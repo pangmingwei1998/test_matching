@@ -49,6 +49,33 @@ def parse_markdown(md_text: str, version: str, source: str):
     # =========================
     # Flush helpers
     # =========================
+    def build_path(include_level_1: bool = True, include_level_2: bool = True,
+                   include_level_3: bool = False, suffix: str = None) -> str:
+        """构建 path 字符串，只包含非 null 的层级"""
+        parts = [theme]
+
+        # level_1: 如果有 id 则显示 "id. title"，否则只显示 "title"
+        if include_level_1 and l1_title:
+            l1_part = f"{l1_id}. {l1_title}" if l1_id else l1_title
+            parts.append(l1_part)
+
+        # level_2: 如果有 id 则显示 "id. title"，否则只显示 "title"
+        if include_level_2 and l2_title:
+            l2_part = f"{l2_id}. {l2_title}" if l2_id else l2_title
+            parts.append(l2_part)
+
+        # level_3: 如果有 id 则显示 "id. title"，否则只显示 "title"
+        if include_level_3 and l3_title:
+            l3_part = f"{l3_id}. {l3_title}" if l3_id else l3_title
+            parts.append(l3_part)
+
+        # 添加后缀（如 "Preamble" 或序号 id）
+        if suffix:
+            parts.append(suffix)
+
+        return " > ".join(parts)
+
+
     def flush_preamble(level: str):
         nonlocal buffer
 
@@ -66,10 +93,10 @@ def parse_markdown(md_text: str, version: str, source: str):
             "level_2": {"id": l2_id, "title": l2_title} if level == "level_2" else {"id": None, "title": None},
             "level_3": {"id": None, "title": None},
             "Preamble": content,
-            "path": (
-                f"{theme} > Preamble"
-                if level == "theme"
-                else f"{theme} > {l1_title} > Preamble"
+            "path": build_path(
+                include_level_1=(level != "theme"),
+                include_level_2=(level == "level_2"),
+                suffix="Preamble"
             ),
             "source": source
         })
@@ -87,6 +114,9 @@ def parse_markdown(md_text: str, version: str, source: str):
 
         stats["content_blocks"] += 1
 
+        # level_3 的后缀：如果有 title 则显示 "id. title"，否则只显示 id
+        l3_suffix = f"{l3_id}. {l3_title}" if l3_title else l3_id
+
         results.append({
             "Theme": theme,
             "version": version,
@@ -94,7 +124,12 @@ def parse_markdown(md_text: str, version: str, source: str):
             "level_2": {"id": l2_id, "title": l2_title},
             "level_3": {"id": l3_id, "title": l3_title},
             "content": content,
-            "path": f"{theme} > {l1_title} > {l2_title} > {l3_id}",
+            "path": build_path(
+                include_level_1=True,
+                include_level_2=True,
+                include_level_3=False,
+                suffix=l3_suffix
+            ),
             "source": source
         })
 
@@ -233,17 +268,17 @@ def parse_markdown(md_text: str, version: str, source: str):
 # Runner
 # =========================
 if __name__ == "__main__":
-    md_path = "/home/pmw/h20/Text_matching/RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+    md_path = "/home/pmw/h20/Text_matching/apple4.9.md"
 
     md_text = Path(md_path).read_text(encoding="utf-8")
 
     parsed, stats = parse_markdown(
         md_text=md_text,
         version="V4.9",
-        source="RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+        source="apple4.9.md"
     )
 
-    with open("RBA_4JI_A.json", "w", encoding="utf-8") as f:
+    with open("Apple_standard.json", "w", encoding="utf-8") as f:
         json.dump(parsed, f, ensure_ascii=False, indent=2)
 
     print("\n====== Parsing Summary ======")
