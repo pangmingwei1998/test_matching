@@ -17,6 +17,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # 安装依赖
 pip install -r requirements.txt
 
+# 解析 Markdown 文档为 JSON（推荐使用 parse_4ji.py）
+python3 parse_4ji.py
+
 # 运行主程序
 python text_matching.py
 
@@ -29,7 +32,15 @@ pip install faiss-gpu
 
 ## 架构说明
 
-### 主要组件 ([text_matching.py](text_matching.py))
+### 主要组件
+
+| 文件 | 职责 |
+|-------|---------|
+| [text_matching.py](text_matching.py) | 主比对系统：BGE-M3 嵌入、FAISS 索引、LLM 判断、Excel 导出 |
+| [parse_4ji.py](parse_4ji.py) | Markdown 文档解析器：将层级 Markdown 转换为结构化 JSON |
+| [download_model.py](download_model.py) | BGE-M3 模型手动下载工具 |
+
+### text_matching.py 类结构
 
 | 类 | 行号 | 职责 |
 |-------|-------|---------|
@@ -42,18 +53,92 @@ pip install faiss-gpu
 ### 数据流程
 
 ```
-加载 JSON 文档（多行 JSON 格式）
+Markdown 文档 (.md)
          ↓
-为供应商文档生成嵌入向量
+parse_4ji.py 解析
          ↓
-构建 FAISS 索引
+JSON 文档（结构化）
          ↓
-对每条企业联盟文档：
-  ├─ 召回 Top-K 候选（向量相似度）
-  ├─ 按 SIMILARITY_THRESHOLD 过滤（默认 0.8）
-  └─ 对过滤后的候选进行 LLM 判断
-         ↓
-导出到 Excel（带格式）
+text_matching.py:
+  ├─ 加载 JSON 文档
+  ├─ 为供应商文档生成嵌入向量
+  ├─ 构建 FAISS 索引
+  ├─ 对每条企业联盟文档：
+  │   ├─ 召回 Top-K 候选（向量相似度）
+  │   ├─ 按 SIMILARITY_THRESHOLD 过滤（默认 0.8）
+  │   └─ 对过滤后的候选进行 LLM 判断
+  └─ 导出到 Excel（带格式）
+```
+
+## parse_4ji.py - Markdown 文档解析器
+
+### 功能
+
+将层级结构的 Markdown 文档解析为结构化 JSON，供 text_matching.py 使用。
+
+### 层级结构
+
+```
+### (H1) - Theme（主题，如 Anti-Discrimination）
+  ↓
+## (H2) - Level 1（一级标题，如 Supplier Code of Conduct Requirements）
+  ↓
+# (H3) - Level 2（二级标题，如 Supplier Responsibility Standards）
+  ↓
+1. (H4) - Level 3 item（序号条款，如 1. Policy & Procedures）
+```
+
+### 配置规则
+
+| 配置项 | 默认值 | 说明 |
+|--------|--------|------|
+| `H1_PATTERN` | `^###\s+(.*)` | Theme 级别 |
+| `H2_PATTERN` | `^##\s+(.*)` | Level 1 级别 |
+| `H3_PATTERN` | `^#\s+(.*)` | Level 2 级别 |
+| `H4_PATTERN` | `^(\d+)\.\s+(.*)` | Level 3 item（序号） |
+| `REQUIRE_BLANK_BEFORE_H4` | `True` | 序号前是否需要空行 |
+
+### 重要逻辑
+
+1. **Preamble 识别**：层级标题与序号之间的内容为 Preamble（前言）
+2. **空 Preamble 处理**：当序号紧跟在三级标题后时（中间无内容），跳过 Preamble 生成
+3. **ID 提取**：标题中的编号（如 `A1. Title` → `id=A1, title=Title`）自动提取
+4. **Path 构建**：自动生成层级路径，格式为 `Theme > level_1 > level_2 > level_3`
+
+### JSON 输出格式
+
+```json
+{
+  "Theme": "Anti-Discrimination",
+  "version": "V4.9",
+  "level_1": {
+    "id": null,
+    "title": "Supplier Code of Conduct Requirements"
+  },
+  "level_2": {
+    "id": null,
+    "title": "Supplier Responsibility Standards"
+  },
+  "level_3": {
+    "id": "1",
+    "title": "Policy & Procedures"
+  },
+  "content": "条款内容...",
+  "path": "Anti-Discrimination > Supplier Code of Conduct Requirements > Supplier Responsibility Standards > 1. Policy & Procedures",
+  "source": "apple4.9.md"
+}
+```
+
+### 使用方法
+
+修改脚本底部的文件路径后运行：
+
+```python
+md_path = "/path/to/document.md"
+version = "V4.9"
+source = "document.md"
+
+parsed, stats = parse_markdown(md_text, version, source)
 ```
 
 ### 输入文件
@@ -63,93 +148,49 @@ pip install faiss-gpu
 - **RBA-VAP-Standard-V8.0.2_Apr2025-A.md** - RBA 责任标准（V8.0.2）
 - **apple4.9.md** - Apple 供应商责任标准（4.9）
 
-##### 解析后的 JSON 文档
+#### 解析后的 JSON 文档
 
-使用 [parse_documents.py](parse_documents.py) 将 Markdown 文档解析为 JSON：
+使用 [parse_4ji.py](parse_4ji.py) 解析后的输出：
 
-```bash
-# 解析两个文档
-python3 parse_documents.py
-```
+- **Apple_standard.json** - Apple 解析结果（219 条记录）
+- **RBA_4JI_A.json** - RBA 解析结果
 
-生成两个 JSON 文件：
+#### JSON 结构说明
 
-- **RBA_standard_parsed.json** - RBA 解析结果
-- **Apple_standard_parsed.json** - Apple 解析结果
-
-###### JSON 结构说明
+**parse_4ji.py 输出格式（数组，每行一个 JSON 对象）：**
 
 ```json
 {
-  "meta": {
-    "source": "RBA" | "Apple",           // 文档来源
-    "version": "V8.0.2" | "4.9",         // 版本号
-    "date": "Apr2025" | null,            // 日期
-    "title": "文档标题",
-    "generated_at": "2026-01-12T...",    // 生成时间
-    "total_blocks": 18                   // 总块数
+  "Theme": "Anti-Discrimination",
+  "version": "V4.9",
+  "level_1": {
+    "id": null,
+    "title": "Supplier Code of Conduct Requirements"
   },
-  "blocks": [
-    {
-      "block_id": "RBA-A1-policy",       // 全局唯一 ID
-      "source": "RBA" | "Apple",         // 来源
-      "topic": "A. Labor" | "Anti-Discrimination",  // 顶层主题
-      "section": "A1. Prohibition of Forced Labor",  // 二级标题
-      "category": "1. Policy",           // 分块依据（按编号/分类）
-      "category_type": "policy",         // 标准化分类类型
-      "text": "完整条款内容...",         // 用于向量化的文本
-      "path": "A > A1 > policy",         // 层级路径（用于筛选/追溯）
-      "keywords": ["forced", "labor"],   // 提取的关键词
-      "word_count": 163,                 // 词数统计
-      "table": {                         // 可选：表格数据（RBA 评估标准）
-        "has_table": true,
-        "table_markdown": "<table>...",
-        "table_type": "rating_matrix"
-      }
-    }
-  ]
+  "level_2": {
+    "id": null,
+    "title": "Supplier Responsibility Standards"
+  },
+  "level_3": {
+    "id": "1",
+    "title": "Policy & Procedures"
+  },
+  "content": "条款内容...",     // 或 "Preamble": "前言内容..."
+  "path": "Anti-Discrimination > Supplier Code of Conduct Requirements > Supplier Responsibility Standards > 1. Policy & Procedures",
+  "source": "apple4.9.md"
 }
 ```
 
-###### category_type 标准化映射
-
-**RBA:**
-
-| category | category_type |
-|----------|---------------|
-| Preamble / Code 8.0 Labor Preamble | `preamble` |
-| Code 8.0 | `code` |
-| 1. Policy | `policy` |
-| 2. Procedures & Practices | `procedures` |
-| 3. Controls & Monitoring | `controls` |
-| 4. Records | `records` |
-| 5. Serious conditions | `serious_conditions` |
-| 6. Leading Practices | `leading_practices` |
-| 7. Fees evaluation criteria | `evaluation_criteria` |
-
-**Apple:**
-
-| category | category_type |
-|----------|---------------|
-| Supplier Code of Conduct Requirements | `code_of_conduct` |
-| 1、Policy & Procedures | `policy_procedures` |
-| 2、Operational Practice | `operational_practice` |
-| 3、Training and Communication | `training_communication` |
-| 4、Documentation | `documentation` |
-| 5、Victim Support | `victim_support` |
-
-###### 分块规则
-
-| 文档 | 分块粒度 | 说明 |
-|------|----------|------|
-| RBA | 按编号 1-7 分块 | Code 8.0 前言单独分块；表格数据保留在 `table` 字段 |
-| Apple | 按中文数字 1、2、3、4 分块 | Supplier Code of Conduct Requirements 单独分块 |
+**关键字段：**
+- `content` / `Preamble`：二选一，content 用于序号条款，Preamble 用于层级前言
+- `path`：层级路径，用于筛选和追溯（格式优化后包含 id 和 title）
+- `level_X.id`：可选的编号标识（如 `A1`、`1` 等）
 
 #### 输出文件
 
-- **matching_results.xlsx** - 列名：`企业联盟条款`、`供应商条款`、`相似度得分`、`LLM判断结果`、`LLM判断理由`、`排名`、`供应商标题`、`企业版本`
+- **matching_results.xlsx** - Excel 比对结果（带格式）
 
-## 关键配置
+## text_matching.py 关键配置
 
 所有路径和参数集中在 `Config` 类中 ([text_matching.py:23-50](text_matching.py#L23-L50))：
 
@@ -164,12 +205,24 @@ python3 parse_documents.py
 
 ## 重要注意事项
 
+### text_matching.py
+
 1. **LLM API 依赖**：需要能访问 `http://10.71.5.24:8000/v1` 的 LLM API。系统内置重试逻辑（最多 3 次，指数退避）。
 
 2. **模型缓存**：BGE-M3 模型（约 2GB）缓存在 `~/.cache/huggingface/hub/models--BAAI--bge-m3`。首次下载后支持离线模式。
 
-3. **语言**：文档和注释使用中文。输入/输出数据为中英文混合。
+3. **JSON 加载**：`load_json_documents()` 函数支持多行 JSON 格式（对象可跨多行）。
 
-4. **Excel 格式**：输出文件对重复的企业联盟条款使用合并单元格，自定义列宽，行高 200，全边框样式。
+### parse_4ji.py
 
-5. **JSON 加载**：输入文件使用多行 JSON 格式（每行一个 JSON 对象），由 `load_json_documents()` 工具函数处理。
+1. **序号识别逻辑**：当 `REQUIRE_BLANK_BEFORE_H4=True` 时，序号（`1.`）前需要空行才被识别；但当序号紧跟在三级标题（`#`）后时，即使没有空行也会被识别（通过 `seen_text_since_heading` 标志判断）。
+
+2. **空 Preamble 跳过**：如果三级标题和序号之间没有内容，不会生成空的 Preamble 记录。
+
+3. **Path 格式优化**：path 字段自动包含 id 和 title，格式为 `Theme > level_1 > level_2 > id. title`，null 值不会加入。
+
+4. **语言**：文档和注释使用中文。输入/输出数据为中英文混合。
+
+### Excel 输出格式
+
+输出文件对重复的企业联盟条款使用合并单元格，自定义列宽（A:60, B:60, C:15, D:15, E:40, F:10, G:30, H:15），行高 200，全边框样式。
