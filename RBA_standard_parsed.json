@@ -1,0 +1,1177 @@
+[
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "General",
+    "level_1": {
+      "id": "VAP",
+      "title": "VAP Standard"
+    },
+    "level_2": {
+      "id": "VAP",
+      "title": "VAP Standard"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "The following notes apply to all provisions herein: 14.1.1 When there is a discrepancy between the RBA code, local law, a participant’s policies, or a Collective Bargaining Agreement (CBA), the RBA defines conformance to the RBA code as meeting the strictest requirements (even if it meets RBA code provisions and legal requirements). A Collective Bargaining Agreement may create requirements beyond the RBA Code requirements. The Validated assessment (VA) shall not validate CBA compliance where it is stricter than the RBA Code. 14.1.2 A legal non-conformance is a Major non-conformance unless otherwise stated in a specific provision (e.g., A3.1 if the situation of reviewee is below 60h/w but above local law for ≤40% of the workers) or there is another finding which has a higher non-conformance rating for that provision. 14.1.3 All communications from the reviewee to workers shall be done in a language the worker can understand unless otherwise stated in the provisions. If this is not the case, the relevant aspect is, at minimum, a ‘Major’ non-conformance. 14.1.4 Guidance applies to all workers, including temporary, migrant, student, and contract, directly and indirectly, employed workers that work in the factory/on production/in the warehouse and any other type of worker/employee unless the AC specifically states a narrower focus group. 14.1.5 Unless otherwise noted, references to the percentage of workers in conformance or nonconformance are based on the defined sample. 14.1.6 A Process is not required to be in writing (unless the AC states specifically it shall be documented). However, all processes shall be verifiably implemented consistently. 14.1.7 Adequate shall mean appropriate and complete for its intended purpose. In practice, it means all required code compliance elements are included in the document (policy or procedure). For example, n adequate policy on prohibition of child labor includes all the elements RBA requires on this code topic. 14.1.8 Effective shall mean successfully achieves its intended goal or outcome. In practice, this means all implementation elements are deployed and the outcome of process/procedure meets the RBA requirement. An effective procedure of child labor will include all RBA required implementation elements such as age verification, personnel files and no children are present or have been hired. Internal Migrant Workers 14.1.9 Internal migrant workers: Individuals who are recruited and migrate from their usual place of residence to another state or province within their home country for employment purposes. These individuals may differ from the dominant group, often the majority population—in terms of race, color, religion, or cultural origin. 14.1.10 Internal migrant workers shall be considered a separate group, like foreign migrant workers, during the Validated assessment to determine risks and conformance specific to this group. Code 8.0 Labor Preamble: Participants commit to respect the human rights of workers, and to treat them with dignity and respect as understood by the international community. This applies to all workers including temporary, migrant, student, contract, direct employees, and any other type of worker.",
+    "path": "VAP > VAP > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Forced labor in any form, including but not limited to, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery or trafficking of persons is not permitted. This includes transporting, harboring, recruiting, transferring, or receiving persons by means of threat, force, coercion, abduction or fraud for labor or services. There shall be no unreasonable restrictions on workers’ freedom of movement in the facility in addition to unreasonable restrictions on entering or exiting company- provided facilities including, if applicable, workers’ dormitories or living quarters. As part of the hiring process, all workers must be provided with a written employment agreement in their native language, or in a language the worker can understand that contains a description of terms and conditions of employment. Foreign migrant workers must receive the employment agreement prior to the worker departing from his or her country of origin and there shall be no substitution or change(s) allowed in the employment agreement upon arrival in the receiving country unless these changes are made to meet local law and provide equal or better terms. All work shall be voluntary, and workers shall be free to leave work at any time or terminate their employment without penalty if reasonable notice is given, which shall be clearly stated in workers’ contracts. Participants shall maintain documentation on all leaving workers. Employers, agents, and sub-agents’ may not hold or otherwise destroy, conceal, or confiscate identity or immigration documents, such as government-issued identification, passports, or work permits. Notwithstanding the foregoing, employers can only hold documentation if necessary to comply with the local law. In this case, at no time shall workers be denied access to their documents. Workers shall not be required to pay employers’ agents or sub-agents’ recruitment fees or other related fees for their employment. If any such fees are found to have been paid by workers, such fees shall be repaid to the worker.",
+    "path": "A > A1 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:\n\na. No levies, recruiting, hiring or placement fees or costs, even if allowed by local law.   \nb. No fees or costs charged to workers as defined by the RBA Definition of Fees   \nc. No deposits, mandatory saving, or any other financial obligation are required to obtain or keep a job. d. If fees and costs were found to be charged, workers must be repaid within 90 days.   \ne. No holding original identification documents of workers   \nf. Overtime is to be voluntary (i.e., workers can always refuse overtime)   \ng. Resignation must be voluntary, and the required notice period cannot exceed one month.   \nh. The penalty for not serving notice cannot exceed 60% of one month’s wages.   \ni. Workers’ freedom of movement is not restricted.",
+    "path": "A > A1 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. Workers are not required to pay any deposit or employment fee to the supplier, labor recruiter or employment agency to get or keep their job (See RBA Definition of Fees). b. No control of or access to workers’ banking or financial accounts (direct deposit is allowed).\n\nc. Workers are informed before employment of the key employment terms and conditions in writing in their native language or in a language that the worker can understand.\n\ni. Allowed fees (e.g., housing), deductions (e.g., taxes, social insurance) are disclosed to the workers.   \nii. No detrimental changes to the contract or work conditions\n\nd. Signed employment contracts or agreements are in place between the worker and the facility, to ensure the worker is provided with documentation of their legal rights and responsibilities. All terms required by law are in the employment contracts.\n\ne. Verbal explanation to workers of the key components of the employment conditions in the worker's native language, or in a language the worker can understand AND gaining their acknowledgement this has happened.\n\ni. Nature of work including what PPE is required to be worn.   \nii. Working hours (which do not exceed 60 hours, 6 consecutive workdays), personal leave allowance and public holidays.   \niii. Benefits (housing, transportation, uniforms, etc.)   \niv. What allowed fees the worker shall be charged and the amount(s)   \nv. Wages and wage deductions (including all components of tax and social insurance(s)) and how these are calculated including premiums for overtime (which must be at least 125% of standard pay), working rest days and statutory holidays.   \nvi. Other non-legally required benefits provided (pension, insurances, etc.)   \nvii. Information concerning the general conditions of life and work.\n\nf. Offer letter / Contract terms should include:\n\ni. Name and address of the employer ii. Worker’s full name   \niii. Workers’ start date and duration of contract.   \niv. Contract termination requirements include a notice period not to exceed one month, or less per local law and a penalty for early contract termination. v. Contract renewal provisions (if applicable).   \nvi. Description of the location and nature of work to be performed.   \nvii. Regular work hours and shifts and anticipated overtime hours with total working hours not to exceed 60 hours per week or local law, whichever is lower.   \nviii. Regular, overtime, and holiday wage rates and estimated monthly base and total pay.\n\nix. Any bonuses and conditions for earning them.\n\nx. Any allowances granted (e.g., food, accommodation)\n\nxi. Full listing of all deductions including specification of the type and amount of each deduction and which, if any, are optional.\n\nxii. Method and frequency of wage payment\n\nxiii. Description of additional benefits including medical insurance coverage, accident/injury, insurance, holidays, annual leave, sick leave, and/or any other applicable benefits\n\nxiv. If accommodation is provided include detailed description of living conditions and breakdown of any deductions for accommodations, meals, transportation, or other services provided or offered by the employer and/or their labor agent or other representative or service provider.\n\nxv. Any other terms required by applicable laws and regulations.\n\nxvi. Clear prohibition on charging of recruitment or placement fees xvii. Note: there should be no terms 1. Requiring overtime 2. Restricting movements",
+    "path": "A > A1 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. Cascade this policy and the RBA Code of Conduct to suppliers, contractors, subcontractors, and labor recruiters noted the expectation that they adopt it, put in place procedures to follow it.   \nb. Conformance to the policy is regularly monitored.   \nc. When engaging with recruiters and labor agents determine the specific amount of any fees and expenses that are required to recruit, hire and onboard each individual (which varies if they are local, internal migrant, or foreign migrant worker) prior to commencement of work and ensure that is part of contract and sub-contracts and paid to reduce risk of workers incurring fees.   \nd. Actively verify compliance through monitoring labor recruiters, brokers, and agents.\n\nNOTE: reimbursement is not the desired model (no fees to workers is)and therefore it is a non-conformance to the RBA Code of Conduct albeit a lesser one.",
+    "path": "A > A1 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. Personnel files for all workers are maintained and include:\n\ni. All versions of employment contract / agreement   \nii. All items to ensure regulatory compliance.   \niii. They are maintained with appropriate access and retention controls (on and/or off site) and confidentiality to protect privacy.   \niv. Documentation on their leaving conditions and end of contract of workers   \nv. Workers’ documentation must be retained for at least 12 months or as required by law whichever is longer.\n\nb. Contracts with service providers, recruiters, labor agents and labor contractors and evidence that they have acted in compliance with the contract/agreement requirements. c. Records on allowed fees are maintained and disclosed to the worker.",
+    "path": "A > A1 > 4",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "item": {
+      "id": "5",
+      "title": "Serious Conditions"
+    },
+    "content": "5. Serious conditions that will result in a severe finding:\n\nRestricting workers from voluntary employment termination.   \nImposing any penalty for resignation that is >3 months of gross base wages.   \nCreating a situation that puts workers at risk such as locking exit doors in the factory or dormitories while the workers are inside.   \nAny action that would be considered coercive or restrictive to reasonable movement by the use of threats such as firing, “sending home,” reporting immigration status to authorities or similarly severe activities.   \nUse or employment of non-voluntary labor.   \nChanging the terms and conditions of employment to be materially worse than originally agreed.   \nNot communicating employment terms and conditions before employment.   \nKeeping, destroying, concealing, or confiscating original personal identification documents such as passports, work permits, identity, or travel papers.   \nIf in the rare case where local law requires an employer to store personal identification documents, tampering with or restricting access for more than 12 hours or charging a fee to access them.",
+    "path": "A > A1 > 5",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "item": {
+      "id": "6",
+      "title": "Leading Practices"
+    },
+    "content": "6. Leading Practices include:\n\nContract or offer letter detailing the level of physical work and what personal protective equipment is required to be worn. If this is impractical for a contract or offer letter, a separate document can suffice.   \nContract or employment agreement includes the worker’s date of birth.   \nForeign and internal migrant workers should be interviewed when they join the company to learn if any of the policies were violated, in which case remedy must be provided, and they must be informed of the grievance mechanism. If fees and costs were found to be charged, workers must be repaid within 90 days.",
+    "path": "A > A1 > 6",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "item": {
+      "id": "7",
+      "title": "Evaluation Criteria"
+    },
+    "content": "7. Fees evaluation criteria:\n\nRating:\n\nScenario 1 - Prohibited recruitment and hiring fees that were paid and not reimbursed within 90 days or as soon as practicable upon discovery.   \n\n<table><tr><td>Frequency\\ Severity in monthly gross base wages</td><td>0-&lt;5%* (&lt;1-month gross base salary)</td><td>5%-&lt;100%* (&lt;1-month gross base salary)</td><td>100-&lt;150%* (&gt;1 month - 1.5-month gross base salary)</td><td>150%* (&gt;1.5-month gross base salary)</td></tr><tr><td>≤1%or3workers or fewer (whichever is greater)</td><td>Minor</td><td>Minor</td><td> Major</td><td>Priority</td></tr><tr><td>&gt;1%-5%or more than 3workers but less than 7 workers</td><td>Major</td><td>Major</td><td>Major</td><td>Priority</td></tr><tr><td>&gt;5%-40% or more than 7workers</td><td>Major</td><td>Major</td><td>Priority</td><td>Priority</td></tr><tr><td>&gt;40%</td><td>Major</td><td>Priority</td><td>Priority</td><td>Priority</td></tr></table>\n\nScenario 2 - Prohibited recruitment and hiring fees that were paid and reimbursed within 90 days before or after commencement of employment.   \n\n<table><tr><td rowspan=1 colspan=1>Frequency\\ Severity in monthly gross base wages</td><td rowspan=1 colspan=1> 0-&lt;5%* (&lt;1-month gross base salary)</td><td rowspan=1 colspan=1>5%-&lt;100%* (&lt;1-month gross base salary)</td><td rowspan=1 colspan=1>100%* (1-month gross base salary)</td></tr><tr><td rowspan=1 colspan=1>≤1%or3workersor fewer(whichever is greater)</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1>&gt;1%or3workers or fewer(whichever is greater)</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Major</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1>*Total of all fees charged during recruitment apd emplovment</td><td></td><td></td><td></td></tr></table>\n\n\\*Total of all fees charged during recruitment and employment",
+    "path": "A > A1 > 7",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Child labor shall not be used in any stage of manufacturing. The term “child” refers to any person under the age of 15, or under the age for completing compulsory education, or under the minimum age for employment in the country, whichever is greatest. Workers under the age of 18 (Young Workers) shall not perform work that is likely to jeopardize their health or safety, including night shifts and overtime. Participants shall ensure proper management of student workers through proper maintenance of student records, rigorous due diligence of educational partners, and protection of students’ rights in accordance with applicable laws and regulations. Participants shall implement an appropriate mechanism to verify the age of workers. The use of legitimate workplace learning programs, which comply with all laws and regulations, is supported. Participants shall provide appropriate support and training to all student workers. In the absence of local law, the wage rate for student workers, interns, and apprentices shall be at least the same wage rate as other entry-level workers performing equal or similar tasks. If child labor is identified, assistance/remediation shall be provided.",
+    "path": "A > A2 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1. Policy: Have a detailed, comprehensive documented young worker policy with elements including:\n\na. Child labor prohibition: setting a minimum working age that is no lower than the greater of local law, 15 years of age, or customer expectations.   \nb. Do not refuse a previous applicant if they now meet company policy and the corresponding legal requirements.   \nc. If underage labor is identified, assistance/remediation is provided and should include: i. Health exam and appropriate action if necessary. ii. Aid to and through completion of compulsory schooling. iii. Maintaining the child's income until legally eligible to work. iv. When they exist, and are acceptable by law, to move underage workers into proper apprenticeship positions, restricting their hours and type of work to accommodate educational needs, as required, rather than discharging or fining these workers.\n\nd. When young workers are employed, policies shall include:\n\ni. Health checks if required by law. ii. Identification and assignment of young workers to non-hazardous positions. iii. Restriction on time of day worked (young workers are not allowed night work <generally means any consecutive period of at least 7 hours between 10 PM and 7 AM> or overtime).\n\ne. When employing learners (apprentices, interns, student workers) a policy shall include:\n\ni. A commitment to only providing internships/student workers assignments and apprenticeships that complement their course of study field or learning of a new vocation.   \nii. Follow a principle of equal pay for equal work (if performing same/similar work/level as regular workers then the pay should be the same).   \niii. Ensure working hours shall not conflict with any of the learner’s school attendance.   \niv. Be clear and limit the duration of the training period, and the number of times the same worker can be classified as a trainee.   \nv. Do not require and ensure that there is not any placement, onboarding, or other fees paid by the learner to gain or retain employment.   \nvi. Do not allow deduction for educational fees from the student worker’s wages.   \nvii. If there is a period where wages can be below minimum wage as per law it should be limited and reasonable in duration or not longer than 6 months, whichever is stricter.   \nviii. Ensure that no agency or intermediary is used in connection with the recruitment, hiring, arrangement, and management of student workers, interns, or apprentices.\n\nix. Ensure that all work is voluntary (including choice of learning placement assignment).\n\nx. Do not use student workers, interns, or apprentices to simply fill a labor shortage.\n\nxi. When employing apprentices, the maximum duration of apprenticeship (not more than 6 months if worker is paid below minimum wage).\n\nxii. When employing Student workers policy shall include:",
+    "path": "A > A2 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. You only employ workers above the legal/hiring policy age for employment.   \nb. There is a formal documented process to verify the age of each worker prior to employment with procedures to ensure that workers are of legal age and that documentation is genuine. The process includes inspection and cross-reference to verify the validity of at least two types of official ID\\* and periodically evaluating the documentation for a random sample of workers.   \nc. ID types for initial and ongoing verification and cross-reference include. i. Matching photographic ID to worker’s face ii. Verification through third-party resources where available, such as Internet resources or local government offices iii. Affidavit from local government representative iv. Birth certificate v. Government-issued personal identification card vi. Driver’s license vii. Voting registration card viii. “Official stamped” copy of a school certificate ix. Foreign or internal work permit or other government recognized record. x. Finger printing or ID card with owner's photograph to prevent under-age workers entering the facility by using another person's ID who may have been vetted or hired.   \nd. Ensure that young workers are working within the appropriate conditions of employment: including legal working hours, not working overtime, not working nights, not working within school hours, and not working in hazardous conditions or roles.   \ne. If young workers found to be working in prohibited times or in hazardous roles, immediate containment not termination is to occur putting on day shift only which does not conflict with compulsory education, moved to non-hazardous positions, elimination of future overtime.   \nf. A documented process is in place to assist any underage workers found working in the facility. This does not include discharging or fining underage workers, but rather provides ways to move them into proper apprenticeship positions, restricts their work hours and type of work as well as accommodating their educational needs (see Policy section above).   \ng. Ensure that any children present in the facility are allowed only in approved areas, separate from the work area, such as day care facilities.   \nh. If apprentices are employed, there is a clear program for training and promotion, with specific limits on the number of hours worked, duration of training period, and number of times the same worker can be classified as a trainee.",
+    "path": "A > A2 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. Applicable laws and regulations ensuring protection of learners’ rights (e.g., working conditions, health & safety) are identified and enforced.   \nb. Perform due diligence on, monitor and take corrective actions to address any non-conformance by an involved educational institution and establish sanctions as appropriate, including termination of the relationship.   \nc. Periodically verify the reliability of age records. Age verification shall include visual verification of a government recognized photographic identification record. Maintain a reliable ID verification system to control the workers' access into the facility.   \nd. Periodically verify young workers are not working overtime, nights, or in hazardous conditions/roles.   \ne. Ensure underage labor assistance/remediation process is designed to provide for the welfare of the individual.\n\nf. Ensure that the three-way agreement required between the student workers (and/or legal guardian), school and supplier include:\n\ni. Student worker’s full name ii. Student worker’s emergency contact information   \niii. The name and address of the student worker’s school   \niv. The name and address of the reviewee. v. Living conditions (if applicable)   \nvi. Wages and benefits   \nvii. Costs (if any) for meals and accommodation (shall be no higher than a fair market rate)   \nviii. Working hours   \nix. Nature of work and place where it shall be performed. x. Signed in three copies.",
+    "path": "A > A2 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. Due diligence reports on educational partners   \nb. Maintain verification of worker age and right-to-work status until at least 12 months or as required by law whichever is longer.   \nc. After the worker departs the company.   \nd. Learner records are maintained, accurate, complete, and up to date.   \ne. Maintenance of student worker/intern or apprentices' records in personnel files (includes agreement if applicable, learning objectives, evaluations, reference to training material, assignment, etc.)   \nf. Details on promotion/hiring opportunities after successful apprenticeship, eligibility, recruitment, employment agreement, nature of work, working hours, wages, and benefits.",
+    "path": "A > A2 > 4",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "item": {
+      "id": "5",
+      "title": "Serious Conditions"
+    },
+    "content": "5. Serious conditions that will result in a severe finding:\n\nUnderage workers are present.   \nYoung workers performing inherently hazardous work.\n\nCode 8.0: Working hours shall not exceed the maximum set by local law. Further, a work week shall not be more than 60 hours per week, including overtime, except in emergency or unusual situations. All overtime shall be voluntary. Workers shall be allowed to have at least one day off every seven days.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "A > A2 > 5",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "item": {
+      "id": "6",
+      "title": "Leading Practices"
+    },
+    "content": "6. Leading Practices include:\n\na. The disciplinary policy includes the following elements:\n\ni. Graduated/Progressive – “First time” or small offenses might involve training/retraining or verbal discussions between the worker and supervisor in private - not in front of other workers. Major or re-occurring offenses would involve more serious disciplinary written warning or re-assignment, etc., according to the documented process.   \nii. Constructive- Feedback is timely, targeted, and intended to motivate improvement in worker behavior and performance.   \niii. Balanced - discipline applied consistently to all individuals and groups.\n\nb. Facilities proactively equipped to accommodate disabled persons (e.g., wheelchair ramps; elevators; visual evaluation alarms; etc.).\n\nc. Having policies and taking actions to hire and promote a diverse workforce.\n\n# A6 Freedom of Association and Collective Bargaining\n\nCode 8.0: Open communication and direct engagement between workers and management are the most effective ways to resolve workplace and compensation issues. Workers and/or their representatives shall be able to openly communicate and share ideas and concerns with management regarding working conditions and management practices without fear of discrimination, reprisal, intimidation, or harassment. In alignment with these principles, participants shall respect the right of all workers to form and join trade unions of their own choosing, to bargain collectively, and to engage in peaceful assembly as well as respect the right of workers to refrain from such activities. Where the right of freedom of association and collective bargaining is restricted by applicable laws and regulations, workers shall be allowed to elect and join alternate lawful forms of worker representations.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "A > A2 > 6",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "item": {
+      "id": "7",
+      "title": "Evaluation Criteria"
+    },
+    "content": "7. Evaluation criteria for consecutive days of work\n\n<table><tr><td rowspan=2 colspan=1>Consecutive Days</td><td rowspan=1 colspan=4> % Of Sampled Workers</td></tr><tr><td rowspan=1 colspan=1> ≤1%</td><td rowspan=1 colspan=1> &gt;1% to ≤5% of sampledworkers</td><td rowspan=1 colspan=1>&gt;5% to ≤40%</td><td rowspan=1 colspan=1>&gt;40%</td></tr><tr><td rowspan=1 colspan=1>≥24 Consecutive Days</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2>Priority</td><td rowspan=2 colspan=1>Priority</td></tr><tr><td rowspan=1 colspan=1> &gt;12 to &lt;24 Consecutive Days</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1> &gt;6(or local law if stricter) to ≤12 Consecutive Days</td><td rowspan=1 colspan=1>Conformance</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1> Major</td></tr><tr><td rowspan=1 colspan=1>≤6(or local law if stricter) Consecutive Days</td><td rowspan=2 colspan=4>ConformancePriority</td></tr><tr><td rowspan=1 colspan=1>Workers under the age of 18 are found to be working consecutive days in excess of the stricter of law or 6 consecutive days</td></tr></table>\n\n# A4 Wages and Benefits\n\nCode 8.0: Compensation paid to workers shall comply with all applicable wage laws, including those relating to minimum wages, overtime hours and legally mandated benefits. All workers shall receive equal pay for equal work and qualification. Workers shall be compensated for overtime at pay rates greater than regular hourly rates. Deductions from wages as a disciplinary measure shall not be permitted. For each pay period, workers shall be provided with a timely and understandable wage statement that includes sufficient information to verify accurate compensation for work performed. All use of temporary, dispatch and outsourced labor shall be within the limits of the local law.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "A > A2 > 7",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B1",
+      "title": "Occupational Health and Safety"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Worker potential for exposure to health and safety hazards (chemical, electrical and other energy sources, fire, vehicles, and fall hazards, etc.) shall be identified and assessed, mitigated using the Hierarchy of Controls. Where hazards cannot be adequately controlled by these means, workers shall be provided with appropriate, well-maintained, personal protective equipment, and educational materials about risks to them associated with these hazards. Gender-responsive measures shall be taken, such as not having pregnant women and nursing mothers in working conditions, which could be hazardous to them or their child and to provide reasonable accommodations for nursing mothers.",
+    "path": "B > B1 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B1",
+      "title": "Occupational Health and Safety"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1. Policy: Have a detailed, comprehensive documented occupational health and safety policy with elements including:\n\na. All required permits, licenses, and test reports for occupational health and safety are in place and communicated timely to the government (if required).   \nb. Occupational health & safety hazards are identified, assessed, and mitigated using the Hierarchy of Controls, which includes eliminating, substituting, and controlling through proper design, process and administrative controls, and appropriate Personal Protective Equipment (PPE) which is consistently and correctly used.   \nc. Gender-responsive measures are taken to ensure pregnant women and nursing mothers are not in working conditions, which could be hazardous to them or their child, and provide reasonable accommodations for nursing mothers.\n\nNOTE: All effrts must apply to all types of workers (direct, indirect, dispatched, young,interns,apprentices.",
+    "path": "B > B1 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B1",
+      "title": "Occupational Health and Safety"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. The facility keeps a registry or inventory of health and safety permits, licenses and certifications including their monitoring and reporting requirements, expiration dates, etc.   \nb. Permits, licenses, and certifications are kept current and updated as necessary as operations changes occur.   \nc. All health and safety violations have been remediated and are considered closed by the proper authorities.   \nd. All government reporting is on time and correct.   \ne. Assessments occur: i. An adequate and effective risk assessment process is in place to identify the most significa actual and potential occupational health and safety risks, including specific risks of relevan demographics, such as gender and age, where the facility caused or contributed to adverse health and safety impacts for internal and external stakeholders (including applicable requirements).   \nii. An adequate and effective process is implemented to eliminate or reduce worker safety hazards and determine proper PPE for specific job tasks and/or areas of the facility where it cannot be eliminated.   \niii. A safety hazard assessment is performed for all machinery and equipment before purchase, installation and start up. Controls are implemented for the identified hazards.   \niv. Hazards such as high noise, chemical use, heavy equipment use, awkward positions, work at heights, overhead hazards, etc. should all be evaluated.   \nv. Buildings are structurally sound and conform to local building code requirements.   \nvi. The risk assessment is updated when there is a Significant Change.\n\nNOTE: Young workers,expectant and nursing mothers, others must be considered in a separate and unique category.\n\nNOTE: Exposure to multiple chemicals can be either exposure to multiple chemicals by a single route or exposure to multiple chemicals by multiple routes.A route can be inhalation,ingestion, skin exposure, etc.\n\nf. Risks are addressed through the Hierarchy of Controls\n\ni. Elimination   \nii. Substitution   \niii. Engineering controls   \niv. Process and Administrative controls   \nv. Adequate and effective PPE\n\ng. Examples of areas to assess and steps are provided here; however, this is not comprehensive:\n\ni. Stairways and elevated work areas are provided with appropriate guardrails and handrails. ii. Aisles, stairways, and work areas are free of tripping hazards (stored materials, electrical cords, etc.). iii. Health and safety education, both general and job-specific, is provided during initial orientation and on an ongoing basis.   \niv. Precautions are taken to ensure safety in construction areas, including limiting vehicle speeds, scaffolding to prevent injury from falling objects and controls of electrical hazards. v. In areas where powered industrial vehicles are used, pedestrian walkways are clearly delineated and physically separated, where possible, from vehicle operation areas.   \nvi. Electrical installations and wiring are regularly inspected and maintained to prevent electrical shock hazards (damaged cords and plugs, frayed wiring, missing protective barriers, etc.).   \nvii. Hazards are identified by appropriate signs, placards, and labels in the local language of workers.   \nviii. Energized parts are protected from accidental contact by enclosures and barriers.   \nix. Operating procedures for equipment and machinery posing electrical hazards include electrical safety precautions. x. Lockout/Tagout program is in place for work on equipment where stored energy (electrical, pneumatic, mechanical, etc.) or inadvertent start-up could injure workers.   \nxi. Confined spaces are identified, and hazards are evaluated before workers are allowed to enter. Hazard controls (e.g. mechanical ventilation, personal protective equipment, etc.) are implemented and maintained for the entire duration of the confined space work.\n\nh. Fire hazards are controlled:\n\ni. Combustible storage is minimized and limited to areas with adequate fire detection and protection.   \nii. Flammable and combustible materials are properly stored to prevent the accumulation of vapors.   \niii. Ignition hazards (e.g. smoking, electrical sparks, open flames, etc.) are eliminated in areas where combustible and flammable materials are stored or used or if there is a flammable atmosphere.\n\niv. The facility controls the risks associated with fire hazards (e.g., replacing frayed electrical wiring, avoiding open flames, containing flammable vapors, etc.). v. A hot work permit system is in place for welding, cutting, brazing, and similar activities.\n\nOnly trained and licensed drivers are permitted to operate industrial powered vehicles.\n\nj. Workers are provided with appropriate fall protection for work in elevated work areas (e.g., roof work, heights, forklifts trucks, towers, etc.).\n\nk. PPE. Where hazards cannot be eliminated, there should be proper PPE requisition and renewal process. Adequate and effective notification and enforcement process for PPE use is in place including:\n\ni. Worker training   \nii. Signs and labels   \niii. Regular enforcement by supervisors   \niv. Work area inspections   \nv. PPE inspections and maintenance and renewal/replacement\n\nl. Gender-responsive measures for pregnant women and nursing mothers i. General risk assessment of roles and areas must include potential hazards to expecting and nursing mothers. Those include but are not limited to these elements:",
+    "path": "B > B1 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B1",
+      "title": "Occupational Health and Safety"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. Steps to ensure tools, systems and processes are properly tested, calibrated, and otherwise maintained to demonstrate accuracy in measurement, indication, and recording.\n\nb. Site operations are reviewed for compliance with all monitoring, reporting and other permit requirements based on:\n\ni. Internal monitoring and assessments ii. Independent third-party assessments iii. Regulatory agency reviews/inspections c. Ensure minimum monitoring is done including:\n\ni. A daily safety inspection is performed for all industrial powered vehicles. ii. PPE inspections by workers and staff",
+    "path": "B > B1 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B1",
+      "title": "Occupational Health and Safety"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. All required occupational health and safety permits, licenses and test reports are in place and valid including:\n\ni. Fire safety ii. Industrial Hygiene permits and licenses (e.g., lasers, chemical) iii. Building occupancy permits / use permits. iv. Machine and industrial powered vehicles v. Food, sanitation including drinking water, food sample testing. vi. Housing includes rented apartments. vii. Pressure vessel (e.g., boiler) permits viii. Hoist / lift permits\n\nNOTE: Some signage and information may be required by law to be posted in employee common / break/cafeteria locations.\n\nb. Professional certificates are maintained as required including:\n\ni. Occupational health and safety (e.g., first responders, etc. where required). ii. If nurses or doctors are employed or doctor/nurse services are used. iii. Food worker/prep health tests iv. Health and safety ERT members have the required qualifications/certifications.\n\nc. Accurate, complete, and up-to-date risk assessment reports . Complete, and up-to-date internal and external stakeholder identification reports.\n\ne. Occupational Health / Injury and illness logs.\n\nf. Occupational health and safety testing reports are prepared, submitted as required, and retained including:\n\ni. Industrial hygiene sampling data   \nii. Drinking water sampling data   \niii. Ventilation flow tests   \niv. Injury and illness logs   \nv. Respiratory protection (fit tests, medical evaluations)   \nvi. Hearing conservation programs   \nvii. Notice of availability of medical records   \nviii. Fire safety equipment inspection, testing and mainten\n\ng. All Occupational health and safety permits and licenses including:\n\ni. Fire safety and emergency preparedness ii. Occupational health professional licenses h. Emergency preparedness plans and data i. Occupational safety testing reports i. All industrial hygiene permits, licenses, and monitoring logs (e.g., exposures)\n\nj. Use permits.   \nk. Industrial hygiene testing reports   \nl. All machine (safety) permits and licenses and testing reports.   \nm. Rented apartments shall be permitted by the local government.   \nn. Food, sanitation and housing permits and licenses   \no. Canteen/kitchen workers have valid health certificates.   \np. If local regulations require facility health inspections or other tests or certificates, these are available and valid.\n\nNOTE: All permits,licenses, certifications, and reporting data are posted as required by law in required or conspicuous locations\n\nNOTE: Drinking water testing is not required if local water utity company can attest water meets World Health Organization (WHO) Guidelines for Drinking-Water Quality or equivalent standard",
+    "path": "B > B1 > 4",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B2",
+      "title": "Emergency Preparedness"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Potential emergency situations and events shall be identified and assessed, and their impact minimized by implementing emergency plans and response procedures including emergency reporting, employee notification and evacuation procedures, worker training, and drills. Emergency drills shall be executed at least annually or as required by local law, whichever is more stringent. Emergency plans shall also include appropriate fire detection and suppression equipment, clear and unobstructed egress, adequate exit facilities, contact information for emergency responders, and recovery plans. Such plans and procedures shall focus on minimizing harm to life, the environment, and property.",
+    "path": "B > B2 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B2",
+      "title": "Emergency Preparedness"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1. Policy: Have a detailed, comprehensive documented emergency preparedness policy with elements including:\n\na. Commitment that site will comply with the stricter of local law, RBA Code of Conduct, insurance company requirement, or customer requirements regarding emergency preparedness, equipment, training, and response.   \nb. Ensure that there is proper budget and staffing allocated to install and maintain the exit, detection, alarm, detection, response, and suppression systems as well as training of individuals and coordination with local authorities.",
+    "path": "B > B2 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B2",
+      "title": "Emergency Preparedness"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. Equipment\n\ni. Detection: Automatic heat and/or smoke detection as required by law or the insurance company. Detection devices and systems are functioning and well-maintained.   \nii. Alarm: All buildings have a manual or automatic fire alarm and notification system, and the system is functioning normally. Fire alarm manual call points or pull-stations are provided at or along egress routes to exits.   \niii. Fire suppression: 1. Portable fire extinguishers are installed, with unimpeded access and current inspection tags. 2. Automatic fire sprinklers as required by law or insurance company.\n\niv. Fire hoses (if present) with unimpeded access and inspection tags. The fire water tank and water pressure are normal. v. Asbestos-containing fire-suppression materials (e.g., blankets) are prohibited.\n\nb. Facility staff or a consultant has performed an assessment of potential emergency situations.\n\nc. Emergency Preparedness\n\ni. Emergency response plans have been developed and implemented to address the potential emergency events identified in the assessment (e.g., chemical spill, equipment malfunction, occupational injury, fire, earthquake, weather event, violence)   \nii. The facility has implemented emergency reporting procedures, including training for workers on how to report an emergency.   \niii. The facility maintains alarms and/or a public address system to notify workers of an emergency.   \niv. The facility has implemented evacuation and relocation procedures, and the procedures are tested on a regular basis.   \nv. Workers are trained in emergency reporting, notification and evacuation and relocation.\n\nd. Emergency evacuation drills are conducted regularly for all work areas and shifts. Specifically:\n\ni. Fire evacuation Drills4",
+    "path": "B > B2 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B2",
+      "title": "Emergency Preparedness"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. Inspections, maintenance, testing and replacement to the stricter or local law, insurance, or the following:\n\nNOTE: Portable fire extinguishers shallbe inspected at least monthly， Single-unit smoke/fire detectors shall be inspected and tested at least every 6 months.\n\ni. All other fire safety equipment, the frequency shall not be less than that required/recommended by the manufacturer or insurance company, whichever is more stringent.   \nii. All facilities to identify gaps, risks which might lead to an emergency and/or impede the abilit to respond and/or evacuate efficiently and safely.   \nb. Periodically select and follow egress routes out of the building to the assembly/shelter point to confirm conformance.   \nc. Documenting of evacuation drills followed by analysis and reporting to management on results and plans for improvement.",
+    "path": "B > B2 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B2",
+      "title": "Emergency Preparedness"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. Business continuity and business resumption plans are available, current, and adequate.   \nb. The emergency response plan (ERP) is available, current, adequate, and reflects the risk assessment, including contact information for emergency responders.   \nc. A post-emergency plan is available, current, and adequate, which includes incident reporting, root cause investigation, and corrective/preventative actions.   \nd. Inspection, maintenance, test and replacement records of equipment and infrastructure including but not limited to fire extinguishers, smoke/fire detectors, alarm, sprinklers, exits (including routes, doors)   \ne. Evaluation drill plans and then reports of the drills including date, time began/ended, shift, area, metrics (e.g., time to evacuate), gaps, Corrective action plan that is tracked and reported to completion.",
+    "path": "B > B2 > 4",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B2",
+      "title": "Emergency Preparedness"
+    },
+    "item": {
+      "id": "5",
+      "title": "Serious Conditions"
+    },
+    "content": "5. Serious conditions to ensure do not occur include\n\nNot having firefighting equipment available   \nNot having sprinkler or automatic detection systems when they are required by law or insurance or other.   \nNot having alarm and notification system in place throughout the facilities   \nThe fire alarm control system disengaged, not functioning properly.   \nHaving firefighting equipment, automatic Detection System or alarm or notification systems are in place, however their function or effectiveness is diminished in such a way that there would be an immediate risk to life during an emergency.   \nNot having a comprehensive and up to date Emergency Response Plan.   \nAny emergency support facilities present or poor operating condition such that their function or effectiveness is diminished.   \nEmergency exit that is blocked, has restricted egress, or is lacking easy means of egress (i.e., key, badge, code) which would pose an immediate risk to life during an emergency.   \nNo emergency evacuation drill has been held in the last 2 years or within 1 month after the start of operations of the site or a Significant Change.",
+    "path": "B > B2 > 5",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B3",
+      "title": "Occupational Injury and Illness"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Procedures and systems shall be in place to prevent, manage, track and report occupational injuries and illnesses, including provisions to encourage worker reporting, classify and record injury and illness cases, provide necessary medical treatment, investigate cases and implement corrective actions to eliminate their causes, and facilitate the return of workers to work. Participants shall allow workers to remove themselves from imminent harm, and not return until the situation is mitigated, without fear of retaliation.",
+    "path": "B > B3 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B3",
+      "title": "Occupational Injury and Illness"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1. Policy: Ensure facility’s health and safety policy includes occupational injury and illness elements including:\n\na. Ensuring there is a staffed and funded program to reduce and respond to occupational injuries and illnesses, including injury reporting, recording and classification, and provision of medical treatment.   \nb. Management encourages workers to report all work-related injuries and illnesses to the company and provides them with training on how to report all work-related injuries and illnesses do so to the company.   \nc. Workers are not penalized or terminated for reporting work-related injuries or illnesses.   \nd. Workers can remove themselves from imminent harm and return once the situation is mitigated without fear of retaliation.",
+    "path": "B > B3 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B3",
+      "title": "Occupational Injury and Illness"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. Workers are not in situations that can cause imminent harm.   \nb. Areas that can cause imminent harm to workers are free of workers and are signed, and access is restricted.   \nc. When workers remove themselves from a situation which they perceive to be an imminent harm to them, a corresponding incident report must be generated.   \nd. First Aid kits i. Appropriate and completely stocked placed /assigned first aid kits are available in designated locations for staff and workers to access. ii. First aid kits are unlocked, or if locked, the first responder can always access them.\n\ne. Appropriate and well-maintained first response equipment is available in designated locations.\n\nOnsite emergency occupational medical clinic\n\ni. If applicable, an occupational medical clinic is adequately staffed and supplied to respond to injuries.   \nii. If the medical clinic is not open or operated 24 hours per day, alternative resources such as outside medical services are communicated to employees.   \niii. Supplies for the onsite occupational medical clinic are available, adequate, and inspected.\n\ng. Work-related accidents, near-misses, injuries, and illnesses are accurately tracked, reported, investigated, analyzed, and classified to identify trends and areas for improvement.\n\nh. A documented corrective action system is in place to effectively reduce recurrence of workplace incidents and has been successful in measurably reducing the injury rate.   \ni. The company/facility provides workers with medical evaluations and treatment for work related injuries and illnesses.   \nj. The facility assigns injured workers to their former (or equivalent) job when they are physically abl to resume work.",
+    "path": "B > B3 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B3",
+      "title": "Occupational Injury and Illness"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. Adequate and effective first response process indicating the severity of medical emergency and response (first aid, infirmary, local external hospital).   \nb. An adequate and effective maintenance process is in place for the inspection, maintenance, upkeep, and stocking of all first response equipment and first aid kits.   \nc. The frequency for all inspections is at least monthly or if there is a Significant Change.\n\nNOTE: If during a regular monitoring cycle,it is determined that there are no changes to the facility or work setup,a re-assessment is not needed. This “no-change\"determination should be recorded.",
+    "path": "B > B3 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B3",
+      "title": "Occupational Injury and Illness"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. Onsite occupational medical clinic inventory list.   \nb. First aid kits have an inventory list.   \nc. Inspection tracking records are available and up to date.   \nd. Licenses and permits for facilities such as clinics and staff, including first responders.   \ne. Near misses, first aid events, the number and type of injuries beyond first aid, and any fatalities   \nf. Results of investigations, reports to authorities   \ng. Corrective action and improvement plans including communication and training.   \nh. Trend analysis of the occupational injury and illness data is performed at least annually.   \ni. Imminent harm reports which are complete and accurate for all instances where workers removed themselves from imminent harm.   \nj. Containment plans for situations where workers removed themselves because of their feeling that they face imminent harm.   \nk. Assessment reports of containment of the imminent harm situations providing a “no imminent harm conclusion before workers return to the area.",
+    "path": "B > B3 > 4",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B3",
+      "title": "Occupational Injury and Illness"
+    },
+    "item": {
+      "id": "5",
+      "title": "Serious Conditions"
+    },
+    "content": "5. Serious conditions that will result in a severe finding:\n\nNot having first response equipment.   \nNot having first aid kits available.   \nThe in-house infirmary or clinic are missing critical elements.",
+    "path": "B > B3 > 5",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B4",
+      "title": "Industrial Hygiene"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Worker exposure to chemical, biological, and physical agents shall be identified, evaluated, and controlled according to the Hierarchy of Controls. When hazards cannot be adequately controlled, workers shall be provided with and use appropriate, well-maintained, personal protective equipment free of charge. Participants shall provide workers with safe and healthy working environments, which shall be maintained through ongoing, systematic monitoring of workers’ health and working environments. Participants shall provide occupational health monitoring to routinely evaluate if workers’ health is being harmed from occupational exposures. Protective occupational health programs shall be ongoing and include educational materials about the risks associated with exposure to workplace hazards.",
+    "path": "B > B4 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B4",
+      "title": "Industrial Hygiene"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1.Policy: Ensure company’s health and safety policy includes industrial hygiene elements including:\n\na. Workers’ exposures to chemical, biological, and physical hazards will be identified, evaluated, and adequately controlled in accordance with the hierarchy of controls, which is maintained through ongoing, systematic monitoring of worker’s health.   \nb. Ensure that there is proper budget and staffing allocated to conduct risk assessment, medical evaluations, provide PPE as well as training of individuals and coordination with local authorities as appropriate.",
+    "path": "B > B4 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B4",
+      "title": "Industrial Hygiene"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. The facility has conducted a risk assessment using established methodology to evaluate the risk of exposure to biological, chemical, and/or physical agents at the facility. This is sometimes referred to as a qualitative exposure assessment to determine if there is a risk of exceeding exposure limits.   \nb. The need for exposure monitoring/air sampling is based on the results of the qualitative assessment and should occur if appropriate. Some countries require routine exposure monitoring regardless of the level of exposure.\n\nNOTE: Risk assessment must include exposure to multiple chemicals.\n\nc. Where there is risk that the exposure may be significant, or when required by local regulations, the facility conducts baseline (initial) and routine exposure monitoring/sampling to determine exposure levels to biological, chemical, and/or physical agents at the facility.\n\nd. The facility has implemented controls to reduce or eliminate worker exposure to chemical, biological and physical agents:\n\ni. Engineering controls (e.g. exhaust ventilation, enclosures, etc.) are designed to reduce worke exposure to chemical, biological and physical agents.   \nii. Substitution of less hazardous chemicals and processes.   \niii. Administrative controls (limiting worker exposure time; job rotation) are designed to reduce worker exposures to chemical, biological and physical agents.   \niv. Appropriate Personal Protective Equipment (PPE) is issued to all workers only when engineering or administrative controls do not reduce exposures to acceptable levels.\n\ne. PPE\n\ni. Minimum PPE requirements for entering or working in any production area with open surface tanks of hazardous chemicals where there is a risk of contact with or exposure to the contents of the tank include respirators appropriate to the level and type of inhalation exposure, safety shoes, long sleeves, chemically resistant gloves, and eye protection.   \nii. Workers have been trained to use PPE as intended.   \niii. PPE is free to workers.   \niv. PPE is properly maintained and/or replaced at appropriate intervals to ensure effectiveness in reducing exposures.   \nv. Use of PPE is enforced.\n\nf. Chemicals (including hazardous substances, IFPCs5 ) are adequately and effectively.\n\ni. Categorized   \nii. Handled   \niii. Stored   \niv. Moved within a single facility/ multiple facility.\n\nv. Access is controlled. vi. Potential employee exposure control methods are adequate and effective, such as",
+    "path": "B > B4 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B4",
+      "title": "Industrial Hygiene"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. Regular evaluation plan to verify the effectiveness of implemented controls and corrective actions if required. The frequency should be at least every 3 years unless a Significant Change requires reevaluation.   \nb. The facility carries out risk assessments when new chemicals are introduced into the facility's operations or whenever modifications to the facility’s processes could change worker exposure levels. The facility carries out exposure monitoring/sampling when the risk of exposure may be significant or when the exposure assessment is required by local regulations.   \nc. An adequate and effective mitigation process for all significant actual and potential occupational health and safety risks identified, tracking implementation, and resulting adverse impact.   \nd. Approval is required for the purchase and use of hazardous chemicals and for all new purchases of hazardous chemicals before use.   \ne. Evaluations of chemicals (including hazardous chemicals) of less hazardous or non-hazardous alternatives, including Greenhouse Gas and ozone depletion impact.   \nf. Engineering controls are implemented to mitigate worker exposure effectively and adequately to substances containing IFPC List chemicals, which is demonstrated by industrial hygiene records.   \n5 IFPC (Industry focus process chemicals) include chemical mixtures that contain any of the following ingredients:   \na)1-Bromopropane (CAS 106-94-5)   \nb)Benzene (71-43-2)   \nc)Dichloromethane (Methylene Chloride) (75-09-2)   \nd)Methanol (67-56-1)   \ne)n-Hexane (110-54-3)   \nf) N-Methyl-Pyrrolidone (NMP) (872-50-4)   \ng)Tetrachloroethylene (127-18-4)   \nh)Toluene (108-88-3)   \ni) Trichloroethylene (79-01-6)\n\ng. IFPCs\n\ni. An adequate and effective process for all hazardous chemicals to track, review, approve for use, and approve all new purchases of IFPCs before use.   \nii. An adequate and effective recorded program to control the identified potential hazards to chemical, biological, or physical agents is in place and follows the hierarchy of controls in a documented gated process, demonstrating that each hierarchy level has been fully evaluated and reasons why it could not address the risk fully before proceeding to the next hierarchal level.   \niii. A prioritized review and selection process to eliminate, substitute or isolate workers from all IFPCs.\n\nNOTE: Administrative controls or PPE are used as designed controls for substances containing IFPCs only in temporary circumstances or in supplement to engineering controls.\n\nh. Monitoring, testing, alarm, and reporting equipment is available, well-maintained, calibrated, and operational.",
+    "path": "B > B4 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B4",
+      "title": "Industrial Hygiene"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. Copies of hazardous substances inventory, manifests, and shipping papers are maintained and accurate.   \nb. Accurate chemical inventory records are maintained and accurate.   \nc. Inspection records of hazardous substances and their points of storage and use are maintained and accurate.   \nd. Worker testing, surveillance records to determine if the worker is being harmed from exposure to agents, respiratory, hearing loss or any other medical concerns related to specific job activities.   \ne. Equipment monitoring, testing, calibrating, and repair records.   \nf. Any other testing reports such as sampling records including sampling performed by government agencies as part of a regulatory inspection; all for the last three years.",
+    "path": "B > B4 > 4",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B4",
+      "title": "Industrial Hygiene"
+    },
+    "item": {
+      "id": "5",
+      "title": "Serious Conditions"
+    },
+    "content": "5. Serious conditions that will result in a severe finding:\n\nNot considering the COMBINED exposure to multiple chemicals that may occur.",
+    "path": "B > B4 > 5",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B5",
+      "title": "Physically Demanding Work"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Worker exposure to the hazards of physically demanding tasks, including manual material handling and heavy or repetitive lifting, prolonged standing, and highly repetitive or forceful assembly tasks shall be identified, evaluated, and controlled.",
+    "path": "B > B5 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B5",
+      "title": "Physically Demanding Work"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1. Policy: Ensure company’s health and safety policy includes physically demanding work elements such that worker exposure to the hazards of physically demanding work is controlled effectively.\n\na. Workers’ exposures to physically demanding will be identified, evaluated, and adequately controlled in accordance with the hierarchy of controls, which is maintained through ongoing, systematic monitoring of worker’s health.   \nb. There is a proper budget and staffing allocated to conduct risk assessment, re-engineering, equipment and tools, and medical evaluations as well as training of individuals and coordination with local authorities as appropriate.",
+    "path": "B > B5 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B5",
+      "title": "Physically Demanding Work"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. The facility has implemented a program to evaluate worker exposure to the hazards of physically demanding work (e.g., ergonomic risk assessments, worker discomfort surveys etc.)   \nb. Procedural, physical, and administrative controls are in place to reduce the hazards of physically demanding work.   \nc. Workers use proper equipment to lift heavy objects (e.g., vacuum hoists; mechanical lift tables; cranes, etc.).   \nd. Workstations do not require prolonged awkward postures.   \ne. Assembly tasks are designed to reduce forceful exertions (e.g., use of power tools, jigs, etc.) and highly repetitive motions.   \nf. Workers are provided with the means to change posture throughout the work shift (e.g., workers can alternate between sitting and standing postures).   \ng. Encourage early reporting of discomfort.",
+    "path": "B > B5 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B5",
+      "title": "Physically Demanding Work"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. Periodic ergonomic task analyses.   \nb. An adequate and effective recorded program to control the identified potential hazards of physically demanding work is in place and follows the hierarchy of controls in a documented gated process, demonstrating that each hierarchy level has been fully evaluated and reasons why it could not address the risk fully before proceeding to the next hierarchal level.   \nc. Review and trend analysis of injuries related to physical demands of job duties.\n\nNOTE: If during a regular monitoring cycle,it is determined that there are no changes to the facility or work setup,a re-assessment is not needed. This \"no-change\"determination should be recorded.",
+    "path": "B > B5 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B5",
+      "title": "Physically Demanding Work"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. Assessments and analysis reports including worker input, any medical assessments (with proper privacy controls).   \nb. Identification of roles with residual physically demanding work and the controls and protections in place to minimize worker exposure.   \nc. Plans to further mitigate risk.",
+    "path": "B > B5 > 4",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B6",
+      "title": "Machine safeguarding"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Production and other machinery shall be evaluated for safety hazards. Physical guards, interlocks, and barriers shall be provided and properly maintained where machinery presents an injury hazard to workers.",
+    "path": "B > B6 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B6",
+      "title": "Machine safeguarding"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1.Policy: Ensure company’s health and safety policy includes machine safeguarding elements including:\n\na. All required permits, licenses and testing reports for machinery are in place and a process is implemented to ensure permits and licenses are always up to date.   \nb. An adequate and effective machine-safeguarding program is implemented, and workers operate machinery safely.",
+    "path": "B > B6 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B6",
+      "title": "Machine safeguarding"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. The facility conducts a job safety analysis (task hazard analysis) to identify job-specific hazards. Corrective action is taken for all identified hazards.   \nb. Supplier conducts regular safety inspections of machinery and machine safeguards. Identified problems are corrected immediately or the machine is shut down until repairs can be made.   \nc. Machinery with non-functioning safeguards is not operated until safeguards are restored to proper operating condition.   \nd. Supplier has a program or process for providing and maintaining machinery safeguards for all dangerous equipment to safeguard operators from injury.   \ne. Adequate training is provided to ensure safe use of equipment.   \nf. The use of machine safeguards by workers is required and verified.   \ng. The facility performs scheduled preventive maintenance of machinery and machine safeguards.   \nh. The facility conducts a pre-purchase/pre-installation hazard review of all machinery and appropriate safeguarding is installed as needed to control the identified hazards.",
+    "path": "B > B6 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B6",
+      "title": "Machine safeguarding"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. An appropriate method is used to ensure that safeguards are installed as needed to control the identified hazards and follows the hierarchy of controls in a documented gated process, demonstrating that each hierarchy level has been fully evaluated and reasons why it could not address the risk fully before proceeding to the next hierarchal level.   \nb. Regular inspection and preventive maintenance of a machine, its safeguards, and emergency stop",
+    "path": "B > B6 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B6",
+      "title": "Machine safeguarding"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. Records demonstrating regular inspection and preventive maintenance of machines are available for review.",
+    "path": "B > B6 > 4",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B6",
+      "title": "Machine safeguarding"
+    },
+    "item": {
+      "id": "5",
+      "title": "Serious Conditions"
+    },
+    "content": "5. Serious conditions that will result in a severe finding:\n\n• Any worker operating a machine in a way that has imminent or immediate risk to life or limb.",
+    "path": "B > B6 > 5",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B7",
+      "title": "Food, Sanitation and Housing"
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "Code 8.0: Workers shall be provided with ready access to clean toilet facilities, potable water and sanitary food preparation, storage, and eating facilities. Worker dormitories provided by the facility/factory and/or via a labor agent shall be maintained to be clean and safe, and provided with appropriate emergency egress, hot water for bathing and showering, adequate lighting, and adequate conditioned ventilation, individually secured accommodations for storing personal and valuable items, and reasonable personal space along with reasonable entry and exit privileges.",
+    "path": "B > B7 > preamble",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B7",
+      "title": "Food, Sanitation and Housing"
+    },
+    "item": {
+      "id": "1",
+      "title": "Policy"
+    },
+    "content": "1. Policy: Ensure company’s health and safety policy includes occupational injury and illness elements including:\n\na. All required health & safety licenses, permits, registrations and certificates related to food, sanitation and housing will be in place and an adequate and effective process is established to ensure permits and licenses will always be up to date.   \nb. Dormitories, bathrooms, and employee spaces will be clean, safe, and well-maintained and meet international housing standards.   \nc. General/public bathrooms, employee spaces, prayer or religious areas, cafeterias, and food areas will be clean and well-maintained.",
+    "path": "B > B7 > 1",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B7",
+      "title": "Food, Sanitation and Housing"
+    },
+    "item": {
+      "id": "2",
+      "title": "Procedures & Practices"
+    },
+    "content": "2. Procedures & Practices are in place such that:\n\na. A documented process is in place to ensure permits are renewed before current permits expire.   \nb. Worker housing (if applicable) minimum requirements: i. Facilities are well-maintained, including adequate lighting, heating, and ventilation. The facilities are clean, and there are adequate domestic waste disposal facilities and pest control measures in place. ii. Sufficient living and working space exists for the number of workers assigned to them. iii. Dormitory and sanitary facilities including common areas, activity rooms, hallways, and rest rooms are clean and properly maintained. iv. The building is adequately conditioned. v. Windows allow light in and proper ventilation. vi. Adequate lighting. vii. Safe and sufficient electricity sockets are provided. viii. Workers are provided with secured space for the storage of their personal belongings. ix. Cold water and clean drinking water are available and easily accessible. x. Hot water is always available and easily accessible or on a convenient schedule. xi. An adequate and effective cleaning and sanitation program is in place. xii. There are adequate domestic waste disposal facilities. xiii. Exiting / Egress requirements include: 1. There are clear, well-lit stairwells to allow for safe exit from dormitories. 2. Dormitories have multiple exit routes, and they are adequate for the number of workers served. 3. Exit route doors unlocked from the inside / in the direction of egress.\n\nNOTE: Doors may be locked from the outside onlyif panic hardware, such as listed crash bars,are used on the inside.\n\nxiv. Structure and layout and maintenance include:",
+    "path": "B > B7 > 2",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B7",
+      "title": "Food, Sanitation and Housing"
+    },
+    "item": {
+      "id": "3",
+      "title": "Controls & Monitoring"
+    },
+    "content": "3. Controls & Monitoring should include:\n\na. On-site inspections, testing, emergency process drills and report generation are conducted by authorized personnel.   \nb. An adequate and effective preventive maintenance program (including emergency response supporting facilities) is in place.   \nc. For rented apartments, there are regular on-site inspections, assessments and updates made to management. These re-occur if there are complaints, there is a Significant Change, or an incident has occurred.",
+    "path": "B > B7 > 3",
+    "source": "RBA"
+  },
+
+  {
+    "standard": "RBA VAP Standard",
+    "version": "V8.0.2",
+    "domain": "Health & Safety",
+    "level_1": {
+      "id": "B",
+      "title": "Health and Safety"
+    },
+    "level_2": {
+      "id": "B7",
+      "title": "Food, Sanitation and Housing"
+    },
+    "item": {
+      "id": "4",
+      "title": "Records"
+    },
+    "content": "4. Records are maintained including:\n\na. Living environments monitoring records on safety, cleanliness, lighting, space, conditioning available, etc.\n\nb. Sanitation program tracking records.   \na. Pest control log.   \nb. Preventive maintenance program logs.   \nc. Regular monitoring and reporting of safe food handling procedures/hygiene.   \nd. Food, sanitation, and housing testing reports.\n\ne. All required food, sanitation and housing permits and licenses are in place, including:\n\ni. Rented apartments must be permitted by the local government as living accommodations.   \nii. Canteen/kitchen workers have valid health certificates.   \niii. Food, sanitation, and housing testing reports including drinking water, food worker health tests, food sample testing.   \niv. If local regulations require facility health inspections or other tests or certificates, these are available and valid.",
+    "path": "B > B7 > 4",
+    "source": "RBA"
+  }
+]

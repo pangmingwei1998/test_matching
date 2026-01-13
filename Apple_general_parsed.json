@@ -1,0 +1,476 @@
+[
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Ethics",
+    "level_1": {
+      "id": null,
+      "title": null
+    },
+    "level_2": {
+      "id": "SupplierCodeofConduc",
+      "title": "Supplier Code of Conduct Requirements"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "SupplierCodeofConduc",
+      "title": "Supplier Code of Conduct Requirements"
+    },
+    "content": "Supplier shall not Discriminate against any Worker based on age, disability, ethnicity, gender, marital status, national origin, political affiliation, race, religion, sexual orientation, gender identity, union membership, or any other status protected by applicable national or local law, in hiring and other employment practices. Supplier shall not require pregnancy or Medical Tests, except where required by Applicable Laws and Regulations or Prudent for Workplace Safety, and shall not improperly Discriminate based on test results.",
+    "path": "SupplierCodeofConduc",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "General",
+    "level_1": {
+      "id": null,
+      "title": null
+    },
+    "level_2": {
+      "id": "SupplierResponsibili",
+      "title": "Supplier Responsibility Standards"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "SupplierResponsibili",
+      "title": "Supplier Responsibility Standards"
+    },
+    "content": "",
+    "path": "SupplierResponsibili",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "General",
+    "level_1": {
+      "id": null,
+      "title": null
+    },
+    "level_2": {
+      "id": "1",
+      "title": "1、Policy & Procedures"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "1",
+      "title": "1、Policy & Procedures"
+    },
+    "content": "",
+    "path": "1",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Management System",
+    "level_1": {
+      "id": "1",
+      "title": "1.3 Risk Management"
+    },
+    "level_2": {
+      "id": "2",
+      "title": "2、Operational Practice"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "2",
+      "title": "2、Operational Practice"
+    },
+    "content": "",
+    "path": "1 > 2",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "2",
+      "title": "2.5 Worker Protections"
+    },
+    "level_2": {
+      "id": "3",
+      "title": "3、Training and Communication"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "3",
+      "title": "3、Training and Communication"
+    },
+    "content": "",
+    "path": "2 > 3",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "4",
+      "title": "4、Documentation"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "4",
+      "title": "4、Documentation"
+    },
+    "content": "Confidentiality of all pregnancy and medical records shall be maintained in accordance with Applicable Laws and Regulations.\n\nSupplier shall retain documentation related to anti-Discrimination.\n\nAll documentation shall be made available to Apple for review upon its request, and such documentation shall be complete, accurate, and up to date.",
+    "path": "3 > 4",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "SupplierCodeofConduc",
+      "title": "Supplier Code of Conduct Requirements"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "SupplierCodeofConduc",
+      "title": "Supplier Code of Conduct Requirements"
+    },
+    "content": "Supplier shall commit to a Workplace free of Harassment, violence and abuse. Supplier shall not threaten Workers with or subject them to harsh or inhumane treatment, including but not limited to Verbal Abuse and Harassment, Psychological Harassment, mental and physical coercion, and Sexual Harassment.",
+    "path": "3 > SupplierCodeofConduc",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "SupplierResponsibili",
+      "title": "Supplier Responsibility Standards"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "SupplierResponsibili",
+      "title": "Supplier Responsibility Standards"
+    },
+    "content": "",
+    "path": "3 > SupplierResponsibili",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "1",
+      "title": "1、Policy and Procedures"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "1",
+      "title": "1、Policy and Procedures"
+    },
+    "content": "",
+    "path": "3 > 1",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Management System",
+    "level_1": {
+      "id": "1",
+      "title": "1.3 Risk Management"
+    },
+    "level_2": {
+      "id": "2",
+      "title": "2、Operational Practices"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "2",
+      "title": "2、Operational Practices"
+    },
+    "content": "",
+    "path": "1 > 2",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "General",
+    "level_1": {
+      "id": "2",
+      "title": "2.2 Security Practices"
+    },
+    "level_2": {
+      "id": "3",
+      "title": "3、Training and Communication"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "3",
+      "title": "3、Training and Communication"
+    },
+    "content": "",
+    "path": "2 > 3",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "4",
+      "title": "4、Documentation"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "4",
+      "title": "4、Documentation"
+    },
+    "content": "Supplier shall retain any documentation related to anti-Harassment, including but not limited to:\n\n• Records of all disciplinary actions taken, which must be maintained in the Worker’s personnel file\n• Information on complaint and investigation procedures, including the affirmation that all reports and complaints related to violence and harassment will be acted on promptly\n• Records of completed training\n• Supplier shall maintain and make available immediately to Apple upon its request all documentation regarding allegations of Harassment and abuse",
+    "path": "3 > 4",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "4",
+      "title": "4、Documentation"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "preamble",
+      "title": "Preamble"
+    },
+    "content": "• A summary of proactive steps taken by Supplier, including violence and harassment prevention program and training for managers, supervisors and staff",
+    "path": "3 > 4 > preamble",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "5",
+      "title": "5、Victim Support"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "5",
+      "title": "5、Victim Support"
+    },
+    "content": "Supplier shall provide necessary support and assistance to victims, including victims of physical or sexual assault, sexual harassment or repeated bullying.",
+    "path": "3 > 5",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "SupplierCodeofConduc",
+      "title": "Supplier Code of Conduct Requirements"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "SupplierCodeofConduc",
+      "title": "Supplier Code of Conduct Requirements"
+    },
+    "content": "Supplier shall ensure that all work is voluntary. Supplier shall not traffic persons or use any form of slave, forced, bonded, indentured, or prison labor. This includes the transportation, harboring, recruitment, transfer, or receipt of persons by means of threat, force, coercion, abduction, fraud, or payments to any person having control over another person for the purpose of exploitation.\n\nSupplier shall not withhold Workers’ original government-issued identification and travel documents. Supplier shall ensure that Workers’ contracts clearly convey the conditions of employment in a language understood by the Workers. Supplier shall not impose unreasonable movement restrictions within the workplace or upon entering or exiting company-provided facilities.\n\nWorkers shall not be required to pay employers’ or their agents’ fees for their recruiting and/or ongoing employment. This includes recruitment, application, recommendation, hiring, placement, processing, renewals, and/or recurring fees of any kind. If such fees are found to have been paid by Workers, they shall be repaid to the Worker.",
+    "path": "3 > SupplierCodeofConduc",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "SupplierResponsibili",
+      "title": "Supplier Responsibility Standards"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "SupplierResponsibili",
+      "title": "Supplier Responsibility Standards"
+    },
+    "content": "",
+    "path": "3 > SupplierResponsibili",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Labor & Human Rights",
+    "level_1": {
+      "id": "3",
+      "title": "3.2 Workers, Supervisors, and Managers"
+    },
+    "level_2": {
+      "id": "1",
+      "title": "1、Policy and Procedures"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "1",
+      "title": "1、Policy and Procedures"
+    },
+    "content": "1.1 Written Policy and Procedures\n\nSupplier shall have a written policy against involuntary labor that complies with the Code, this Standard, and Applicable Laws and Regulations.\n\nSupplier shall have written procedures and systems to implement its prevention of involuntary labor policy.\n\nSupplier shall comply with its Written Policy and Procedures at all times.",
+    "path": "3 > 1",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "Management System",
+    "level_1": {
+      "id": "1",
+      "title": "1.3 Risk Management"
+    },
+    "level_2": {
+      "id": "2",
+      "title": "2、Operational Practices"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "2",
+      "title": "2、Operational Practices"
+    },
+    "content": "",
+    "path": "1 > 2",
+    "source": "Apple Supplier Code of Conduct"
+  },
+
+  {
+    "standard": "Apple Supplier Code of Conduct",
+    "version": "4.9",
+    "domain": "General",
+    "level_1": {
+      "id": "2",
+      "title": "2.8 Bank Accounts"
+    },
+    "level_2": {
+      "id": "3",
+      "title": "3、Training and Communication"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "item": {
+      "id": "3",
+      "title": "3、Training and Communication"
+    },
+    "content": "",
+    "path": "2 > 3",
+    "source": "Apple Supplier Code of Conduct"
+  }
+]

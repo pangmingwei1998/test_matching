@@ -1,0 +1,800 @@
+[
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": null,
+      "title": null
+    },
+    "level_2": {
+      "id": null,
+      "title": null
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "The following notes apply to all provisions herein:\n\n14.1.1 When there is a discrepancy between the RBA code, local law, a participant’s policies, or a Collective Bargaining Agreement (CBA), the RBA defines conformance to the RBA code as meeting the strictest requirements (even if it meets RBA code provisions and legal requirements). A Collective Bargaining Agreement may create requirements beyond the RBA Code requirements. The Validated assessment (VA) shall not validate CBA compliance where it is stricter than the RBA Code.\n\n14.1.2 A legal non-conformance is a Major non-conformance unless otherwise stated in a specific provision (e.g., A3.1 if the situation of reviewee is below 60h/w but above local law for ≤40% of the workers) or there is another finding which has a higher non-conformance rating for that provision.\n\n14.1.3 All communications from the reviewee to workers shall be done in a language the worker can understand unless otherwise stated in the provisions. If this is not the case, the relevant aspect is, at minimum, a ‘Major’ non-conformance.\n\n14.1.4 Guidance applies to all workers, including temporary, migrant, student, and contract, directly and indirectly, employed workers that work in the factory/on production/in the warehouse and any other type of worker/employee unless the AC specifically states a narrower focus group.\n\n14.1.5 Unless otherwise noted, references to the percentage of workers in conformance or nonconformance are based on the defined sample.\n\n14.1.6 A Process is not required to be in writing (unless the AC states specifically it shall be documented). However, all processes shall be verifiably implemented consistently.\n\n14.1.7 Adequate shall mean appropriate and complete for its intended purpose. In practice, it means all required code compliance elements are included in the document (policy or procedure). For example, n adequate policy on prohibition of child labor includes all the elements RBA requires on this code topic.\n\n14.1.8 Effective shall mean successfully achieves its intended goal or outcome. In practice, this means all implementation elements are deployed and the outcome of process/procedure meets the RBA requirement. An effective procedure of child labor will include all RBA required implementation elements such as age verification, personnel files and no children are present or have been hired.\n\nInternal Migrant Workers\n\n14.1.9 Internal migrant workers: Individuals who are recruited and migrate from their usual place of residence to another state or province within their home country for employment purposes. These individuals may differ from the dominant group, often the majority population—in terms of race, color, religion, or cultural origin.\n\n14.1.10 Internal migrant workers shall be considered a separate group, like foreign migrant workers, during the Validated assessment to determine risks and conformance specific to this group.\n\nCode 8.0 Labor Preamble: Participants commit to respect the human rights of workers, and to treat them with dignity and respect as understood by the international community. This applies to all workers including temporary, migrant, student, contract, direct employees, and any other type of worker.",
+    "path": "VAP Standard > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": null,
+      "title": null
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0 Labor Preamble: Participants commit to respect the human rights of workers, and to treat them with dignity and respect as understood by the international community. This applies to all workers including temporary, migrant, student, contract, direct employees, and any other type of worker.",
+    "path": "VAP Standard > . Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0: Forced labor in any form, including but not limited to, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery or trafficking of persons is not permitted. This includes transporting, harboring, recruiting, transferring, or receiving persons by means of threat, force, coercion, abduction or fraud for labor or services. There shall be no unreasonable restrictions on workers’ freedom of movement in the facility in addition to unreasonable restrictions on entering or exiting company- provided facilities including, if applicable, workers’ dormitories or living quarters. As part of the hiring process, all workers must be provided with a written employment agreement in their native language, or in a language the worker can understand that contains a description of terms and conditions of employment. Foreign migrant workers must receive the employment agreement prior to the worker departing from his or her country of origin and there shall be no substitution or change(s) allowed in the employment agreement upon arrival in the receiving country unless these changes are made to meet local law and provide equal or better terms. All work shall be voluntary, and workers shall be free to leave work at any time or terminate their employment without penalty if reasonable notice is given, which shall be clearly stated in workers’ contracts. Participants shall maintain documentation on all leaving workers. Employers, agents, and sub-agents’ may not hold or otherwise destroy, conceal, or confiscate identity or immigration documents, such as government-issued identification, passports, or work permits. Notwithstanding the foregoing, employers can only hold documentation if necessary to comply with the local law. In this case, at no time shall workers be denied access to their documents. Workers shall not be required to pay employers’ agents or sub-agents’ recruitment fees or other related fees for their employment. If any such fees are found to have been paid by workers, such fees shall be repaid to the worker.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "VAP Standard > . Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "1",
+      "title": "Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:"
+    },
+    "content": "a. No levies, recruiting, hiring or placement fees or costs, even if allowed by local law.\nb. No fees or costs charged to workers as defined by the RBA Definition of Fees\nc. No deposits, mandatory saving, or any other financial obligation are required to obtain or keep a job. d. If fees and costs were found to be charged, workers must be repaid within 90 days.\ne. No holding original identification documents of workers\nf. Overtime is to be voluntary (i.e., workers can always refuse overtime)\ng. Resignation must be voluntary, and the required notice period cannot exceed one month.\nh. The penalty for not serving notice cannot exceed 60% of one month’s wages.\ni. Workers’ freedom of movement is not restricted.",
+    "path": "VAP Standard > . Labor > Prohibition of Forced Labor > 1",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "2",
+      "title": "Procedures & Practices are in place such that:"
+    },
+    "content": "a. Workers are not required to pay any deposit or employment fee to the supplier, labor recruiter or employment agency to get or keep their job (See RBA Definition of Fees). b. No control of or access to workers’ banking or financial accounts (direct deposit is allowed).\n\nc. Workers are informed before employment of the key employment terms and conditions in writing in their native language or in a language that the worker can understand.\n\ni. Allowed fees (e.g., housing), deductions (e.g., taxes, social insurance) are disclosed to the workers.\nii. No detrimental changes to the contract or work conditions\n\nd. Signed employment contracts or agreements are in place between the worker and the facility, to ensure the worker is provided with documentation of their legal rights and responsibilities. All terms required by law are in the employment contracts.\n\ne. Verbal explanation to workers of the key components of the employment conditions in the worker's native language, or in a language the worker can understand AND gaining their acknowledgement this has happened.\n\ni. Nature of work including what PPE is required to be worn.\nii. Working hours (which do not exceed 60 hours, 6 consecutive workdays), personal leave allowance and public holidays.\niii. Benefits (housing, transportation, uniforms, etc.)\niv. What allowed fees the worker shall be charged and the amount(s)\nv. Wages and wage deductions (including all components of tax and social insurance(s)) and how these are calculated including premiums for overtime (which must be at least 125% of standard pay), working rest days and statutory holidays.\nvi. Other non-legally required benefits provided (pension, insurances, etc.)\nvii. Information concerning the general conditions of life and work.\n\nf. Offer letter / Contract terms should include:\n\ni. Name and address of the employer ii. Worker’s full name\niii. Workers’ start date and duration of contract.\niv. Contract termination requirements include a notice period not to exceed one month, or less per local law and a penalty for early contract termination. v. Contract renewal provisions (if applicable).\nvi. Description of the location and nature of work to be performed.\nvii. Regular work hours and shifts and anticipated overtime hours with total working hours not to exceed 60 hours per week or local law, whichever is lower.\nviii. Regular, overtime, and holiday wage rates and estimated monthly base and total pay.\n\nix. Any bonuses and conditions for earning them.\n\nx. Any allowances granted (e.g., food, accommodation)\n\nxi. Full listing of all deductions including specification of the type and amount of each deduction and which, if any, are optional.\n\nxii. Method and frequency of wage payment\n\nxiii. Description of additional benefits including medical insurance coverage, accident/injury, insurance, holidays, annual leave, sick leave, and/or any other applicable benefits\n\nxiv. If accommodation is provided include detailed description of living conditions and breakdown of any deductions for accommodations, meals, transportation, or other services provided or offered by the employer and/or their labor agent or other representative or service provider.\n\nxv. Any other terms required by applicable laws and regulations.\n\nxvi. Clear prohibition on charging of recruitment or placement fees xvii. Note: there should be no terms 1.Requiring overtime 2.Restricting movements\n3.Restricting a worker’s rights to freedom of association and collective bargaining consistent with local law.\n\ng. Worker handbook or similar document should include the items above and also:\n\ni. Discipline process (note this cannot include any threat of punishment, fines, violence, or withholding wages)\n\nh. For Migrant Workers\n\ni. Terms and conditions of employment shall be delivered to the migrant workers before departure indicating the conditions of work and remuneration (minimum wage which is guaranteed).\nii. Description of repatriation process and specification of the costs to be borne by the employer and the worker.\niii. Transportation to the receiving country and repatriation as well as between living accommodations and the work facility\niv. Ability to return home during annual leave and family emergencies without penalty.\nv. No substitution or change(s) allowed in the employment contract / agreement upon arrival in the receiving country/region unless these changes are made to meet local law and provide equal or better terms.\n\ni. Workers are not subject to any deductions from their pay other than legally required deductions and agreed upon fees for meals, lodging, uniforms, etc. The amounts of such deductions are communicated to workers at time of hire.\n\nj. Original personal identification such as government issued identification, passports or work permits, certifications, or educational documents such as diplomas are in the possession of the workers unless specifically required by local law.\n\ni. Only copies should be retained to use as verification of age and right-to-work.\nii. Where holding documents is required by local law it must be done with the full knowledge, permission and participation of the worker and procedures are in place to ensure proper handling and immediate access if requested by the worker.\niii. It is acceptable for employers to be in temporary possession of original personal documents only for the time when they are helping to obtain or renew work permits and other legal documents. Provide proper documentation receipt stating the reason for holding of passport/ travel document and expected duration to hold such documents.\niv. In no case shall there be a fee for the possession of government-issued identification, passports, or work permits.\nv. Personal documents shall not be tampered with or damaged in any way.\nvi. Secure personal storage is required when living accommodations are provided directly or indirectly.\nk. Ensure workers are free to use bathrooms, drinking water, and medical facilities, as needed.\nl. Reasonable restrictions linked to health and safety, and IP restrictions can exist.\nm. Workers are allowed to leave the workplace location or dormitory outside of their normal work hours (i.e., no curfews unless dictated by law).\nn. Freedom to enter and leave the site does not apply to prison labor.\no. Doors can be locked from the outside only for normal business and housing security reasons and do not prevent emergency egress.\np. Workers may choose to use external medical facilities for personal health care even when onsite infirmaries or other medical facilities exist.\nq. Personal loans are no greater than 60% of 1-month gross base salary, have a maximum repayment maximum of 10% of the worker’s gross base wage per month for maximum of 6 months. Charging interest is not permitted.\n\nr. Education loans are no greater than 120% of 1-month gross base salary, have a maximum repayment maximum of 10% of the worker’s gross base wage per month for maximum of 12 months. Charging interest is not permitted.\n\ns. The termination notice period is not stricter than 1 month and is noted in their contract/agreement and explained at the time of hiring. The penalty for leaving without reasonable notice cannot exceed 60% of 1 month of gross base wages. Terminating employment is voluntary with no explicit threat of punishment, fines, violence, or withholding wages.",
+    "path": "VAP Standard > . Labor > Prohibition of Forced Labor > 2",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "3",
+      "title": "Controls & Monitoring should include:"
+    },
+    "content": "a. Cascade this policy and the RBA Code of Conduct to suppliers, contractors, subcontractors, and labor recruiters noted the expectation that they adopt it, put in place procedures to follow it.\nb. Conformance to the policy is regularly monitored.\nc. When engaging with recruiters and labor agents determine the specific amount of any fees and expenses that are required to recruit, hire and onboard each individual (which varies if they are local, internal migrant, or foreign migrant worker) prior to commencement of work and ensure that is part of contract and sub-contracts and paid to reduce risk of workers incurring fees.\nd. Actively verify compliance through monitoring labor recruiters, brokers, and agents.\n\nNOTE: reimbursement is not the desired model (no fees to workers is)and therefore it is a non-conformance to the RBA Code of Conduct albeit a lesser one.",
+    "path": "VAP Standard > . Labor > Prohibition of Forced Labor > 3",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "4",
+      "title": "Records are maintained including:"
+    },
+    "content": "a. Personnel files for all workers are maintained and include:\n\ni. All versions of employment contract / agreement\nii. All items to ensure regulatory compliance.\niii. They are maintained with appropriate access and retention controls (on and/or off site) and confidentiality to protect privacy.\niv. Documentation on their leaving conditions and end of contract of workers\nv. Workers’ documentation must be retained for at least 12 months or as required by law whichever is longer.\n\nb. Contracts with service providers, recruiters, labor agents and labor contractors and evidence that they have acted in compliance with the contract/agreement requirements. c. Records on allowed fees are maintained and disclosed to the worker.",
+    "path": "VAP Standard > . Labor > Prohibition of Forced Labor > 4",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "5",
+      "title": "Serious conditions that will result in a severe finding:"
+    },
+    "content": "Restricting workers from voluntary employment termination.\nImposing any penalty for resignation that is >3 months of gross base wages.\nCreating a situation that puts workers at risk such as locking exit doors in the factory or dormitories while the workers are inside.\nAny action that would be considered coercive or restrictive to reasonable movement by the use of threats such as firing, “sending home,” reporting immigration status to authorities or similarly severe activities.\nUse or employment of non-voluntary labor.\nChanging the terms and conditions of employment to be materially worse than originally agreed.\nNot communicating employment terms and conditions before employment.\nKeeping, destroying, concealing, or confiscating original personal identification documents such as passports, work permits, identity, or travel papers.\nIf in the rare case where local law requires an employer to store personal identification documents, tampering with or restricting access for more than 12 hours or charging a fee to access them.",
+    "path": "VAP Standard > . Labor > Prohibition of Forced Labor > 5",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "6",
+      "title": "Leading Practices include:"
+    },
+    "content": "Contract or offer letter detailing the level of physical work and what personal protective equipment is required to be worn. If this is impractical for a contract or offer letter, a separate document can suffice.\nContract or employment agreement includes the worker’s date of birth.\nForeign and internal migrant workers should be interviewed when they join the company to learn if any of the policies were violated, in which case remedy must be provided, and they must be informed of the grievance mechanism. If fees and costs were found to be charged, workers must be repaid within 90 days.",
+    "path": "VAP Standard > . Labor > Prohibition of Forced Labor > 6",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "7",
+      "title": "Fees evaluation criteria:"
+    },
+    "content": "Rating:\n\nScenario 1 - Prohibited recruitment and hiring fees that were paid and not reimbursed within 90 days or as soon as practicable upon discovery.\n\n<table><tr><td>Frequency\\ Severity in monthly gross base wages</td><td>0-&lt;5%* (&lt;1-month gross base salary)</td><td>5%-&lt;100%* (&lt;1-month gross base salary)</td><td>100-&lt;150%* (&gt;1 month - 1.5-month gross base salary)</td><td>150%* (&gt;1.5-month gross base salary)</td></tr><tr><td>≤1%or3workers or fewer (whichever is greater)</td><td>Minor</td><td>Minor</td><td> Major</td><td>Priority</td></tr><tr><td>&gt;1%-5%or more than 3workers but less than 7 workers</td><td>Major</td><td>Major</td><td>Major</td><td>Priority</td></tr><tr><td>&gt;5%-40% or more than 7workers</td><td>Major</td><td>Major</td><td>Priority</td><td>Priority</td></tr><tr><td>&gt;40%</td><td>Major</td><td>Priority</td><td>Priority</td><td>Priority</td></tr></table>\n\nScenario 2 - Prohibited recruitment and hiring fees that were paid and reimbursed within 90 days before or after commencement of employment.\n\n<table><tr><td rowspan=1 colspan=1>Frequency\\ Severity in monthly gross base wages</td><td rowspan=1 colspan=1> 0-&lt;5%* (&lt;1-month gross base salary)</td><td rowspan=1 colspan=1>5%-&lt;100%* (&lt;1-month gross base salary)</td><td rowspan=1 colspan=1>100%* (1-month gross base salary)</td></tr><tr><td rowspan=1 colspan=1>≤1%or3workersor fewer(whichever is greater)</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1>&gt;1%or3workers or fewer(whichever is greater)</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Major</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1>*Total of all fees charged during recruitment apd emplovment</td><td></td><td></td><td></td></tr></table>\n\n\\*Total of all fees charged during recruitment and employment",
+    "path": "VAP Standard > . Labor > Prohibition of Forced Labor > 7",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0: Child labor shall not be used in any stage of manufacturing. The term “child” refers to any person under the age of 15, or under the age for completing compulsory education, or under the minimum age for employment in the country, whichever is greatest. Workers under the age of 18 (Young Workers) shall not perform work that is likely to jeopardize their health or safety, including night shifts and overtime. Participants shall ensure proper management of student workers through proper maintenance of student records, rigorous due diligence of educational partners, and protection of students’ rights in accordance with applicable laws and regulations. Participants shall implement an appropriate mechanism to verify the age of workers. The use of legitimate workplace learning programs, which comply with all laws and regulations, is supported. Participants shall provide appropriate support and training to all student workers. In the absence of local law, the wage rate for student workers, interns, and apprentices shall be at least the same wage rate as other entry-level workers performing equal or similar tasks. If child labor is identified, assistance/remediation shall be provided.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "VAP Standard > . Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "level_3": {
+      "id": "1",
+      "title": "Policy: Have a detailed, comprehensive documented young worker policy with elements including:"
+    },
+    "content": "a. Child labor prohibition: setting a minimum working age that is no lower than the greater of local law, 15 years of age, or customer expectations.\nb. Do not refuse a previous applicant if they now meet company policy and the corresponding legal requirements.\nc. If underage labor is identified, assistance/remediation is provided and should include: i. Health exam and appropriate action if necessary. ii. Aid to and through completion of compulsory schooling. iii. Maintaining the child's income until legally eligible to work. iv. When they exist, and are acceptable by law, to move underage workers into proper apprenticeship positions, restricting their hours and type of work to accommodate educational needs, as required, rather than discharging or fining these workers.\n\nd. When young workers are employed, policies shall include:\n\ni. Health checks if required by law. ii. Identification and assignment of young workers to non-hazardous positions. iii. Restriction on time of day worked (young workers are not allowed night work <generally means any consecutive period of at least 7 hours between 10 PM and 7 AM> or overtime).\n\ne. When employing learners (apprentices, interns, student workers) a policy shall include:\n\ni. A commitment to only providing internships/student workers assignments and apprenticeships that complement their course of study field or learning of a new vocation.\nii. Follow a principle of equal pay for equal work (if performing same/similar work/level as regular workers then the pay should be the same).\niii. Ensure working hours shall not conflict with any of the learner’s school attendance.\niv. Be clear and limit the duration of the training period, and the number of times the same worker can be classified as a trainee.\nv. Do not require and ensure that there is not any placement, onboarding, or other fees paid by the learner to gain or retain employment.\nvi. Do not allow deduction for educational fees from the student worker’s wages.\nvii. If there is a period where wages can be below minimum wage as per law it should be limited and reasonable in duration or not longer than 6 months, whichever is stricter.\nviii. Ensure that no agency or intermediary is used in connection with the recruitment, hiring, arrangement, and management of student workers, interns, or apprentices.\n\nix. Ensure that all work is voluntary (including choice of learning placement assignment).\n\nx. Do not use student workers, interns, or apprentices to simply fill a labor shortage.\n\nxi. When employing apprentices, the maximum duration of apprenticeship (not more than 6 months if worker is paid below minimum wage).\n\nxii. When employing Student workers policy shall include:\n\n1.A three-way agreement is required between the student workers (and/or legal guardian), school and supplier that includes the terms.\n2.Ensure that the student worker is insured against accidents or liability and that the student worker is fully covered for any other forms of insurance required by law or regulation.\n3.Due Diligence: verify that worker is actively enrolled in a valid program of study at an educational institution.\n\nNote: If learners are NOTto be hired alearner policyis not needed,however a note stating that the supplier does not hire apprentices/interns/student workers is required to be in place.",
+    "path": "VAP Standard > . Labor > Young workers > 1",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "level_3": {
+      "id": "2",
+      "title": "Procedures & Practices are in place such that:"
+    },
+    "content": "a. You only employ workers above the legal/hiring policy age for employment.\nb. There is a formal documented process to verify the age of each worker prior to employment with procedures to ensure that workers are of legal age and that documentation is genuine. The process includes inspection and cross-reference to verify the validity of at least two types of official ID\\* and periodically evaluating the documentation for a random sample of workers.\nc. ID types for initial and ongoing verification and cross-reference include. i. Matching photographic ID to worker’s face ii. Verification through third-party resources where available, such as Internet resources or local government offices iii. Affidavit from local government representative iv. Birth certificate v. Government-issued personal identification card vi. Driver’s license vii. Voting registration card viii. “Official stamped” copy of a school certificate ix. Foreign or internal work permit or other government recognized record. x. Finger printing or ID card with owner's photograph to prevent under-age workers entering the facility by using another person's ID who may have been vetted or hired.\nd. Ensure that young workers are working within the appropriate conditions of employment: including legal working hours, not working overtime, not working nights, not working within school hours, and not working in hazardous conditions or roles.\ne. If young workers found to be working in prohibited times or in hazardous roles, immediate containment not termination is to occur putting on day shift only which does not conflict with compulsory education, moved to non-hazardous positions, elimination of future overtime.\nf. A documented process is in place to assist any underage workers found working in the facility. This does not include discharging or fining underage workers, but rather provides ways to move them into proper apprenticeship positions, restricts their work hours and type of work as well as accommodating their educational needs (see Policy section above).\ng. Ensure that any children present in the facility are allowed only in approved areas, separate from the work area, such as day care facilities.\nh. If apprentices are employed, there is a clear program for training and promotion, with specific limits on the number of hours worked, duration of training period, and number of times the same worker can be classified as a trainee.",
+    "path": "VAP Standard > . Labor > Young workers > 2",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "level_3": {
+      "id": "3",
+      "title": "Controls & Monitoring should include:"
+    },
+    "content": "a. Applicable laws and regulations ensuring protection of learners’ rights (e.g., working conditions, health & safety) are identified and enforced.\nb. Perform due diligence on, monitor and take corrective actions to address any non-conformance by an involved educational institution and establish sanctions as appropriate, including termination of the relationship.\nc. Periodically verify the reliability of age records. Age verification shall include visual verification of a government recognized photographic identification record. Maintain a reliable ID verification system to control the workers' access into the facility.\nd. Periodically verify young workers are not working overtime, nights, or in hazardous conditions/roles.\ne. Ensure underage labor assistance/remediation process is designed to provide for the welfare of the individual.\n\nf. Ensure that the three-way agreement required between the student workers (and/or legal guardian), school and supplier include:\n\ni. Student worker’s full name ii. Student worker’s emergency contact information\niii. The name and address of the student worker’s school\niv. The name and address of the reviewee. v. Living conditions (if applicable)\nvi. Wages and benefits\nvii. Costs (if any) for meals and accommodation (shall be no higher than a fair market rate)\nviii. Working hours\nix. Nature of work and place where it shall be performed. x. Signed in three copies.",
+    "path": "VAP Standard > . Labor > Young workers > 3",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "level_3": {
+      "id": "4",
+      "title": "Records are maintained including:"
+    },
+    "content": "a. Due diligence reports on educational partners\nb. Maintain verification of worker age and right-to-work status until at least 12 months or as required by law whichever is longer.\nc. After the worker departs the company.\nd. Learner records are maintained, accurate, complete, and up to date.\ne. Maintenance of student worker/intern or apprentices' records in personnel files (includes agreement if applicable, learning objectives, evaluations, reference to training material, assignment, etc.)\nf. Details on promotion/hiring opportunities after successful apprenticeship, eligibility, recruitment, employment agreement, nature of work, working hours, wages, and benefits.",
+    "path": "VAP Standard > . Labor > Young workers > 4",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A2",
+      "title": "Young workers"
+    },
+    "level_3": {
+      "id": "5",
+      "title": "Serious conditions that will result in a severe finding:"
+    },
+    "content": "Underage workers are present.\nYoung workers performing inherently hazardous work.",
+    "path": "VAP Standard > . Labor > Young workers > 5",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A3",
+      "title": "Working Hours"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0: Working hours shall not exceed the maximum set by local law. Further, a work week shall not be more than 60 hours per week, including overtime, except in emergency or unusual situations. All overtime shall be voluntary. Workers shall be allowed to have at least one day off every seven days.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "VAP Standard > . Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A3",
+      "title": "Working Hours"
+    },
+    "level_3": {
+      "id": "1",
+      "title": "Policy: Have a detailed, comprehensive documented working hour policy with elements including:"
+    },
+    "content": "a. Standard hours worked, days off, sick leave allowance, holidays, leave/vacation allowance, and paternity/maternity leave, in conformance to local law.\nb. Meal and rest breaks, overtime policy and limits; in conformance to local law and good safety practices. These shall include gender-responsive measures and other accommodations.\nc. Note limits on i. Working hours in the facilities designated standard workweek (e.g. Sunday to Saturday, Monday to Sunday): must not be more than 60 including overtime. ii. Consecutive working days after which a day of rest is granted with no company work or obligations (e.g., training, being on call): must not be more than 6 iii. Overtime.\n\nNOTE: Unless specified otherwise by local legal requirements, this provision does not apply to exempt workers, including those in executive, managerial, or professional positions.",
+    "path": "VAP Standard > . Labor > Working Hours > 1",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A3",
+      "title": "Working Hours"
+    },
+    "level_3": {
+      "id": "2",
+      "title": "Procedures & Practices are in place such that:"
+    },
+    "content": "a. The work hours and time off policy is communicated to workers at the time of hire and in an employee handbook.\nb. There is a process to remain aware of and in compliance with local and national laws and regulations regarding working hours.\nc. You have obtained any necessary permission from authorities/unions on work schedule (e.g., comprehensive work week / work hour schedule)\nd. RBA Code requires that companies comply with local laws or Code, whichever is more stringent. If the company has a valid and current government waiver (e.g., Comprehensive Work Hour System in China, which allows shifting of overtime limits), this waiver is considered “local law.” Regardless of the waiver, the 60 hours/week limit is in place.\ne. Any legal non-conformance is rated a major non-conformance. An exception to this rule is whether weekly working hours are below or equal to 60h/week but above local law for less than 40% of the reviewed working hours.\nf. There is a process to track and analyze hours over time, including identification of capacity constraints, and is taking action to reduce overtime to target level.\ng. You have a work hours management system to ensure that workers do not work overtime in excess of legal limits. Work weeks do not exceed than 60 hours, including overtime, except in Emergency or Unusual Situations.\n\nNOTE: The RBA recognizes truly unpredictable events that may require overtime in excess of RBA limits. These are Emergency or Unusual Situations which cannot be planned for orforeseen. Such situations are uncommon and do not become standard operating procedure. Examples include:\n\ni. Equipment breakdown, power failure or other emergency resulting in prolonged shutdown of a production line.\n\nii. Unforeseen raw material or component shortages or quality issues shut down production. Excessive overtime is then needed in both situations to recoup lost production time and meet customer commitments.\niii. In all of these cases evidence of FEWER hours worked before a period of excessive production due to an Emergency or Unusual Situation is present and documented. The site has a documented plan to recover from the emergency situation and bring working hours back into conformance.\n\nNOTE: the types of situations are NOT Emergency or Unusual Situations include:\n\niv. Holidays, peak season production demands and new product ramps. These are predictable and proper planning can minimize overtime requirements.\nv. Contract change orders that significantly increase order volumes or shorten delivery timelines. This should be negotiated in good faith between the client and the location and should never exceed the capacity of the location at a rate of 60 hours per week or the legal maximum work hour requirement for the location.\n\nh. Workers may refuse overtime without threat of retaliation, penalty, or dismissal.\n\ni. The facility provides meal breaks, rest breaks, rest days, leave periods, holidays, and vacation days per local legal requirements (most countries require workers to be given a 15-to-30-minute break every so many hours, as well as defined meal breaks).\nj. Legal working hours are communicated to workers (worker handbook, notice board, orientation training, and other means).\nk. Workers are not required to work on their designated day off.",
+    "path": "VAP Standard > . Labor > Working Hours > 2",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A3",
+      "title": "Working Hours"
+    },
+    "level_3": {
+      "id": "3",
+      "title": "Controls & Monitoring should include:"
+    },
+    "content": "a. Ensure there is a strong tracking and recording system which will allow for accurate reporting, record keeping allowing for investigation, and visibility to those planning workload to avoid going over limits if not actively limit planning work beyond work hour and workday limits.\nb. Ensure awareness of requirements of compliance with local and national/regional laws and regulations including any approved comprehensive work week / work hour schedule, RBA requirements and any customer requirements regarding working hours, workdays, and overtime\nc. Develop and implement a planning, training, staffing and work assignment strategy to ensure conformance with all requirements.\nd. Train and then refresh train planning and manufacturing staff on limits of working hours and days worked including the limits of any Young Workers and Learners present.\ne. Monitor actual performance and actively adjust and control working hours including overtime and days worked to ensure conformance to policy.\nf. Supplier monitors hours for any workers of on-site supplier / subcontractor / agent to ensure the meet the stricter of local law, RBA Code of Conduct, customer requirements, or company policy.",
+    "path": "VAP Standard > . Labor > Working Hours > 3",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A3",
+      "title": "Working Hours"
+    },
+    "level_3": {
+      "id": "4",
+      "title": "Records are maintained including:"
+    },
+    "content": "a. Accurately determine and record days, time and overtime worked to ensure conformance and the provide accurate due monetary compensation.\nb. Exceptional circumstances shall be recorded at the time of the Emergency or Unusual Situation along with the plan to recover. Not after the event.\nc. Leave records are securely kept, accurate and consistent with medical certificates, actual leave (including maternity/paternity) and holidays.",
+    "path": "VAP Standard > . Labor > Working Hours > 4",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A3",
+      "title": "Working Hours"
+    },
+    "level_3": {
+      "id": "5",
+      "title": "Serious conditions that will result in a severe finding:"
+    },
+    "content": "Not allowing worker to take time off for illness or maternity when they present a valid medical certificate or recognized notification.",
+    "path": "VAP Standard > . Labor > Working Hours > 5",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A3",
+      "title": "Working Hours"
+    },
+    "level_3": {
+      "id": "6",
+      "title": "Evaluation criteria for working hours:"
+    },
+    "content": "<table><tr><td rowspan=2 colspan=1>Work Hours/Week</td><td rowspan=1 colspan=5>% Of Sample Work Weeks</td></tr><tr><td rowspan=1 colspan=1>≤1%</td><td rowspan=1 colspan=1> &gt;1% to ≤5%</td><td rowspan=1 colspan=1>&gt;5% to ≤15%</td><td rowspan=1 colspan=1>&gt;15% to ≤40%</td><td rowspan=1 colspan=1>&gt;40%</td></tr><tr><td rowspan=1 colspan=1>&gt;84 hours/week</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>Priority</td><td rowspan=2 colspan=1>Priority</td><td rowspan=3 colspan=1>PriorityPriority</td></tr><tr><td rowspan=1 colspan=1>&gt;72 hours/week to ≤84hours/week</td><td rowspan=1 colspan=1>Conformance</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1>&gt;60 hours/week to ≤72hours/week</td><td rowspan=1 colspan=1>Conformance</td><td rowspan=1 colspan=1> Opportunity for Improvement</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1>&gt;Local law to ≤60 hours/week</td><td rowspan=1 colspan=1>Conformance</td><td rowspan=1 colspan=1>Opportunity forImprovement</td><td rowspan=1 colspan=1>Minor*</td><td rowspan=1 colspan=1>Minor*</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1>&lt; Local law AND ≤60hours/week</td><td rowspan=2 colspan=5>ConformancePriority</td></tr><tr><td rowspan=1 colspan=1>1. Young workers are found to be working in excess of thestricter of law or 60 hours per week 2. Young workers are workingovertime 3. Young workers are doingnight work</td></tr></table>",
+    "path": "VAP Standard > . Labor > Working Hours > 6",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A3",
+      "title": "Working Hours"
+    },
+    "level_3": {
+      "id": "7",
+      "title": "Evaluation criteria for consecutive days of work"
+    },
+    "content": "<table><tr><td rowspan=2 colspan=1>Consecutive Days</td><td rowspan=1 colspan=4> % Of Sampled Workers</td></tr><tr><td rowspan=1 colspan=1> ≤1%</td><td rowspan=1 colspan=1> &gt;1% to ≤5% of sampledworkers</td><td rowspan=1 colspan=1>&gt;5% to ≤40%</td><td rowspan=1 colspan=1>&gt;40%</td></tr><tr><td rowspan=1 colspan=1>≥24 Consecutive Days</td><td rowspan=1 colspan=1></td><td rowspan=1 colspan=2>Priority</td><td rowspan=2 colspan=1>Priority</td></tr><tr><td rowspan=1 colspan=1> &gt;12 to &lt;24 Consecutive Days</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Major</td></tr><tr><td rowspan=1 colspan=1> &gt;6(or local law if stricter) to ≤12 Consecutive Days</td><td rowspan=1 colspan=1>Conformance</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1>Minor</td><td rowspan=1 colspan=1> Major</td></tr><tr><td rowspan=1 colspan=1>≤6(or local law if stricter) Consecutive Days</td><td rowspan=2 colspan=4>ConformancePriority</td></tr><tr><td rowspan=1 colspan=1>Workers under the age of 18 are found to be working consecutive days in excess of the stricter of law or 6 consecutive days</td></tr></table>",
+    "path": "VAP Standard > . Labor > Working Hours > 7",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A4 Wages and Benefits",
+      "title": "A4 Wages and Benefits"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0: Compensation paid to workers shall comply with all applicable wage laws, including those relating to minimum wages, overtime hours and legally mandated benefits. All workers shall receive equal pay for equal work and qualification. Workers shall be compensated for overtime at pay rates greater than regular hourly rates. Deductions from wages as a disciplinary measure shall not be permitted. For each pay period, workers shall be provided with a timely and understandable wage statement that includes sufficient information to verify accurate compensation for work performed. All use of temporary, dispatch and outsourced labor shall be within the limits of the local law.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "VAP Standard > . Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A4 Wages and Benefits",
+      "title": "A4 Wages and Benefits"
+    },
+    "level_3": {
+      "id": "1",
+      "title": "Policy: Have a detailed, comprehensive documented wage and benefits policy with elements including:"
+    },
+    "content": "a. “Pay equals time worked” applies for any company-required activity (e.g., work, training)\nb. “Equal pay for equal work and qualification” applies to prohibit discrimination.\nc. All workers shall be paid no less than the greater of agreed and legal wage for all hours.\nd. Overtime and other compensation and benefits are paid and are on top of the agreed wage for regular hours at a rate which is the stricter of local law or 125% of the standard rate.\ne. Prohibit unauthorized deductions, including for disciplinary measures, company assets, tools, PPE, or any other item.\nf. The wage payment schedule is regular and documented.\ng. Full payment made to leavers (resigned workers) in compliance with the law and not later than one month after the final day on the job.",
+    "path": "VAP Standard > . Labor > A4 Wages and Benefits > 1",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A4 Wages and Benefits",
+      "title": "A4 Wages and Benefits"
+    },
+    "level_3": {
+      "id": "2",
+      "title": "Procedures & Practices are in place such that:"
+    },
+    "content": "a. The facility has a system to pay workers for both regular work hours and overtime in accordance with applicable law. Workers are compensated at the minimum wage or greater for regular work hours, and at a premium rate for work over the number of hours in a standard work week (overtime and holidays) which is the stricter of local law or 125% of standard rate.\nb. If there is a period where wages can be below minimum wage as per law it should be limited and reasonable in duration or not longer than 6 months, whichever is stricter.\nc. Correctly calculate wages, benefits, and overtime and maintain detailed accurate pay records.\nd. Provide all legally mandated benefits to workers, including contract elements.\ne. Pay all mandated withholdings to the appropriate government agency (taxes, social insurance, etc.)\nf. Records are maintained to verify these payments for both regular and contract workers.\n\nNOTE: Neither the workers nor the supplier is allowed to “waive\"any required mandatory deductions/contributions such as social insurance\n\ng. Pay (including overtime, others) should be timely per published schedule.\n\nh. Ensure proper wage rate for learners as follows:\n\ni. Intern: at least the minimum wage, unless their performance is significantly below expectation for that wage cycle,\nii. Apprentice: at least the minimum wage unless the local law specifically defines a lower wage for this type of worker. Agreed apprentice wage increase when meeting new skills requirements. Workers after a successful apprenticeship have clearly recorded promotion and wage adjustment.\niii. No financial/scholastic penalty (note scholastic penalty is allowed only if directly related to underperformance on educational component of program) (student worker and intern).\n\ni. Medical (including maternity) or sick leave absences do not incur a financial penalty if within the more generous of the law, employment contract/agreement or company policy at the time.\n\nWorkers are not to be kept on trainee wages beyond legally specified durations.\n\nk. Workers are paid directly without any intermediary (except bank) with no unauthorized or prohibited deductions (including for disciplinary measures, PPE, educational fees for learners), in a timely manner.\n\nl. Workers are provided with pay slips/receipts which clearly list the i. Hours worked in separate categories: regular, overtime, holiday, rest day, and others. ii. Wage rates and wages by category: regular and overtime/holiday/rest/other rate. iii. Legally required withholdings: taxes, deductions and any other previously agreed upon deductions or contributions (e.g., housing, food, social insurance, etc.). iv. Show employer contributions. v. Pay should be shown in a manner which allows workers to “check” that their pay is accu m. Company, labor agents, and any other 3rd party do not have access to workers’ bank or financial accounts even if the workers would allow it.\n\nn. Withholdings for taxes and other government programs made promptly to the applicable agency.\n\nNOTE: In cases where a worker is permanently transferred to a diferent state, region, country employment site,the minimum wage and other benefits and entitlements shallbe paid according to the legal provisions and standards where Workers are now deployed. That is regardless of whetherthe facility ora third-party service provider,labor agent, vocational school or sub-contractor is their employer. Longer term but not permanent stays/visits must conform to local law in terms of right to work and workers need tobe provided with sufficient wages and benefits to maintain a comparable or better standard of living than they have in their permanent place of employment.",
+    "path": "VAP Standard > . Labor > A4 Wages and Benefits > 2",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A4 Wages and Benefits",
+      "title": "A4 Wages and Benefits"
+    },
+    "level_3": {
+      "id": "3",
+      "title": "Controls & Monitoring should include:"
+    },
+    "content": "a. Ensure wage rates are equal or higher to local law, agreement.\nb. Workers (both regular and contract) are provided with information and training at the time of hire to fully comprehend how wages are calculated and what to expect when they receive payment.\nc. You must monitor pay for any workers of on-site supplier, subcontractor, agent to ensure accurate and timely payment, contributions and deductions are occurring.\nd. Workers are made aware of the process to raise a concern over pay. These concerns are reviewed promptly, and workers are provided additional payment / changes to rates when issues.",
+    "path": "VAP Standard > . Labor > A4 Wages and Benefits > 3",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A4 Wages and Benefits",
+      "title": "A4 Wages and Benefits"
+    },
+    "level_3": {
+      "id": "4",
+      "title": "Records are maintained including:"
+    },
+    "content": "a. Wages, benefits, and overtime are correctly calculated, and accurate pay records are maintained.\nb. Records of employee concerns, result of self-assessment and adjustments to pay or rates.\n\nNote: the RBA does not accept any agreement with workers that allows for anything except compliance to local law including social insurance.",
+    "path": "VAP Standard > . Labor > A4 Wages and Benefits > 4",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A4 Wages and Benefits",
+      "title": "A4 Wages and Benefits"
+    },
+    "level_3": {
+      "id": "5",
+      "title": "Serious conditions that will result in a severe finding:"
+    },
+    "content": "Delaying payments to workers for more than 1 month beyond the regular payment cycle. If workers’ wages are deducted for payment of the government or regulatory deductions, such payment have not been made or auditee’s payment is least 3 months overdue.",
+    "path": "VAP Standard > . Labor > A4 Wages and Benefits > 5",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A5",
+      "title": "Non-Discrimination / Non-Harassment / Humane Treatment"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0: Participants shall commit to a workplace free of harassment and unlawful discrimination. There shall be no harsh or inhumane treatment including violence, gender-based violence, sexual harassment, sexual abuse, corporal punishment, mental or physical coercion, bullying, public shaming, or verbal abuse of workers; nor is there to be the threat of any such treatment. Companies shall not engage in discrimination or harassment based on race, color, age, gender, sexual orientation, gender identity or expression, ethnicity or national origin, disability, pregnancy, religion, political affiliation, union membership, covered veteran status, protected genetic information or marital status in hiring and employment practices such as wages, promotions, rewards, and access to training. Disciplinary policies and procedures in support of these requirements shall be clearly defined and communicated to workers. Workers shall be provided with reasonable accommodation for religious practices and disability. In addition, workers or potential workers should not be subjected to medical tests, including pregnancy or virginity tests, or physical exams that could be used in a discriminatory way. This was drafted in consideration of ILO Discrimination (Employment and Occupation) Convention (No.111).\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "VAP Standard > . Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A5",
+      "title": "Non-Discrimination / Non-Harassment / Humane Treatment"
+    },
+    "level_3": {
+      "id": "1",
+      "title": "Policy: Have a detailed, comprehensive documented non-discrimination and non-harassment policy with elements including:"
+    },
+    "content": "a. No discrimination or harassment based on race, color, age, gender, sexual orientation, gender identity or expression, ethnicity or national origin, disability, pregnancy, religion, political affiliation, union membership, covered veteran status, protected genetic information or marital status in hiring and employment practices such as wages, promotions, rewards, and access to training.\nb. No harsh or inhumane treatment including violence, gender- based violence, sexual harassment, sexual abuse, corporal punishment, mental or physical coercion, bullying, public shaming, or verbal abuse of workers; nor is there to be the threat of any such treatment.\nc. Decisions in hiring, employing (such as compensation, promotion, access to training, …), or terminating workers are based solely on the candidate's ability to perform the job's requirements.\nd. Prohibition of disciplinary wage deductions are in place including “Pay equals time worked.”\ne. Health tests, pregnancy testing, or contraception are not used as a condition of employment.\n\nNOTE: Pregnant and nursing workers should be moved from hazardous to non-hazardous roles or remove the hazards from their roles; in either case while keeping the same pay and all other benefits.\n\nf. There should be no termination of a worker’s employment based on the worker’s pregnancy, virginity, or parental status.\n\nNOTE: In some cases, health tests are required by local governments for foreign migrant workers prior to issuance of work visas.\n\ng. Reasonable accommodation is provided including:\n\ni. For requested religious practices ii. For disability including all required by local law.",
+    "path": "VAP Standard > . Labor > Non-Discrimination / Non-Harassment / Humane Treatment > 1",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A5",
+      "title": "Non-Discrimination / Non-Harassment / Humane Treatment"
+    },
+    "level_3": {
+      "id": "2",
+      "title": "Procedures & Practices are in place such that:"
+    },
+    "content": "a. Clear communication to workers happens at the time of hire and is immediately accessible to all workers (e.g. worker training, handbooks, noticeboard postings, etc.)\nb. Provides managers and supervisors with training on the company's policies and procedures for disciplinary action. The training clearly communicates proper treatment of workers and prohibits any and all forms of abuse and harassment.\n\nc. No discrimination or harassment against a worker in eligibility for another position based on the worker’s refusal to take a medical test where there is no required medical test for such position.\n\nd. All disciplinary actions are taken when discrimination and/or mistreatment occurs.\n\ne. Establish a disciplinary process which is humane.\n\nf. Disciplinary records do not show inhumane disciplinary measures.\n\ng. There are no groups inappropriately exempted from discipline process (policies applied equally).\n\nh. All records of disciplinary action against workers shall be reviewed by management and verifiably communicated to them.\n\ni. Formal policies and procedures exist for sick leave and maternity leave.\n\ni. Workers receive a reasonable amount of time off for sickness without job loss or financial penalty.\nii. Workers are able to take time off for legally allowable maternity leave without loss of their job or seniority.\n\nj. Provide adequate compensation for lost income to workers injured at work or suffering from occupational disease, in accordance with local requirements.\n\nk. Establish a confidential communication system where workers can raise issues of concern including treatment by their supervisors or coworkers without fear of reprisal.\n\nl. Accommodations\n\ni. Establish a process and group to review requests for religious practices and disability accommodation.\nii. Review and decide upon and provide reason of decision of accommodation (or no accommodation) to the requestor in a timely manner.\niii. The religious accommodation element of the process shall reasonably accommodate group individual religious practice requests made to management and may include:\n1.Scheduling Changes\n2.Voluntary Substitutes and Shift Swaps\n3.Change of Job Tasks and Lateral Transfer\n4.Dress and Grooming Standards\n5.Use of Employer Facilities\n6.Tests and Selection Process\n\niv. Accommodation requests may be refused for safety and security concerns, after seeking alternatives (including off-site options) and/or a significant impact on business operations, operating costs, or other workers.\nv. Reasonable accommodation for worker’s disability is provided; Perform assessments using legal, customer and worker situations to identify gaps that should be addressed, e.g., missing ramps for those using wheelchairs or insufficient and inappropriate workstation tools.",
+    "path": "VAP Standard > . Labor > Non-Discrimination / Non-Harassment / Humane Treatment > 2",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A5",
+      "title": "Non-Discrimination / Non-Harassment / Humane Treatment"
+    },
+    "level_3": {
+      "id": "3",
+      "title": "Controls & Monitoring should include:"
+    },
+    "content": "a. Periodically reviews hiring practices, compensation records, and benefits to determine that there is no prohibited discrimination.\nb. Hiring agents and supplier management are trained in non-discrimination and applicable nondiscrimination laws.\nc. Ensuring workers are aware of the existing and planned accommodations as well as channel to request accommodations.",
+    "path": "VAP Standard > . Labor > Non-Discrimination / Non-Harassment / Humane Treatment > 3",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A5",
+      "title": "Non-Discrimination / Non-Harassment / Humane Treatment"
+    },
+    "level_3": {
+      "id": "4",
+      "title": "Records are maintained including:"
+    },
+    "content": "a. Have written job descriptions for worker roles that focus solely on \"occupational qualifications,\" not personal characteristics.\nb. Investigations, results, and actions related to allegations and discriminatory actions observed and/or mistreatment of workers.\nc. Records of all cases of disciplinary decisions are available and show any disciplinary actions with signature or confirmation of worker.\n\nd. Accommodation records (helps with consistency as well)\n\ni. Religious accommodation requests and decisions are recorded and maintained. ii. Disability access, assessment, and other reports for all identified disabilities iii. Disability effectiveness evaluation reports are available for all identified disabilities. iv. Corrective action plans are available for all identified disabilities for any disability accommodation deemed ineffective.",
+    "path": "VAP Standard > . Labor > Non-Discrimination / Non-Harassment / Humane Treatment > 4",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A5",
+      "title": "Non-Discrimination / Non-Harassment / Humane Treatment"
+    },
+    "level_3": {
+      "id": "5",
+      "title": "Serious conditions that will result in a severe finding:"
+    },
+    "content": "Discrimination, harassment, or inhumane treatment case without action taken.\nAn inhumane, discriminatory, or harassing disciplinary action.\nReasonable Religious Accommodation requests are refused by management without j u s t i f i c a t i o n .\nDisability accommodation requests are refused by management without justification.",
+    "path": "VAP Standard > . Labor > Non-Discrimination / Non-Harassment / Humane Treatment > 5",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A5",
+      "title": "Non-Discrimination / Non-Harassment / Humane Treatment"
+    },
+    "level_3": {
+      "id": "6",
+      "title": "Leading Practices include:"
+    },
+    "content": "a. The disciplinary policy includes the following elements:\n\ni. Graduated/Progressive – “First time” or small offenses might involve training/retraining or verbal discussions between the worker and supervisor in private - not in front of other workers. Major or re-occurring offenses would involve more serious disciplinary written warning or re-assignment, etc., according to the documented process.\nii. Constructive- Feedback is timely, targeted, and intended to motivate improvement in worker behavior and performance.\niii. Balanced - discipline applied consistently to all individuals and groups.\n\nb. Facilities proactively equipped to accommodate disabled persons (e.g., wheelchair ramps; elevators; visual evaluation alarms; etc.).\n\nc. Having policies and taking actions to hire and promote a diverse workforce.",
+    "path": "VAP Standard > . Labor > Non-Discrimination / Non-Harassment / Humane Treatment > 6",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A6 Freedom of Association and Collective Bargaining",
+      "title": "A6 Freedom of Association and Collective Bargaining"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0: Open communication and direct engagement between workers and management are the most effective ways to resolve workplace and compensation issues. Workers and/or their representatives shall be able to openly communicate and share ideas and concerns with management regarding working conditions and management practices without fear of discrimination, reprisal, intimidation, or harassment. In alignment with these principles, participants shall respect the right of all workers to form and join trade unions of their own choosing, to bargain collectively, and to engage in peaceful assembly as well as respect the right of workers to refrain from such activities. Where the right of freedom of association and collective bargaining is restricted by applicable laws and regulations, workers shall be allowed to elect and join alternate lawful forms of worker representations.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "VAP Standard > . Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A6 Freedom of Association and Collective Bargaining",
+      "title": "A6 Freedom of Association and Collective Bargaining"
+    },
+    "level_3": {
+      "id": "1",
+      "title": "Policy: Have a detailed, comprehensive documented freedom of association and collective bargaining policy with elements including:"
+    },
+    "content": "a. Respect of the right of workers to form or enroll in a worker representation body, or to refrain from doing so.2\nb. As open communication and direct engagement between workers and management are the most effective ways to resolve workplace issues, where the right of freedom of association is restricted by applicable laws and regulations, workers shall be allowed to elect and join alternate lawful forms of worker representations.\nc. Non-interference, restrain, or coercion of workers in the exercise of their right to individually or collectively to express, promote, pursue, and defend their concerns or ideas or to refrain from doing so.\nd. Non-interference with and no financing of a worker representation body unless required by law.\ne. Recognize and respect the right of workers to bargain collectively, or refrain from doing so.\nf. Respect the legal rights of all workers to bargain collectively, or refrain from doing so.\ng. Commitment to enter negotiations upon request by the worker representation body.\nh. Commitment to participate in good faith in the collective bargaining process with the worker representation body.\ni. Respect the legal right of all workers to peacefully assemble.3",
+    "path": "VAP Standard > . Labor > A6 Freedom of Association and Collective Bargaining > 1",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A6 Freedom of Association and Collective Bargaining",
+      "title": "A6 Freedom of Association and Collective Bargaining"
+    },
+    "level_3": {
+      "id": "2",
+      "title": "Procedures & Practices are in place such that:"
+    },
+    "content": "a. Ensure the policies and procedures for freedom of association are communicated to all managers, supervisors, and workers.\nb. Any worker representation body, trade union or lawful alternative, reflects the interests of those workers who chose to be represented without the interference of management.\nc. Do not dismiss, discipline, coerce or threaten workers as a result of exercising their right to freedom of association.\nd. Do not discriminate in employment decisions against workers because of their affiliation with any worker groups.\ne. Employee representative(s) and other workers are treated equally.\n\n2 The reviewee company is responsible for ensuring their workers can exercise their rights to organize in a climate free of violence, pressure, fear, and threats. reviewee is not required to take an active role in supporting workers’ efforts to associate or organize.\n\n3 Company may place reasonable time, place, and manner controls regarding assembly for purposes of maintaining a healthy, safe, and productive work environment.\n\nf. Enact, within the scope of national law and practice, a mutually agreed process between the company and workers to facilitate regular discussion on matters of mutual concern.\ng. Ensure company management conducts regular sessions with workers to discuss their issues or concerns.\nh. Open feedback channels exist for workers to bring issues to the attention of management for resolution. Communications are kept confidential for the protection of workers.\ni. All CBA terms and conditions are implemented.\nj. Granting religious accommodation should be evaluated against requirements in any CBA and may vary from the CBA. A dialogue with worker representatives is held if there is a difference between an accommodation request and the CBA, if this does not violate the privacy of the Accommodation requestor.",
+    "path": "VAP Standard > . Labor > A6 Freedom of Association and Collective Bargaining > 2",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A6 Freedom of Association and Collective Bargaining",
+      "title": "A6 Freedom of Association and Collective Bargaining"
+    },
+    "level_3": {
+      "id": "3",
+      "title": "Controls & Monitoring should include:"
+    },
+    "content": "a. Management contributions are limited to providing meeting space and/or meeting materials (such as note taking material) unless required by law.\nb. Management should not dominate or interfere with the formation or administration of any worker representation body (or alternate lawful forms where the right of freedom of association is restricted by applicable laws and regulations) or contribute support, either financial or human resources. Where legally required, management shall allow the democratic election of worker representatives.\nc. Review payroll records to confirm that trade union employees or worker representatives are paid the same as other workers in similar job functions.\nd. Get worker feedback as to how communications might be improved between them and managemen and make adjustment.",
+    "path": "VAP Standard > . Labor > A6 Freedom of Association and Collective Bargaining > 3",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": ". Labor"
+    },
+    "level_2": {
+      "id": "A6 Freedom of Association and Collective Bargaining",
+      "title": "A6 Freedom of Association and Collective Bargaining"
+    },
+    "level_3": {
+      "id": "4",
+      "title": "Records are maintained including:"
+    },
+    "content": "a. Worker representation body meeting minutes and financial records, if available, to determine source of funding and materials.\nb. Records are maintained on freedom of association related grievances and show how the grievance was investigated and acted upon including communication to workers.",
+    "path": "VAP Standard > . Labor > A6 Freedom of Association and Collective Bargaining > 4",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  }
+]
