@@ -37,7 +37,7 @@ class Config:
     USE_LOCAL_ONLY = os.path.exists(HF_CACHE)  # 如果缓存存在，强制使用本地模式
 
     # 向量检索参数
-    TOP_K = 5  # 召回Top-K候选
+    TOP_K = 6  # 召回Top-K候选
 
     # LLM API 配置
     LLM_API_BASE = "http://10.71.5.24:8000/v1"
@@ -483,8 +483,8 @@ class TextMatcher:
             'LLM判断结果',
             'LLM判断理由',
             '排名',
-            'B文件路径',
             'A文件路径',
+            'B文件路径',
         ]
 
         # 只保留存在的列
@@ -506,8 +506,8 @@ class TextMatcher:
             worksheet.column_dimensions['D'].width = 15  # LLM判断结果
             worksheet.column_dimensions['E'].width = 40  # LLM判断理由
             worksheet.column_dimensions['F'].width = 10  # 排名
-            worksheet.column_dimensions['G'].width = 40  # B文件路径
-            worksheet.column_dimensions['H'].width = 40  # A文件路径
+            worksheet.column_dimensions['G'].width = 40  # A文件路径
+            worksheet.column_dimensions['H'].width = 40  # B文件路径
 
             # 设置所有数据行的行高为 200
             for row in range(2, len(df) + 2):  # 从第2行开始（第1行是标题）
