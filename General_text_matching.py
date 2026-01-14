@@ -116,30 +116,6 @@ def filter_content_blocks(documents: List[Dict[str, Any]]) -> List[Dict[str, Any
     return content_docs
 
 
-def format_clause_text(doc: Dict[str, Any]) -> str:
-    """格式化条款文本，拼接 content 和 level_3 的 id、title"""
-    content = doc.get('content', '')
-
-    # 获取 level_3 信息
-    level_3 = doc.get('level_3', {})
-    l3_id = level_3.get('id') if level_3 else None
-    l3_title = level_3.get('title') if level_3 else None
-
-    # 拼接 level_3 的 id 和 title（如果有）
-    prefix_parts = []
-    if l3_id:
-        prefix_parts.append(str(l3_id))
-    if l3_title:
-        prefix_parts.append(l3_title)
-
-    # 如果有前缀，则拼接（添加换行）
-    if prefix_parts:
-        prefix = ". ".join(prefix_parts) + ".\n"
-        return prefix + content
-    else:
-        return content
-
-
 def truncate_text(text: str, max_length: int = 512) -> str:
     """截断过长的文本"""
     if len(text) <= max_length:
@@ -411,10 +387,12 @@ class TextMatcher:
         print("初始化完成，开始匹配...")
         print("=" * 60 + "\n")
 
-        # 保存文档数量统计
+        # 保存文档数量统计和文件名（去掉 .json 后缀）
         self.doc_counts = {
             'a_docs': len(self.a_docs),
-            'b_docs': len(self.b_docs)
+            'b_docs': len(self.b_docs),
+            'a_file_name': os.path.basename(Config.A_FILE).replace('.json', ''),
+            'b_file_name': os.path.basename(Config.B_FILE).replace('.json', '')
         }
 
     def match(self) -> List[Dict[str, Any]]:
@@ -423,8 +401,7 @@ class TextMatcher:
 
         # 对A文件的每个content段落进行匹配
         for a_doc in tqdm(self.a_docs, desc="匹配进度"):
-            a_text = a_doc.get('content', '')
-            a_text_display = format_clause_text(a_doc)  # 用于显示的文本（包含 id.title）
+            a_text = a_doc.get('content', '')  # 已包含 id.title 前缀
 
             # 1. 向量检索 Top-K
             query_embedding = self.embedder.encode([a_text])
@@ -436,8 +413,7 @@ class TextMatcher:
             # 2. 对 Top-K 结果进行 LLM 精判
             for rank, (similarity, idx) in enumerate(zip(similarities[0], indices[0]), 1):
                 b_doc = self.b_docs[idx]
-                b_text = b_doc.get('content', '')
-                b_text_display = format_clause_text(b_doc)  # 用于显示的文本（包含 id.title）
+                b_text = b_doc.get('content', '')  # 已包含 id.title 前缀
 
                 # 相似度过滤
                 if similarity < Config.SIMILARITY_THRESHOLD:
@@ -446,10 +422,10 @@ class TextMatcher:
                 # LLM 精判
                 llm_relevance, llm_reason = self.llm_judge.judge(a_text, b_text)
 
-                # 保存结果
+                # 保存结果（content 已包含 id.title 前缀）
                 result = {
-                    'A文件条款': a_text_display,
-                    'B文件条款': b_text_display,
+                    'A文件条款': a_text,
+                    'B文件条款': b_text,
                     '相似度得分': round(float(similarity), 4),
                     '排名': rank,
                     'LLM判断结果': llm_relevance,
@@ -463,7 +439,7 @@ class TextMatcher:
             # 如果A文件中的某一条条款没有匹配结果，也需要添加到结果中（空匹配）
             if not has_match:
                 result = {
-                    'A文件条款': a_text_display,
+                    'A文件条款': a_text,
                     'B文件条款': '',
                     '相似度得分': '',
                     '排名': '',
@@ -640,7 +616,7 @@ class TextMatcher:
         stats_html = self._generate_stats_html(stats, doc_counts)
 
         # 表格内容 HTML
-        table_html = self._generate_table_html(df, columns_order, merge_spans)
+        table_html = self._generate_table_html(df, columns_order, merge_spans, doc_counts)
 
         # 组装完整 HTML
         html = f"""<!DOCTYPE html>
@@ -648,7 +624,7 @@ class TextMatcher:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>责任标准条款匹配结果</title>
+    <title>RBA Clause Matching Results</title>
     <style>
         * {{
             margin: 0;
@@ -742,8 +718,12 @@ class TextMatcher:
             border-left-color: #ffc107;
         }}
 
-        .stat-card.empty {{
+        .stat-card.not-related {{
             border-left-color: #dc3545;
+        }}
+
+        .stat-card.empty {{
+            border-left-color: #e3e0e0;
         }}
 
         .stat-label {{
@@ -936,7 +916,7 @@ class TextMatcher:
     def _generate_header_html(self, df: pd.DataFrame) -> str:
         """生成页面头部 HTML"""
         return f"""        <div class="header">
-            <h1>责任标准条款匹配结果</h1>
+            <h1>RBA Clause Matching Results</h1>
             <div class="subtitle">
                 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')}
             </div>
@@ -948,13 +928,13 @@ class TextMatcher:
 
         cards = []
 
-        # A/B 文档数量卡片
+        # A/B 文档数量卡片（使用 JSON 文件名）
         cards.append(f"""                <div class="stat-card">
-                    <div class="stat-label">📄 A 文档（企业联盟）</div>
+                    <div class="stat-label">📄 {doc_counts.get('a_file_name', 'A 文档')}</div>
                     <div class="stat-value">{doc_counts.get('a_docs', 0)}</div>
                 </div>""")
         cards.append(f"""                <div class="stat-card">
-                    <div class="stat-label">📄 B 文档（供应商）</div>
+                    <div class="stat-label">📄 {doc_counts.get('b_file_name', 'B 文档')}</div>
                     <div class="stat-value">{doc_counts.get('b_docs', 0)}</div>
                 </div>""")
 
@@ -1017,13 +997,16 @@ class TextMatcher:
 
         return merge_spans
 
-    def _generate_table_html(self, df: pd.DataFrame, columns_order: List[str], merge_spans: dict) -> str:
+    def _generate_table_html(self, df: pd.DataFrame, columns_order: List[str], merge_spans: dict, doc_counts: Dict[str, int]) -> str:
         """生成表格 HTML"""
 
-        # 表头
+        # 表头（使用文件名，已去掉 .json 后缀）
+        a_name = doc_counts.get('a_file_name', 'A 文档')
+        b_name = doc_counts.get('b_file_name', 'B 文档')
+
         header_mapping = {
-            'A文件条款': '企业联盟条款 (A)',
-            'B文件条款': '供应商条款 (B)',
+            'A文件条款': f'{a_name}',
+            'B文件条款': f'{b_name}',
             '相似度得分': '相似度',
             'LLM判断结果': '相关性',
             'LLM判断理由': '判断理由',

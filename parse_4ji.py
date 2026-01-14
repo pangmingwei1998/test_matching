@@ -117,13 +117,21 @@ def parse_markdown(md_text: str, version: str, source: str):
         # level_3 的后缀：如果有 title 则显示 "id. title"，否则只显示 id
         l3_suffix = f"{l3_id}. {l3_title}" if l3_title else l3_id
 
+        # 拼接 content 前缀：id. title\n + 原始 content
+        # 这样向量化时会包含标题语义信息
+        content_with_prefix = content
+        if l3_title:
+            content_with_prefix = f"{l3_id}. {l3_title}\n{content}"
+        elif l3_id:
+            content_with_prefix = f"{l3_id}\n{content}"
+
         results.append({
             "Theme": theme,
             "version": version,
             "level_1": {"id": l1_id, "title": l1_title},
             "level_2": {"id": l2_id, "title": l2_title},
             "level_3": {"id": l3_id, "title": l3_title},
-            "content": content,
+            "content": content_with_prefix,  # 修改：包含 id.title 前缀
             "path": build_path(
                 include_level_1=True,
                 include_level_2=True,
@@ -268,17 +276,17 @@ def parse_markdown(md_text: str, version: str, source: str):
 # Runner
 # =========================
 if __name__ == "__main__":
-    md_path = "/home/pmw/h20/Text_matching/apple4.9.md"
+    md_path = "/home/pmw/h20/Text_matching/RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
 
     md_text = Path(md_path).read_text(encoding="utf-8")
 
     parsed, stats = parse_markdown(
         md_text=md_text,
         version="V4.9",
-        source="apple4.9.md"
+        source="RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
     )
 
-    with open("Apple_standard.json", "w", encoding="utf-8") as f:
+    with open("RBA_standard.json", "w", encoding="utf-8") as f:
         json.dump(parsed, f, ensure_ascii=False, indent=2)
 
     print("\n====== Parsing Summary ======")

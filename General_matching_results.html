@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>责任标准条款匹配结果</title>
+    <title>RBA Clause Matching Results</title>
     <style>
         * {
             margin: 0;
@@ -97,8 +97,12 @@
             border-left-color: #ffc107;
         }
 
-        .stat-card.empty {
+        .stat-card.not-related {
             border-left-color: #dc3545;
+        }
+
+        .stat-card.empty {
+            border-left-color: #e3e0e0;
         }
 
         .stat-label {
@@ -281,33 +285,33 @@
 <body>
     <div class="container">
                 <div class="header">
-            <h1>责任标准条款匹配结果</h1>
+            <h1>RBA Clause Matching Results</h1>
             <div class="subtitle">
-                共 11 条记录 | 生成时间: 2026-01-14 10:07:43
+                生成时间: 2026-01-14 13:15:38
             </div>
         </div>
                 <div class="stats-section">
             <div class="stats-title">匹配统计</div>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-label">📄 A 文档（企业联盟）</div>
+                    <div class="stat-label">📄 RBA_A</div>
                     <div class="stat-value">6</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">📄 B 文档（供应商）</div>
-                    <div class="stat-value">4</div>
+                    <div class="stat-label">📄 Apple_standard</div>
+                    <div class="stat-value">186</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">总记录数</div>
-                    <div class="stat-value">11</div>
+                    <div class="stat-value">36</div>
                 </div>
                 <div class="stat-card strong">
                     <div class="stat-label">🟢 强相关</div>
-                    <div class="stat-value">1</div>
+                    <div class="stat-value">23</div>
                 </div>
                 <div class="stat-card weak">
                     <div class="stat-label">🟡 弱相关</div>
-                    <div class="stat-value">9</div>
+                    <div class="stat-value">12</div>
                 </div>
                 <div class="stat-card not-related">
                     <div class="stat-label">🔴 不相关</div>
@@ -319,8 +323,8 @@
             <table>
         <thead>
             <tr>
-                <th>企业联盟条款 (A)</th>
-                <th>供应商条款 (B)</th>
+                <th>RBA_A</th>
+                <th>Apple_standard</th>
                 <th>相似度</th>
                 <th>相关性</th>
                 <th>判断理由</th>
@@ -331,7 +335,7 @@
         </thead>
         <tbody>
             <tr>
-                <td class="clause-a">1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:.
+                <td class="clause-a" rowspan="6">1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:
 a. No levies, recruiting, hiring or placement fees or costs, even if allowed by local law.
 b. No fees or costs charged to workers as defined by the RBA Definition of Fees
 c. No deposits, mandatory saving, or any other financial obligation are required to obtain or keep a job. d. If fees and costs were found to be charged, workers must be repaid within 90 days.
@@ -340,23 +344,253 @@ f. Overtime is to be voluntary (i.e., workers can always refuse overtime)
 g. Resignation must be voluntary, and the required notice period cannot exceed one month.
 h. The penalty for not serving notice cannot exceed 60% of one month’s wages.
 i. Workers’ freedom of movement is not restricted.</td>
-                <td class="clause-b">3. Training and Communication.
-3.1 Responsible Staff
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
 
-Supplier shall provide comprehensive training to any person involved in activities that may be associated with Discrimination risks.
+Supplier shall have a written policy that addresses wages, benefits, and contracts requirements specified in Applicable Laws and Regulations and this Standard.
 
-3.2 Workers, Supervisors, and Managers
+Supplier shall have written procedures and systems to implement its wages, benefits, and contracts policy.
 
-Supplier shall effectively communicate its anti-Discrimination policy to all Workers, supervisors, and managers. This communication shall include information about Hazardous jobs, workplace accommodations for non-Hazardous positions, and voluntary Medical Testing. The communication or training shall be provided during the initial orientation period and reinforced via refresher training on a regular basis.</td>
-                <td class="score">0.8010</td>
+Supplier shall comply with its Written Policy and Procedures at all times.
+
+1.2 Directly Responsible Individual(s)
+
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the wages, benefits, and contracts 1、Policy and Procedures.
+
+1.3 Risk Management
+
+Supplier shall identify and comply with wages, benefits, and contracts requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall identify, assess, and minimize risks related to wages, benefits, and contracts.</td>
+                <td class="score">0.8433</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦用工自由与费用禁止，条款B强调反歧视培训与沟通，均属劳动者权益保护但侧重点不同"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动及工人自由，条款B关注工资福利合规，主题部分交叉但核心义务不同"]</td>
                 <td class="rank">1</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
+                <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
             </tr>
             <tr>
-                <td class="clause-a" rowspan="2">2. Procedures &amp; Practices are in place such that:.
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
+
+Supplier shall have a written policy against involuntary labor that complies with the Code, this Standard, and Applicable Laws and Regulations.
+
+Supplier shall have written procedures and systems to implement its prevention of involuntary labor policy.
+
+Supplier shall comply with its Written Policy and Procedures at all times.
+
+1.2 Directly Responsible Individual(s)
+
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of prevention of involuntary labor 1、Policy and Procedures.
+
+1.3 Risk Management
+
+Supplier shall identify and comply with prevention of involuntary labor requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall identify, assess, and minimize risks related to involuntary labor.</td>
+                <td class="score">0.8420</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均围绕禁止强迫劳动的政策与实施义务，A侧重具体操作标准，B强调制度建设和风险管理，核心责任主题一致且互补。"]</td>
+                <td class="rank">2</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
+                <td class="path">Prevention of Involuntary Labor &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
+            </tr>
+            <tr>
+                <td class="clause-b">3. Non-Harassment and Non-Retaliation
+No Worker or prospective Worker shall be subject to dismissal, discrimination, harassment, Blacklisting, intimidation, retaliation, or other Employment Decision for reason of:
+
+• Membership and/or participation in a union, Worker association, or other freedom of association activities
+• Exercising lawful right to form a union or participating in collective bargaining efforts
+• Organizing or participating in a legal strike or demonstration
+• Raising issues to Management concerning compliance with a collective bargaining agreement or any other legal requirements.
+
+Supplier shall not threaten or use violence or the presence of police or military to intimidate employees or to prevent, disrupt, or break up any activities that constitute a lawful and peaceful exercise of the right of freedom of association, including union meetings, organizing activities, assemblies, and lawful strikes.
+
+Supplier shall not transfer, demote, promote, outsource, or reassign Workers as a means to discourage unionization or participation in Worker-Management communication activities.
+
+Supplier Management shall not impede Workers’ right to peaceful organization by outsourcing work performed by union members. Shifting production from one site to another for the purpose of retaliating against Workers who have formed or are attempting to form a union is prohibited by the Code and this Standard.</td>
+                <td class="score">0.8394</td>
+                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动与保障工人自由，条款B侧重非歧视与结社自由，均属劳工权益但义务主题不同"]</td>
+                <td class="rank">3</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
+                <td class="path">Freedom of Association and Collective Bargaining &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Non-Harassment and Non-Retaliation</td>
+            </tr>
+            <tr>
+                <td class="clause-b">1. Freedom of Association
+1.1 Policy and Procedures
+
+Supplier shall have a written policy on freedom of association. In addition, Supplier shall have procedures and systems to implement its freedom of association policy in a manner that satisfies the requirements of Applicable Laws and Regulations, Apple’s Supplier Code of Conduct, and Supplier Responsibility Standards.
+
+Supplier shall respect Workers’ lawful rights to form or participate (or refrain from forming or participating) in organizations of their choosing, including but not limited to unions, Worker committees, or other Worker associations, and bargain collectively without interference, discrimination, retaliation, or harassment. Supplier shall accommodate Workers should they express a desire for a Grievance mechanism in addition to formal representation.
+
+Where Applicable Laws and Regulations substantially restrict freedom of association, Supplier shall allow alternative means for Workers to individually and collectively engage with Supplier, including processes for Workers to express their Grievances and protect their rights regarding working conditions and terms of employment. Where such alternative means are provided, they should be accessible by all workers, regardless of race, religion, gender or nationality, or other protected class.
+
+1.2 Neutrality
+
+Supplier is not required to take an active role in supporting Workers’ efforts to associate or organize, but they must ensure that Workers can exercise their rights in a climate free of violence, pressure, fear, intimidation, and threats.
+
+1.3 Deductions
+
+Supplier shall not deduct union membership fees or any other union fees from Workers’ wages without the express and written consent of individual Workers, unless specified otherwise in freely negotiated and valid collective bargaining agreements.</td>
+                <td class="score">0.8353</td>
+                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动与工人自由，条款B侧重结社自由与集体谈判，均涉及工人基本权利，但在责任义务主题上各有侧重，存在部分交集。"]</td>
+                <td class="rank">4</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
+                <td class="path">Freedom of Association and Collective Bargaining &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Freedom of Association</td>
+            </tr>
+            <tr>
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
+
+Supplier shall have a written policy that addresses worker engagement and Grievance management requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall have written procedures and systems to implement its Worker Engagement and Grievance Management policy.
+
+Supplier shall periodically review, and analyze the effectiveness of existing worker engagement activities including remedial measures at least once per year.
+
+Supplier shall comply with its Written Policy and Procedures at all times.
+
+1.2 Directly Responsible Individual(s)
+
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the worker engagement and Grievance Management 1、Policy and Procedures.
+
+1.3 Protection and Non-Retaliation
+
+A Worker or prospective Worker shall be able to report any Grievance, or provide feedback, or participate in the investigation of such, in a safe environment without fear of reprisal, dismissal, discrimination, harassment, Blacklisting, intimidation, retaliation, or any other penalty of any form when raised in Good Faith.
+
+Supplier shall also ensure Workers’ identities are protected to the maximum extent possible to prevent retaliation and ensure confidentiality, and that any private information is disclosed only to Supplier personnel or parties required or permitted to access the information by law, or as required to conduct a good-faith, thorough investigation of any Grievance.</td>
+                <td class="score">0.8265</td>
+                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动及工人自由权利，条款B关注申诉机制与非报复保护，主题部分关联但核心义务不同"]</td>
+                <td class="rank">5</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
+                <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
+            </tr>
+            <tr>
+                <td class="clause-b">2. Operational Practice
+2.1 Minimum Pay
+
+All Workers shall be paid no less than the Minimum Wage for all Regular Hours as per Applicable Laws and Regulations. A Worker’s Base Wage shall always be set at or above Minimum Wage for the Classification of Worker.
+
+The pay structure shall not require Workers to work more than the legally mandated Regular Hours (whether calculated on an hourly, daily, weekly, or monthly basis) in order to earn the Base Wage.
+
+2.2 Overtime Pay
+
+All Overtime Hours shall be paid at the appropriate overtime rate applied to appropriate Base Wage as per Applicable Laws and Regulations or employment contract, whichever is higher, for the relevant Classification of Worker.
+
+In countries where there are no legally established overtime rates as per Applicable Laws and Regulations, the minimum overtime rate shall be 125% of the Base Wage.
+
+2.3Benefits
+
+Supplier shall provide Mandatory Benefits to the Classification of Worker as per Applicable Laws and Regulations. Where permitted under law, Supplier shall provide Workers with paid and unpaid leave, and public holidays.
+
+2.4 Working Hour Calculations for Regular and Overtime
+
+For the purposes of pay and benefits, Regular and Overtime Hours calculations shall be based on the exact hours and minutes worked.
+
+If Supplier is unable to calculate the exact minutes, Regular and Overtime Hours shall be rounded up to the nearest 15 minutes in the Worker’s favor as follows:
+
+&lt;table&gt;&lt;tr&gt;&lt;td&gt;TIME IN MINUTES&lt;/td&gt;&lt;td&gt;0 ≤ X&amp;lt;15&lt;/td&gt;&lt;td&gt;15 ≤ X &amp;lt;30&lt;/td&gt;&lt;td&gt;30 ≤ X&amp;lt;45&lt;/td&gt;&lt;td&gt;45 ≤X&amp;lt;60&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rounded Allotment in Minutes for Overtime&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;45&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+2.5 Working Hour Calculations for Tardiness
+
+For the purposes of pay and benefits, deductions for tardiness shall be based on the exact hours and minutes by which a Worker is tardy.
+
+If Supplier is unable to calculate the exact minutes, deductions for tardiness shall be rounded down to the nearest 15 minutes in the Worker’s favor as follows:
+
+&lt;table&gt;&lt;tr&gt;&lt;td&gt;TIME IN MINUTES&lt;/td&gt;&lt;td&gt;0 ≤X&amp;lt;15&lt;/td&gt;&lt;td&gt;15 ≤ X&amp;lt; 30&lt;/td&gt;&lt;td&gt;30 ≤ X&amp;lt;45&lt;/td&gt;&lt;td&gt;45 ≤X&amp;lt;60&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rounded Allotment in Minutes for Tardiness&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;45&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+2.6 Waivers
+
+Waivers affecting working hours or Worker wages and benefits, even those promulgated by local authorities or government agencies, will not be accepted (for example, the Comprehensive Working Hours System in China).
+
+2.7 Deductions
+
+Supplier or its agents shall not deduct earnings from Workers’ paychecks except where required by Applicable Laws and Regulations, for example, taxes and social insurance, or where Supplier or its agent is providing a service. If deductions are made as part of a service provided to Workers, Workers shall have the choice to opt out of any such service.
+
+Monetary Penalties deducted from wages or reductions in Mandatory Benefits as disciplinary measures are prohibited.
+
+2.8 Deposits
+
+Deposits from Workers are prohibited unless required by Applicable Laws and Regulations. If a deposit is legally required, Supplier shall ensure that a receipt is provided for any deposits made by Workers and that such deposits shall be returned in full to the Worker as expeditiously as practicable, but no later than one month after the Worker’s employment has terminated or reason for such deposit has ended, whichever is earlier.
+
+2.9 Charges
+
+Supplier shall not charge Workers for anything required by the Supplier for the employee to effectively carry out their job duties, including but not limited to:
+
+• Required personal protective equipment • Uniforms, except for unreturned uniforms • Headset and replaceable foam pad covers
+
+Deposits shall not be charged upon the issue of such equipment. Suppliers may charge a prorated fee for unreturned items. The Supplier must communicate these requirements when items are supplied.
+
+2.10 Payment
+
+Supplier shall be required to make monetary payments under all circumstances where Workers have not been paid their due. This includes but is not limited to:
+
+• Underpayment • Exit payment: Irrespective of the conditions under which the employment relationship has ended, all Workers shall receive their wages due. Supplier shall effectively communicate the resignation process to all Workers at the start of the employment relationship and at the time of any material change in such process. Supplier shall ensure that the resignation process is easily accessible to all Workers, including those who do not provide Reasonable Notice of termination. Supplier shall not require compensation in any form for Workers who do not provide Reasonable Notice of termination unless required by Applicable Laws
+
+and Regulations. Supplier shall provide the Worker a record of the final wages earned and an explanation for any deductions.
+
+• Deductions or payment by workers not specified by law: deductions made for deposits, fees, uniform charges, medical tests, disciplinary fines, tools, background checks, etc.
+
+• Non-payment of statutory benefits such as overtime wages, annual leave, and paid public holidays
+
+• Wages for mandatory meetings and trainings outside working time
+
+2.11 Pay Schedule
+
+Supplier shall pay Workers within the deadline defined by Applicable Laws and Regulations; in the absence of such guidance, Supplier shall pay Workers within 30 days of the end of the Working Period. Pay adjustments in the case of discrepancies in records must be paid on or before the next payday.
+
+2.12 Signed Contract
+
+Workers shall sign a written employment contract prior to performing any work at a Supplier’s facility.
+
+Supplier shall ensure that the employment contract is written in a language that the Worker understands.
+
+This contract shall conform to Applicable Laws and Regulations and all relevant terms outlined in the Apple Code of Conduct and Supplier Responsibility Standards.
+
+Supplier shall ensure that all Workers receive and understand a copy of this contract, signed by the Supplier, at the time of the Worker’s signature. This also applies to any supplementary agreements.
+
+At a minimum, this contract shall contain:
+
+• All employment terms required by Applicable Laws and Regulations
+• Worker’s full name and date of birth
+• Worker’s passport number, ID card, or equivalent identification Emergency contact information
+• The nature of work and place where it will be performed
+• Living conditions
+• Costs (if any) for meals and accommodation
+
+• Descriptions and quantitative estimates of each line item to be deducted from wages
+• The term of contract (if applicable)
+• Expected regular working hours, Overtime Hours, frequency of rest days, and holidays.
+• Base Wages for Regular Hours
+• Clearly defined regular, overtime, and holiday wage rates, including maximum allowable Overtime Hours Deductions (if any)
+• Benefits
+• All applicable bonuses and allowance Date of eligibility for reimbursement of deposit (if any) Contract termination/resignation procedures and terms
+• Terms and conditions for contract renewal
+• No terms that deny a Worker the right to organize or engage in collective bargaining
+
+2.13 Revised/Supplemental Contracts
+
+Supplier shall ensure that any revisions to employment contracts and other related agreements shall be compliant to this Standard and that any revisions of the terms shall not be less favorable to the Worker as outlined in original employment contract unless as negotiated through collective bargaining.
+
+2.14 Contract Termination
+
+Supplier shall ensure that Workers are free to terminate their employment contract.
+
+2.15 Probation
+
+Where probationary or training employment is legally allowed, Supplier shall ensure that Workers are paid at least Minimum Wages. No Workers shall work more than 3 months cumulatively in these employment categories, or the maximum period allowed by Applicable Laws and Regulations, whichever is shorter.</td>
+                <td class="score">0.8260</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "条款A禁止强迫劳动并保障工人自由，条款B通过工资、工时、合同等保障工人基本权益，二者在防止剥削、保障劳工权利方面形成责任义务的互补与强化"]</td>
+                <td class="rank">6</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
+                <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practice</td>
+            </tr>
+            <tr>
+                <td class="clause-a" rowspan="6">2. Procedures &amp; Practices are in place such that:
 a. Workers are not required to pay any deposit or employment fee to the supplier, labor recruiter or employment agency to get or keep their job (See RBA Definition of Fees). b. No control of or access to workers’ banking or financial accounts (direct deposit is allowed).
 
 c. Workers are informed before employment of the key employment terms and conditions in writing in their native language or in a language that the worker can understand.
@@ -435,7 +669,370 @@ q. Personal loans are no greater than 60% of 1-month gross base salary, have a m
 r. Education loans are no greater than 120% of 1-month gross base salary, have a maximum repayment maximum of 10% of the worker’s gross base wage per month for maximum of 12 months. Charging interest is not permitted.
 
 s. The termination notice period is not stricter than 1 month and is noted in their contract/agreement and explained at the time of hiring. The penalty for leaving without reasonable notice cannot exceed 60% of 1 month of gross base wages. Terminating employment is voluntary with no explicit threat of punishment, fines, violence, or withholding wages.</td>
-                <td class="clause-b">2. Operational Practice.
+                <td class="clause-b">2. Operational Practices
+2.1 Engaging Third Party Employment Agencies
+
+Supplier shall sign contract with a TPEA before engaging the TPEA to recruit or hire Workers. The contract shall comply with Applicable Laws and Regulations and the applicable terms of the Code and related Supplier Responsibility Standards and at a minimum include the following when applicable:
+
+• Compensation structure for any and all wages, benefits or bonuses to be paid or provided to Workers
+• Terms of payment by Supplier to the TPEA
+• Term that no unreasonable fees may be charged to Workers or unreasonable deductions made from Workers’ wages or other benefits in relation to their recruitment or hiring
+• Term that includes the consequences for violating this Standard, up to and including termination of the relationship between Supplier and TPEA
+
+2.2 Identity Documents
+
+TPEA shall not require surrender of Workers’ original identity documents, withhold Workers’ original identity documents, or restrict Workers’ access to original identity documents for any reason.
+
+Supplier and TPEA may request (but may not demand or require) Workers’ original identity documents for the purposes of obtaining visa renewals or satisfying other work permit related requirements for such Workers. Supplier shall work with related parties including a TPEA to ensure timely return of all original identity documents to Workers.
+
+Third Party Employment Agencies may obtain and retain copies of Workers’ original identity documents.
+
+2.3 Recruitment of Workers
+
+Supplier shall verify TPEA’s recruitment practices including but not limited to job postings and job interviews to ensure compliance with Applicable Laws and Regulations, and this Standard.
+
+A signed copy of the agreement shall be provided to workers in their own language when applicable and Suppliers shall verify the terms of the agreements between the TPEA and Workers prior to receiving the Workers onsite.
+
+Supplier shall conduct due diligence, including but not limited to onboarding interviews with Workers recruited or hired through the TPEA to ensure that:
+
+• The TPEA has not recruited or hired Students
+• Workers were provided accurate details of the nature and place of work, living conditions, the term of the employment contract (if applicable), working hours, Base Wages for Regular Hours, rates for overtime and holiday wages, and any bonuses or Return Fees committed by the TPEA and applicable deductions and benefits
+• Workers are not charged any unreasonable fees and expenses or deposits related to their employment
+• The TPEA does not withhold Workers’ original government-issued identification and travel documents
+
+Supplier shall document and maintain records of the due diligence above.
+
+2.4 Wage Payment
+
+Supplier shall establish a due diligence process to ensure, where TPEA is responsible for making wage and benefits, the payment and benefits are accurate and timely.
+
+The due diligence process shall include, at a minimum, effective monitoring of original payment records of all wages, bonuses or Return Fees. Supplier shall interview adequate number of workers recruited or hired through TPEA to ensure:
+
+• Full and timely payment of all wages, bonuses or Return Fees • No unreasonable deductions from Workers’ wages or other benefits
+
+An itemized pay slip shall be provided to Workers along with payment of bonuses or Return Fees.
+
+In the event of unreasonable fees or deductions in relation to recruitment or hiring, or under-payment of wages, bonuses, or Return Fee, Supplier shall repay the relevant amounts to workers.
+
+2.5 Bank Accounts
+
+Third Party Employment Agencies shall not have direct control of or access to Worker bank accounts other than to make direct deposits of compensation.
+
+2.6 Third Party Employment Agencies Service Access
+
+Supplier shall ensure that Workers have direct access to TPEA services, for example:
+
+• A TPEA representative stationed at Supplier site • A TPEA online service which provides prompt reply to Workers</td>
+                <td class="score">0.9084</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及用工责任，涵盖招聘、合同、工资、身份证明等义务，A侧重工人直接权利，B侧重第三方机构管理，内容互补且标准一致"]</td>
+                <td class="rank">1</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
+                <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
+            </tr>
+            <tr>
+                <td class="clause-b">2. Operational Practices
+2.1 Identity Documents
+
+Workers shall retain possession or control of all identity documents, such as passports, identity papers, travel documents, and other personal legal documents.
+
+Supplier shall not require surrender of Workers’ original identity documents, withhold Workers’ original identity documents, or restrict Workers’ access to original identity documents for any reason. Supplier may obtain and retain copies of Workers’ original identity documents.
+
+Supplier may request (but may not demand or require) Workers’ original identity documents for the purposes of obtaining visa renewals or satisfying other work permit related requirements for such Workers. Supplier shall work with related parties including a TPEA to ensure timely return of all original identity documents to Workers.
+
+2.2 Recruitment Fees
+
+Workers shall not be required to pay employers’ or their agents’ fees for their recruiting and/or ongoing employment. This includes recruitment, application, recommendation, hiring, skills test, placement, processing, renewals, and/or recurring fees of any kind. If such fees are found to have been paid by Workers, they shall be repaid to the Worker.
+
+2.3 Deposits
+
+Deposits from Workers are prohibited unless required by Applicable Laws and Regulations. If a deposit is legally required, Supplier shall ensure that an accurate receipt is provided for any deposits made by Workers and that such deposits be returned in full to the Worker as expeditiously as practicable, but no later than one month after the Worker’s employment has terminated or reason for such deposit has ended, whichever is earlier.
+
+2.4 Loans
+
+Personal loans to Workers or job seekers under circumstances where repayment terms could be construed as debt bondage or forced labor are prohibited.
+
+2.5 Freedom of Movement
+
+All Workers shall have the right to freely enter into and to terminate their employment.
+
+Supplier shall not confine or restrict Worker’s freedom of movement inside the place of production or Supplier-provided facilities, including access to drinking water and the Worker’s Dormitory room, except where necessary for Worker safety and permitted by Applicable Laws and Regulations.
+
+Supplier shall not track workers’ realtime movement at workplace by requiring workers to wear any Tracking Devices unless for the monitoring of workplace health and safety.
+
+Supplier shall not restrict Workers’ access to bathrooms in terms of time or frequency of bathroom breaks, number of workers going to bathroom at any time or non-payment of wages during bathroom breaks.
+
+2.6 Forced Overtime
+
+All overtime shall be voluntary. Supplier shall ensure that all Workers have the right to refuse to work Overtime Hours.
+
+Supplier shall not impose overtime where Workers are unable to leave the work premises. Under no conditions shall a Supplier impose punitive measures such as salary deductions, apply coercion of any kind, denial of future opportunities for overtime, or take disciplinary action against Workers for refusing overtime.
+
+2.7 Production Quota
+
+Supplier shall not set production quotas or piecework rates at such a level that Workers need to work beyond regular working hours (excluding overtime) to earn the legal Minimum Wage or the prevailing industry wage.
+
+2.8 Bank Accounts
+
+Suppliers shall not have direct control of or access to Worker bank accounts other than to make direct deposits of compensation.</td>
+                <td class="score">0.9045</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及工人身份文件、招聘费用、存款、贷款、自由流动及银行账户等核心责任义务，要求高度一致，部分条款互为补充。"]</td>
+                <td class="rank">2</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
+                <td class="path">Prevention of Involuntary Labor &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
+            </tr>
+            <tr>
+                <td class="clause-b">2. Operational Practices
+2.1 Legal Work Permits
+
+Supplier shall ensure that all FCWs have valid legal work permits.
+
+2.2 Signed Employment Contract
+
+Supplier shall ensure that all FCWs who are hired to work in Supplier’s facility while living in another country receive, understand, and sign a written employment contract in their own language, and receive a copy of the employment contract prior to departing from the sending country.
+
+In addition to the requirements specified in the Wages, Benefits, and Contracts Standard, contracts for FCWs shall additionally include the following:
+
+• Terms and conditions regarding the possession of identity documents during the employment contract term
+• Estimates of the minimum and maximum net pay the FCW could expect to receive each month. Maximum net pay shall be based on maximum of 60 hours of work per week.
+
+2.3 Early Termination of Contract with Reasonable Notice
+
+Supplier shall not penalize FCWs for voluntarily terminating their employment contracts with Reasonable Notice as defined by local laws.
+
+2.4 Early Termination of Contract Without Reasonable Notice
+
+Unless prohibited by law, Supplier may allow FCW to bear the actual cost of repatriation to the sending country for voluntarily terminating their employment contract early without Reasonable Notice. If this repatriation cost exceeds 60% of their 1 month net wage of the most recently paid wages, the excess shall be paid by employer.
+
+Supplier shall not penalize FCWs for voluntarily terminating their employment contract early without Reasonable Notice by deduction of base or overtime wages due.
+
+2.5 Fees, Expenses, and Deposits
+
+Supplier shall use its best efforts to ensure FCWs are not charged any Fees and Expenses or deposits related to their employment in accordance with Apple’s definition of Fees and Expenses.
+
+Suppliers shall pay the costs of recruitment directly to the extent possible.
+
+Supplier shall implement a process to determine the specific amount of any Fees and Expenses paid by each individual FCW prior to commencement of work.
+
+Supplier shall ensure that TPEA conducts due diligence through onboarding verification, so that applicants will understand how they came to know about this employment and any applicable risks.
+
+Applicants who paid any intermediaries, such as sub-agencies who are not in a working relationship with the TPEA, shall have an equal opportunity in the application process.
+
+Fees &amp; Expenses
+
+Suppliers are responsible for paying all fees and expenses associated with recruitment, placement, processing, transportation, or ongoing management of
+
+workers in both the Sending Country and the Receiving Country, and any Third Party Employment Agency expenses and fees, including, but not limited to:
+
+Recruitment fees
+
+• Reservation or commitment fees
+• Informal broker and sub-agent fees and expenses for assistance in recruitment (fees paid by workers to middlemen, recruiters, or individual/individuals who referred the worker to the Employment Agency or hiring company, whether formal or informal)
+• Recruitment service fees in the Sending Country (such as application or recommendation fees)
+• Recruitment service fees in the Receiving Country (both one-time and recurring fees)
+• Deposits
+• Relocation costs if asked to move once employment has begun
+
+Transportation and lodging costs
+
+• Air or ground transportation and the airport/border tax from Sending Country to Receiving Country
+• Returning air or ground transportation and the airport/border tax from Receiving Country to Sending Country
+
+Documentation, medical, training, and other government fees
+
+• Third-Party Employment Agency service fees
+• Passport and visa fees
+• Quarantined accommodation/facilities expense on arrival to country of work and upon repatriation (unless there are applicable laws otherwise directed)
+• Medical checkups, testing, vaccinations, and immunization/screening in the Sending Country and Receiving Country
+• Temporary work or residence permits and renewals
+• Documentation fees in Sending Country (such as notarization, translation services, and attorney’s fees)
+• Insurance
+• Government-required fees
+• Background and reference checks
+
+• Photos (including new passport or visa and renewals)
+• Quarantined accommodation/ facilities expenses on arrival to country of work and upon repatriation
+• Training fees
+• Third Party Employment Agency or supplier mandated training
+
+Exemptions
+
+Unless required by Applicable Laws and Regulations, the following shall be exempted:
+
+• Direct transportation expenses incurred from Worker’s home to local or central recruitment processing centers in the Sending Country prior to the offer of employment and signed acceptance in writing
+• Any fees and expenses incurred by workers for any services, with any parties (sub-agencies/intermediaries), where these parties are not connected / in a business independent from the TPEA, or are providing services to the applicants prior to TPEA engagement
+
+Fees and Expenses related to the recruitment of FCWs should be clearly stated in the contracts between Third Party Employment Agencies and Supplier to ensure compliance with zero fee policies.
+
+Supplier shall require Third Party Employment Agencies to provide accurate receipts to each FCW detailing actual Fees and Expenses paid by the FCW before departure from the sending country.
+
+Supplier shall implement a non-reprisal policy that prohibits the punishment of and/or retaliation against FCWs for any information provided during the jobseeking or employment process. This policy shall be communicated to all FCWs during the interview process.
+
+2.6 Remedy
+
+In the event that the Supplier finds that a FCW has paid Fees and Expenses related to their employment, Supplier shall reimburse such Fees and Expenses to the FCW within 30 days of the later of (i) the start of the FCW’s employment with Supplier or (ii) the date Supplier discovers the fee payment(s).
+
+2.7 Identity Document Storage
+
+Supplier shall provide each FCW with individual secure storage, in accommodation they provide, accessible for FCW for their identity documents, such as passports, identity papers, travel documents, and other personal legal documents.
+
+Storage shall be:
+
+• Freely and immediately accessible to FCWs at any time
+• Accessible to FCWs without assistance and there shall be no barriers to access
+• Lockable and secured against unauthorized access
+
+2.8 Pregnancy Protections
+
+Supplier shall take affirmative steps to protect the rights of FCWs who become pregnant, including if the FCW was found pregnant on arrival at the receiving country. In cases where receiving country law requires that pregnant FCWs return to their home country (or the sending country) to give birth, Supplier shall provide such protections to pregnant FCWs as per Applicable Laws and Regulations.
+
+2.9 Diplomatic Access
+
+Supplier shall not prevent any FCW from contacting his or her embassy.
+
+2.10 Repatriation
+
+Suppliers shall be responsible for the payment of repatriation for each FCW in all circumstances including but not limited to the following:
+
+• Upon completion of the employment contract
+• On termination of the contract due to employee misconduct, illness or incapacity
+• The FCW has been subject to harassment, abuse, or other violation of his or her rights
+
+This requirement does not apply when the FCW:
+
+• Obtains other employment within the country and leaving the country is not required per Applicable Laws and Regulations
+• Terminates employment contract early without Reasonable Notice</td>
+                <td class="score">0.9026</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及 migrant worker 的合同、费用、身份证明、解雇通知、遣返等核心责任义务，标准高度一致且互为补充。"]</td>
+                <td class="rank">3</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
+                <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
+            </tr>
+            <tr>
+                <td class="clause-b">2. Operational Practice
+2.1 Minimum Pay
+
+All Workers shall be paid no less than the Minimum Wage for all Regular Hours as per Applicable Laws and Regulations. A Worker’s Base Wage shall always be set at or above Minimum Wage for the Classification of Worker.
+
+The pay structure shall not require Workers to work more than the legally mandated Regular Hours (whether calculated on an hourly, daily, weekly, or monthly basis) in order to earn the Base Wage.
+
+2.2 Overtime Pay
+
+All Overtime Hours shall be paid at the appropriate overtime rate applied to appropriate Base Wage as per Applicable Laws and Regulations or employment contract, whichever is higher, for the relevant Classification of Worker.
+
+In countries where there are no legally established overtime rates as per Applicable Laws and Regulations, the minimum overtime rate shall be 125% of the Base Wage.
+
+2.3Benefits
+
+Supplier shall provide Mandatory Benefits to the Classification of Worker as per Applicable Laws and Regulations. Where permitted under law, Supplier shall provide Workers with paid and unpaid leave, and public holidays.
+
+2.4 Working Hour Calculations for Regular and Overtime
+
+For the purposes of pay and benefits, Regular and Overtime Hours calculations shall be based on the exact hours and minutes worked.
+
+If Supplier is unable to calculate the exact minutes, Regular and Overtime Hours shall be rounded up to the nearest 15 minutes in the Worker’s favor as follows:
+
+&lt;table&gt;&lt;tr&gt;&lt;td&gt;TIME IN MINUTES&lt;/td&gt;&lt;td&gt;0 ≤ X&amp;lt;15&lt;/td&gt;&lt;td&gt;15 ≤ X &amp;lt;30&lt;/td&gt;&lt;td&gt;30 ≤ X&amp;lt;45&lt;/td&gt;&lt;td&gt;45 ≤X&amp;lt;60&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rounded Allotment in Minutes for Overtime&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;45&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+2.5 Working Hour Calculations for Tardiness
+
+For the purposes of pay and benefits, deductions for tardiness shall be based on the exact hours and minutes by which a Worker is tardy.
+
+If Supplier is unable to calculate the exact minutes, deductions for tardiness shall be rounded down to the nearest 15 minutes in the Worker’s favor as follows:
+
+&lt;table&gt;&lt;tr&gt;&lt;td&gt;TIME IN MINUTES&lt;/td&gt;&lt;td&gt;0 ≤X&amp;lt;15&lt;/td&gt;&lt;td&gt;15 ≤ X&amp;lt; 30&lt;/td&gt;&lt;td&gt;30 ≤ X&amp;lt;45&lt;/td&gt;&lt;td&gt;45 ≤X&amp;lt;60&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rounded Allotment in Minutes for Tardiness&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td&gt;45&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+2.6 Waivers
+
+Waivers affecting working hours or Worker wages and benefits, even those promulgated by local authorities or government agencies, will not be accepted (for example, the Comprehensive Working Hours System in China).
+
+2.7 Deductions
+
+Supplier or its agents shall not deduct earnings from Workers’ paychecks except where required by Applicable Laws and Regulations, for example, taxes and social insurance, or where Supplier or its agent is providing a service. If deductions are made as part of a service provided to Workers, Workers shall have the choice to opt out of any such service.
+
+Monetary Penalties deducted from wages or reductions in Mandatory Benefits as disciplinary measures are prohibited.
+
+2.8 Deposits
+
+Deposits from Workers are prohibited unless required by Applicable Laws and Regulations. If a deposit is legally required, Supplier shall ensure that a receipt is provided for any deposits made by Workers and that such deposits shall be returned in full to the Worker as expeditiously as practicable, but no later than one month after the Worker’s employment has terminated or reason for such deposit has ended, whichever is earlier.
+
+2.9 Charges
+
+Supplier shall not charge Workers for anything required by the Supplier for the employee to effectively carry out their job duties, including but not limited to:
+
+• Required personal protective equipment • Uniforms, except for unreturned uniforms • Headset and replaceable foam pad covers
+
+Deposits shall not be charged upon the issue of such equipment. Suppliers may charge a prorated fee for unreturned items. The Supplier must communicate these requirements when items are supplied.
+
+2.10 Payment
+
+Supplier shall be required to make monetary payments under all circumstances where Workers have not been paid their due. This includes but is not limited to:
+
+• Underpayment • Exit payment: Irrespective of the conditions under which the employment relationship has ended, all Workers shall receive their wages due. Supplier shall effectively communicate the resignation process to all Workers at the start of the employment relationship and at the time of any material change in such process. Supplier shall ensure that the resignation process is easily accessible to all Workers, including those who do not provide Reasonable Notice of termination. Supplier shall not require compensation in any form for Workers who do not provide Reasonable Notice of termination unless required by Applicable Laws
+
+and Regulations. Supplier shall provide the Worker a record of the final wages earned and an explanation for any deductions.
+
+• Deductions or payment by workers not specified by law: deductions made for deposits, fees, uniform charges, medical tests, disciplinary fines, tools, background checks, etc.
+
+• Non-payment of statutory benefits such as overtime wages, annual leave, and paid public holidays
+
+• Wages for mandatory meetings and trainings outside working time
+
+2.11 Pay Schedule
+
+Supplier shall pay Workers within the deadline defined by Applicable Laws and Regulations; in the absence of such guidance, Supplier shall pay Workers within 30 days of the end of the Working Period. Pay adjustments in the case of discrepancies in records must be paid on or before the next payday.
+
+2.12 Signed Contract
+
+Workers shall sign a written employment contract prior to performing any work at a Supplier’s facility.
+
+Supplier shall ensure that the employment contract is written in a language that the Worker understands.
+
+This contract shall conform to Applicable Laws and Regulations and all relevant terms outlined in the Apple Code of Conduct and Supplier Responsibility Standards.
+
+Supplier shall ensure that all Workers receive and understand a copy of this contract, signed by the Supplier, at the time of the Worker’s signature. This also applies to any supplementary agreements.
+
+At a minimum, this contract shall contain:
+
+• All employment terms required by Applicable Laws and Regulations
+• Worker’s full name and date of birth
+• Worker’s passport number, ID card, or equivalent identification Emergency contact information
+• The nature of work and place where it will be performed
+• Living conditions
+• Costs (if any) for meals and accommodation
+
+• Descriptions and quantitative estimates of each line item to be deducted from wages
+• The term of contract (if applicable)
+• Expected regular working hours, Overtime Hours, frequency of rest days, and holidays.
+• Base Wages for Regular Hours
+• Clearly defined regular, overtime, and holiday wage rates, including maximum allowable Overtime Hours Deductions (if any)
+• Benefits
+• All applicable bonuses and allowance Date of eligibility for reimbursement of deposit (if any) Contract termination/resignation procedures and terms
+• Terms and conditions for contract renewal
+• No terms that deny a Worker the right to organize or engage in collective bargaining
+
+2.13 Revised/Supplemental Contracts
+
+Supplier shall ensure that any revisions to employment contracts and other related agreements shall be compliant to this Standard and that any revisions of the terms shall not be less favorable to the Worker as outlined in original employment contract unless as negotiated through collective bargaining.
+
+2.14 Contract Termination
+
+Supplier shall ensure that Workers are free to terminate their employment contract.
+
+2.15 Probation
+
+Where probationary or training employment is legally allowed, Supplier shall ensure that Workers are paid at least Minimum Wages. No Workers shall work more than 3 months cumulatively in these employment categories, or the maximum period allowed by Applicable Laws and Regulations, whichever is shorter.</td>
+                <td class="score">0.8962</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及雇佣合同、工资支付、工时、扣款、福利等核心责任义务，标准高度一致且互为补充，覆盖范围部分重叠但严格程度相当"]</td>
+                <td class="rank">4</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
+                <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practice</td>
+            </tr>
+            <tr>
+                <td class="clause-b">2. Operational Practice
 2.1 Anti-Discrimination
 
 Unless prohibited by law, Supplier shall not Discriminate against any Worker based on race, color, age, gender, sexual orientation, ethnicity, disability, religion, political affiliation, union membership, national origin, marital status, or gender identity in hiring and employment practices such as applications for employment, promotions, rewards, access to training, job assignments, wages, benefits, discipline, and termination.
@@ -483,100 +1080,325 @@ Supplier shall provide documentary evidence that any Medical Test or other test 
 Supplier shall identify positions deemed Hazardous for pregnant Workers, nursing Workers, or Workers with a medical condition. At a minimum, these must be communicated to persons responsible for recruitment, allocation of tasks, and the Worker before the Worker begins to work at that position.
 
 Supplier shall take reasonable measures to ensure the safety and health of pregnant Workers, nursing Workers, and Workers with a medical condition, including elimination of workplace health and safety risks to such Workers and accommodating such Workers in a non-Hazardous position.</td>
-                <td class="score">0.8714</td>
+                <td class="score">0.8754</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦用工合同与经济权益保障，条款B侧重反歧视与特殊群体保护，均属劳动者权益范畴但核心主题不同"]</td>
-                <td class="rank">1</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦雇佣条件与财务权益，条款B关注反歧视与医疗保护，均属劳动者权益但侧重点不同"]</td>
+                <td class="rank">5</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
                 <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practice</td>
             </tr>
             <tr>
-                <td class="clause-b">1. Policy &amp; Procedures.
-1.1 Written Policy and Procedures
+                <td class="clause-b">2. Operational Practices
+2.1 Purpose for Hiring Students
 
-Supplier shall have a written policy against Discrimination that complies with this Standard, Applicable Laws and Regulations, the Code, and all other relevant applicable standards. The policy must clearly state that:
+Supplier shall only hire or allow Students to work at the Supplier’s facilities in connection with a Program at an Educational Institution. Supplier shall not hire Students to meet its demand for workforce labor or to fill short-term gaps in labor supply.
 
-• Supplier shall not Discriminate against any Worker based on race, color, age, gender, sexual orientation, ethnicity, disability, religion, political affiliation, union membership, national origin, marital status, or gender identity in hiring and employment practices such as applications for employment, promotions, rewards, access to training, job assignments, wages, benefits, discipline, and termination, unless prohibited by law.
+2.2 Use of Third Party Employment Agencies
 
-• Supplier shall not require pregnancy or Medical Tests, except where required by Applicable Laws and Regulations or Prudent for Workplace Safety, and shall not improperly discriminate based on test results.
-• No Worker will be punished or retaliated against for reporting Discriminatory practices.
+Supplier shall not use Third Party Employment Agencies in connection with the recruitment, hiring, arrangement, management or employment of Students.
 
-Supplier shall have written procedures and systems to implement its antiDiscrimination policy.
+2.3 Qualifications of Students
 
-Supplier shall comply with its Written Policy and Procedures at all times.
+Supplier shall ensure that Students are eligible for employment under Applicable Laws and Regulations.
 
-1.2 Directly Responsible Individual(s)
+Supplier shall ensure that the students are actively enrolled in a Program of study at an Educational Institution.
 
-Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the anti-Discrimination 1、Policy and Procedures.
+2.4 Voluntary Employment
 
-1.3 Risk Management
+Supplier shall ensure that all work performed by a Student is voluntary.
 
-Supplier shall identify and comply with anti-Discrimination requirements specified in Applicable Laws and Regulations, as well as this Standard.
+2.5 Educational Contribution
 
-Supplier shall identify, assess, minimize, and eliminate Discrimination.</td>
-                <td class="score">0.8261</td>
-                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦用工合同与经济权益保障，条款B关注反歧视政策，均属雇主责任但主题不同，部分内容涉及共同合规要求。"]</td>
-                <td class="rank">2</td>
+During any education or training related Program, the Supplier facility shall ensure that the Student Worker’s field of study is relevant to the Supplier’s industry or work position.
+
+2.6 Student Agreements
+
+Supplier shall have a written agreement with the student. This agreement must adhere to Applicable Laws and Regulations.
+
+Where required by law or regulation, the Student’s Educational Institution shall be a party to the agreement between Supplier and the Student.
+
+2.7 Signed Student Agreement
+
+The student shall sign this agreement prior to performing work at the Supplier’s facility.
+
+2.8 Receipt of Student Worker Agreement
+
+Supplier shall ensure that the Student understands the agreement and receives a copy of it prior to performing work at the Supplier’s facility.
+
+2.9 Student Contract Terms
+
+In addition to the requirements specified in the Wages, Benefits, and Contracts Standard, the agreement between the Student and the Supplier, and, if required by law, the Student’s Educational Institution, shall additionally include the following terms:
+
+• The name and address of the Student’s Educational Institution
+• The name and address of the Supplier
+• Individual at the Educational Institution who is responsible for the student
+• Individual at the Supplier who is responsible for the student
+• Insurance coverage
+
+• Education and training to be provided by the Educational Institution • Education and training to be provided by the Supplier
+
+2.10 Student Program Length
+
+The Program length (total accumulated time of work at Supplier facility) shall not exceed the limit regulated by Applicable Laws and Regulations. In the absence of an applicable legal requirement, the maximum length is 1 year.
+
+The Program cannot be extended beyond the agreed end date as written in the original Student agreement.
+
+2.11 Agreement Termination
+
+Supplier shall ensure that the Student is free to terminate his or her agreement.
+
+The student shall not be required to pay any fee or fine or receive any other penalty for early termination of the student agreement with Reasonable Notice.
+
+2.12 Working Hours
+
+Working hours shall not conflict with the Student’s Educational Institution attendance.
+
+Supplier shall adhere to restrictions on working hours as required by local law or regulation.
+
+Supplier shall adhere to restrictions on working hours as required by Applicable Laws and Regulations for any other student Programs.
+
+2.13 Payment
+
+Supplier shall not deduct educational fees from the Student’s wages.
+
+Supplier shall not deduct placement fees from the Student’s wages.
+
+2.14 Insurance Coverage
+
+Supplier shall ensure that the Student is insured against accident or liability.
+
+Supplier shall ensure that the Student is fully covered by any other forms of insurance required by law or regulation.
+
+2.15 Limit on Student Employment
+
+Supplier must comply with any legal limits on the number of Students that can be employed at the Supplier’s facility at any given time.</td>
+                <td class="score">0.8633</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及雇佣合同、费用禁止、自愿就业、保险等核心责任义务，且标准高度一致"]</td>
+                <td class="rank">6</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy &amp; Procedures</td>
+                <td class="path">Educational Program Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
             </tr>
             <tr>
-                <td class="clause-a" rowspan="2">3. Controls &amp; Monitoring should include:.
+                <td class="clause-a" rowspan="6">3. Controls &amp; Monitoring should include:
 a. Cascade this policy and the RBA Code of Conduct to suppliers, contractors, subcontractors, and labor recruiters noted the expectation that they adopt it, put in place procedures to follow it.
 b. Conformance to the policy is regularly monitored.
 c. When engaging with recruiters and labor agents determine the specific amount of any fees and expenses that are required to recruit, hire and onboard each individual (which varies if they are local, internal migrant, or foreign migrant worker) prior to commencement of work and ensure that is part of contract and sub-contracts and paid to reduce risk of workers incurring fees.
 d. Actively verify compliance through monitoring labor recruiters, brokers, and agents.
 
 NOTE: reimbursement is not the desired model (no fees to workers is)and therefore it is a non-conformance to the RBA Code of Conduct albeit a lesser one.</td>
-                <td class="clause-b">3. Training and Communication.
-3.1 Responsible Staff
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
 
-Supplier shall provide comprehensive training to any person involved in activities that may be associated with Discrimination risks.
+Supplier shall have a written policy that addresses worker engagement and Grievance management requirements specified in Applicable Laws and Regulations and this Standard.
 
-3.2 Workers, Supervisors, and Managers
+Supplier shall have written procedures and systems to implement its Worker Engagement and Grievance Management policy.
 
-Supplier shall effectively communicate its anti-Discrimination policy to all Workers, supervisors, and managers. This communication shall include information about Hazardous jobs, workplace accommodations for non-Hazardous positions, and voluntary Medical Testing. The communication or training shall be provided during the initial orientation period and reinforced via refresher training on a regular basis.</td>
-                <td class="score">0.8204</td>
-                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦供应链合规与招聘费用管控，条款B强调反歧视培训与沟通，均涉及供应商责任但主题不同"]</td>
-                <td class="rank">1</td>
-                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
-            </tr>
-            <tr>
-                <td class="clause-b">1. Policy &amp; Procedures.
-1.1 Written Policy and Procedures
-
-Supplier shall have a written policy against Discrimination that complies with this Standard, Applicable Laws and Regulations, the Code, and all other relevant applicable standards. The policy must clearly state that:
-
-• Supplier shall not Discriminate against any Worker based on race, color, age, gender, sexual orientation, ethnicity, disability, religion, political affiliation, union membership, national origin, marital status, or gender identity in hiring and employment practices such as applications for employment, promotions, rewards, access to training, job assignments, wages, benefits, discipline, and termination, unless prohibited by law.
-
-• Supplier shall not require pregnancy or Medical Tests, except where required by Applicable Laws and Regulations or Prudent for Workplace Safety, and shall not improperly discriminate based on test results.
-• No Worker will be punished or retaliated against for reporting Discriminatory practices.
-
-Supplier shall have written procedures and systems to implement its antiDiscrimination policy.
+Supplier shall periodically review, and analyze the effectiveness of existing worker engagement activities including remedial measures at least once per year.
 
 Supplier shall comply with its Written Policy and Procedures at all times.
 
-1.2 Directly Responsible Individual(s)
+1.2 Directly Responsible Individual(s)
 
-Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the anti-Discrimination 1、Policy and Procedures.
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the worker engagement and Grievance Management 1、Policy and Procedures.
+
+1.3 Protection and Non-Retaliation
+
+A Worker or prospective Worker shall be able to report any Grievance, or provide feedback, or participate in the investigation of such, in a safe environment without fear of reprisal, dismissal, discrimination, harassment, Blacklisting, intimidation, retaliation, or any other penalty of any form when raised in Good Faith.
+
+Supplier shall also ensure Workers’ identities are protected to the maximum extent possible to prevent retaliation and ensure confidentiality, and that any private information is disclosed only to Supplier personnel or parties required or permitted to access the information by law, or as required to conduct a good-faith, thorough investigation of any Grievance.</td>
+                <td class="score">0.8621</td>
+                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦供应链合规与费用管控，条款B侧重员工申诉与参与机制，均属企业社会责任范畴但具体义务不同"]</td>
+                <td class="rank">1</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
+                <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
+            </tr>
+            <tr>
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
+
+Supplier shall have a written policy that addresses wages, benefits, and contracts requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall have written procedures and systems to implement its wages, benefits, and contracts policy.
+
+Supplier shall comply with its Written Policy and Procedures at all times.
+
+1.2 Directly Responsible Individual(s)
+
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the wages, benefits, and contracts 1、Policy and Procedures.
 
 1.3 Risk Management
 
-Supplier shall identify and comply with anti-Discrimination requirements specified in Applicable Laws and Regulations, as well as this Standard.
+Supplier shall identify and comply with wages, benefits, and contracts requirements specified in Applicable Laws and Regulations and this Standard.
 
-Supplier shall identify, assess, minimize, and eliminate Discrimination.</td>
-                <td class="score">0.8203</td>
-                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦供应链合规与招聘费用管控，条款B强调反歧视政策与实施，主题不同但均涉及雇佣合规责任，存在部分交集"]</td>
+Supplier shall identify, assess, and minimize risks related to wages, benefits, and contracts.</td>
+                <td class="score">0.8613</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及对供应链中劳工权益的责任义务，A强调政策传递与费用透明，B强调书面政策与风险管理，主题一致且要求互补"]</td>
                 <td class="rank">2</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy &amp; Procedures</td>
+                <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
             </tr>
             <tr>
-                <td class="clause-a" rowspan="2">4. Records are maintained including:.
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
+
+Supplier shall have a written policy that addresses Third Party Employment Agency management requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall have written procedures and systems to implement its Third Party Employment Agency management policy.
+
+Supplier shall comply with its Written Policy and Procedures at all times.
+
+1.2Directly Responsible Individual(s)
+
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the Third Party Employment Agency management 1、Policy and Procedures.
+
+1.3 Risk Management
+
+Supplier shall identify and comply with Third Party Employment Agency management requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall identify, assess, and minimize risks related to the management of, and recruitment from, Third Party Employment Agency, including those sponsored by or affiliated with government agencies.
+
+1.4 Pre-selection Due Diligence
+
+Supplier shall conduct pre-selection due diligence to ensure Third Party Employment Agency compliance with Applicable Laws and Regulations, and the applicable requirements of the Code and related Supplier Responsibility Standards. The due diligence process shall include but is not limited to the following:
+
+• Verification that the TPEA has obtained valid and appropriate licenses, certifications, and permits for all its operations per Applicable Laws and Regulations
+Background checks to determine whether relevant authorities have levied any sanctions or punishments for failure to comply with Applicable Laws and Regulations, or which prevent the TPEA from operating
+
+1.5 Recruitment Due Diligence
+
+Supplier shall conduct due diligence, including but not limited to onboarding interviews with Workers recruited or hired through Third Party Employment Agencies to ensure that:
+
+• Students are clearly identified as such during the recruitment process • Workers are provided with accurate details of the nature and place of work, living conditions, the term of the employment contract (if applicable), working hours, Base Wages for Regular Hours, rates for overtime and holiday wages, and applicable deductions and benefits</td>
+                <td class="score">0.8580</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均聚焦第三方招聘机构管理中的责任义务，涵盖政策传递、合规监控、费用管控与尽职调查，核心要求高度重合"]</td>
+                <td class="rank">3</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
+                <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
+            </tr>
+            <tr>
+                <td class="clause-b">3. Third Party Agency Monitoring
+3.1 Regular Audits
+
+Supplier shall conduct annual audits of TPEAs from which it obtains Workers to ensure compliance with Applicable Laws and Regulations, the Code, and related Supplier Responsibility Standards. For TPEAs involved in hiring of Foreign Contract Workers, the regular audits shall cover TPEAs in both sending and receiving countries.
+
+Suppliers shall audit TPEAs to ensure Workers are provided proper employment contracts, working hours, Base Wages for Regular Hours, rates for overtime and holiday wages, deductions and benefits, including social insurance and living conditions where applicable.
+
+3.2 Third Party Employment Agency Compliance
+
+Supplier shall have a documented procedure in place to manage violations of Applicable Laws and Regulations and this Standard by a TPEA.
+
+This procedure shall define appropriate sanctions and establish a corrective action process pursuant to which the TPEA’s violation is remedied.
+
+Supplier shall terminate its relationship with any TPEA that is unwilling to correct a violation.</td>
+                <td class="score">0.8548</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及对第三方招聘机构的监督责任，A强调费用透明与合同约定，B细化审计与违规处理，内容互补且共同构成完整监管要求"]</td>
+                <td class="rank">4</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
+                <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Third Party Agency Monitoring</td>
+            </tr>
+            <tr>
+                <td class="clause-b">2. Operational Practices
+2.1 Engaging Third Party Employment Agencies
+
+Supplier shall sign contract with a TPEA before engaging the TPEA to recruit or hire Workers. The contract shall comply with Applicable Laws and Regulations and the applicable terms of the Code and related Supplier Responsibility Standards and at a minimum include the following when applicable:
+
+• Compensation structure for any and all wages, benefits or bonuses to be paid or provided to Workers
+• Terms of payment by Supplier to the TPEA
+• Term that no unreasonable fees may be charged to Workers or unreasonable deductions made from Workers’ wages or other benefits in relation to their recruitment or hiring
+• Term that includes the consequences for violating this Standard, up to and including termination of the relationship between Supplier and TPEA
+
+2.2 Identity Documents
+
+TPEA shall not require surrender of Workers’ original identity documents, withhold Workers’ original identity documents, or restrict Workers’ access to original identity documents for any reason.
+
+Supplier and TPEA may request (but may not demand or require) Workers’ original identity documents for the purposes of obtaining visa renewals or satisfying other work permit related requirements for such Workers. Supplier shall work with related parties including a TPEA to ensure timely return of all original identity documents to Workers.
+
+Third Party Employment Agencies may obtain and retain copies of Workers’ original identity documents.
+
+2.3 Recruitment of Workers
+
+Supplier shall verify TPEA’s recruitment practices including but not limited to job postings and job interviews to ensure compliance with Applicable Laws and Regulations, and this Standard.
+
+A signed copy of the agreement shall be provided to workers in their own language when applicable and Suppliers shall verify the terms of the agreements between the TPEA and Workers prior to receiving the Workers onsite.
+
+Supplier shall conduct due diligence, including but not limited to onboarding interviews with Workers recruited or hired through the TPEA to ensure that:
+
+• The TPEA has not recruited or hired Students
+• Workers were provided accurate details of the nature and place of work, living conditions, the term of the employment contract (if applicable), working hours, Base Wages for Regular Hours, rates for overtime and holiday wages, and any bonuses or Return Fees committed by the TPEA and applicable deductions and benefits
+• Workers are not charged any unreasonable fees and expenses or deposits related to their employment
+• The TPEA does not withhold Workers’ original government-issued identification and travel documents
+
+Supplier shall document and maintain records of the due diligence above.
+
+2.4 Wage Payment
+
+Supplier shall establish a due diligence process to ensure, where TPEA is responsible for making wage and benefits, the payment and benefits are accurate and timely.
+
+The due diligence process shall include, at a minimum, effective monitoring of original payment records of all wages, bonuses or Return Fees. Supplier shall interview adequate number of workers recruited or hired through TPEA to ensure:
+
+• Full and timely payment of all wages, bonuses or Return Fees • No unreasonable deductions from Workers’ wages or other benefits
+
+An itemized pay slip shall be provided to Workers along with payment of bonuses or Return Fees.
+
+In the event of unreasonable fees or deductions in relation to recruitment or hiring, or under-payment of wages, bonuses, or Return Fee, Supplier shall repay the relevant amounts to workers.
+
+2.5 Bank Accounts
+
+Third Party Employment Agencies shall not have direct control of or access to Worker bank accounts other than to make direct deposits of compensation.
+
+2.6 Third Party Employment Agencies Service Access
+
+Supplier shall ensure that Workers have direct access to TPEA services, for example:
+
+• A TPEA representative stationed at Supplier site • A TPEA online service which provides prompt reply to Workers</td>
+                <td class="score">0.8499</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均聚焦于第三方招聘机构管理，要求合同规范、费用透明、禁止扣押证件及工资保障，责任义务高度重合且互为补充。"]</td>
+                <td class="rank">5</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
+                <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
+            </tr>
+            <tr>
+                <td class="clause-b">3. Training and Communication
+3.1 Responsible Staff
+
+Supplier shall provide comprehensive training to all staff responsible for FCW management.
+
+3.2 Foreign Contract Workers
+
+Supplier shall provide pre-departure, regular and refresher training for FCWs to ensure they understand at the minimum the following:
+
+• Fees and Expenses related to recruitment and on-going employment
+
+• Reporting channel to whistleblow threats, any recruitment, or employment fees and expenses
+• The terms and conditions per employment contracts
+• Expected living expenses needed
+• Living conditions
+• Expected first salary, any deductions, taxable income and their payment terms including expected amount and payment schedule
+• Relevant labor rights of FCWs
+• Relevant Laws and regulations to follow
+• Company regulations
+• Any other protections under the Code and related Standards during their employment at the receiving country
+
+The above training shall be added onto the basic employee’s training per the applicable requirements.
+
+3.3 Third Party Employment Agencies
+
+Supplier shall effectively communicate its FCW protections policy to all Third Party Employment Agencies involved in such management.</td>
+                <td class="score">0.8480</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均围绕防止工人支付招聘费用及保障知情权，A强调合同与监控，B强调培训与沟通，责任义务互补"]</td>
+                <td class="rank">6</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
+                <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
+            </tr>
+            <tr>
+                <td class="clause-a" rowspan="6">4. Records are maintained including:
 a. Personnel files for all workers are maintained and include:
 
 i. All versions of employment contract / agreement
@@ -586,37 +1408,109 @@ iv. Documentation on their leaving conditions and end of contract of workers
 v. Workers’ documentation must be retained for at least 12 months or as required by law whichever is longer.
 
 b. Contracts with service providers, recruiters, labor agents and labor contractors and evidence that they have acted in compliance with the contract/agreement requirements. c. Records on allowed fees are maintained and disclosed to the worker.</td>
-                <td class="clause-b">4. Documentation.
+                <td class="clause-b">4. Documentation
+Supplier shall retain any documentation related to anti-Harassment, including but not limited to:
+
+• Records of all disciplinary actions taken, which must be maintained in the Worker’s personnel file
+• A summary of proactive steps taken by Supplier, including violence and harassment prevention program and training for managers, supervisors and staff
+• Information on complaint and investigation procedures, including the affirmation that all reports and complaints related to violence and harassment will be acted on promptly
+• Records of completed training
+• Supplier shall maintain and make available immediately to Apple upon its request all documentation regarding allegations of Harassment and abuse</td>
+                <td class="score">0.8697</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及人员档案和记录保存的责任义务，涵盖合规性、保密性及特定事件记录，主题高度重合且要求互补。"]</td>
+                <td class="rank">1</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
+                <td class="path">Anti-Harassment and Abuse &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 4. Documentation</td>
+            </tr>
+            <tr>
+                <td class="clause-b">4. Documentation
+Supplier shall retain documentation related to wages, benefits, and contracts.
+
+Supplier shall ensure that all legally required payroll documents, journals, and reports are available, complete, accurate, and up to date.
+
+All documentation shall be made available to Apple for review upon its request.</td>
+                <td class="score">0.8637</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及雇佣记录与合同文件的保存责任，涵盖合规性、可访问性及审查要求，主题一致且要求互补。"]</td>
+                <td class="rank">2</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
+                <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 4. Documentation</td>
+            </tr>
+            <tr>
+                <td class="clause-b">5. Documentation
+Supplier shall retain documentation related to worker engagement and Grievance management, including the following:
+
+• 1、Policy and Procedures related to worker engagement
+• Worker Training/Communication
+• Grievance records
+• Worker feedback via various channels, e.g. worker survey, regular worker communication meetings
+• Actions taken to address the feedback
+• Regular reviews of worker engagement activities
+
+All documentation shall be made available to Apple for review upon its request.</td>
+                <td class="score">0.8512</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及记录保存责任，涵盖人员管理与合规文档，主题一致，要求相似，覆盖范围部分重叠"]</td>
+                <td class="rank">3</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
+                <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 5. Documentation</td>
+            </tr>
+            <tr>
+                <td class="clause-b">12. Documentation
+Supplier shall retain all documentation related to occupational health and safety management. Supplier shall maintain written copies of all records for the following periods or as per Applicable Laws and Regulations, whichever is more stringent:
+
+• Permits and regulatory approvals: Current versions and/or historic versions (where specified in regulatory requirements)
+• Hazardous Chemical inventory records, UST/AST records, and current versions of MSDS/SDS sheets
+• Historic Hazardous Chemical inventories, emergency response (Chemical spill) drill records, and spill/leakage incident investigation documents for 5 years
+• All equipment, tank, tankage, and area inspection and maintenance records for 5 years
+• Employee training records for the previous 5 years or such other period specified by applicable regulatory requirements, whichever is longer
+• Worker medical surveillance records: Hazardous Chemical medical surveillance records shall be maintained for 30 years plus the duration of the employment, or such other period specified by applicable regulatory requirements, whichever is longer
+• Written copies of all legally required training records
+
+All documentation shall be made available to Apple for review upon its request.</td>
+                <td class="score">0.8465</td>
+                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及记录保存责任，但A侧重人事与合规文件，B侧重健康安全文档，保存期限与对象不同，存在部分交叉但主题侧重不一。"]</td>
+                <td class="rank">4</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
+                <td class="path">Occupational Health and Safety Management &gt; Supplier Code of Conduct Requirement &gt; Supplier Responsibility Standards &gt; 12. Documentation</td>
+            </tr>
+            <tr>
+                <td class="clause-b">11. Documentation
+All Waste management records and documentation shall be made available to Apple for review upon its request. Supplier shall retain the documentation related to Waste management as follows:
+
+• Employee training records for the previous 5 years or such other period specified by applicable regulatory requirements, whichever is longer
+• Employee medical records for the length of employment plus 30 years or as required by applicable regulatory requirements, whichever is longer
+• Current and historical copies of permits and registrations as required by applicable regulations or this Standard
+• Current Hazardous Waste inventory
+• Documentation showing Hazardous Waste is removed from the storage unit at least once per applicable accumulation period
+• Hazardous Waste manifests and other shipping records shall be retained for 5 years
+• Current list of vendors performing reuse, recycle, transport, or disposal of Hazardous Waste directly for the Supplier
+• Incident records regarding all Hazardous Waste incidents at the facility shall be retained for 5 years</td>
+                <td class="score">0.8330</td>
+                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及记录保存责任，但主题不同（人事与服务合规 vs. 废物管理），保存期限与内容要求有差异，义务主体均为供应商，部分要求结构相似。"]</td>
+                <td class="rank">5</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
+                <td class="path">Waste Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standard &gt; 11. Documentation</td>
+            </tr>
+            <tr>
+                <td class="clause-b">4. Documentation
 Confidentiality of all pregnancy and medical records shall be maintained in accordance with Applicable Laws and Regulations.
 
 Supplier shall retain documentation related to anti-Discrimination.
 
 All documentation shall be made available to Apple for review upon its request, and such documentation shall be complete, accurate, and up to date.</td>
-                <td class="score">0.8093</td>
-                <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及文件保密、保留及合规审查义务，主题一致，要求互补，共同构成完整责任体系。"]</td>
-                <td class="rank">1</td>
+                <td class="score">0.8326</td>
+                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及记录保存义务，但主题不同：A侧重人事与合同记录，B侧重医疗与反歧视文档，保存要求和保密范围有差异。"]</td>
+                <td class="rank">6</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
                 <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 4. Documentation</td>
             </tr>
             <tr>
-                <td class="clause-b">3. Training and Communication.
-3.1 Responsible Staff
-
-Supplier shall provide comprehensive training to any person involved in activities that may be associated with Discrimination risks.
-
-3.2 Workers, Supervisors, and Managers
-
-Supplier shall effectively communicate its anti-Discrimination policy to all Workers, supervisors, and managers. This communication shall include information about Hazardous jobs, workplace accommodations for non-Hazardous positions, and voluntary Medical Testing. The communication or training shall be provided during the initial orientation period and reinforced via refresher training on a regular basis.</td>
-                <td class="score">0.8073</td>
-                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A侧重人事档案与合规记录管理，条款B侧重反歧视培训与沟通，均涉及人力资源管理中的合规义务，但具体责任内容不同。"]</td>
-                <td class="rank">2</td>
-                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
-            </tr>
-            <tr>
-                <td class="clause-a" rowspan="3">5. Serious conditions that will result in a severe finding:.
+                <td class="clause-a" rowspan="6">5. Serious conditions that will result in a severe finding:
 Restricting workers from voluntary employment termination.
 Imposing any penalty for resignation that is &gt;3 months of gross base wages.
 Creating a situation that puts workers at risk such as locking exit doors in the factory or dormitories while the workers are inside.
@@ -626,127 +1520,595 @@ Changing the terms and conditions of employment to be materially worse than orig
 Not communicating employment terms and conditions before employment.
 Keeping, destroying, concealing, or confiscating original personal identification documents such as passports, work permits, identity, or travel papers.
 If in the rare case where local law requires an employer to store personal identification documents, tampering with or restricting access for more than 12 hours or charging a fee to access them.</td>
-                <td class="clause-b">3. Training and Communication.
-3.1 Responsible Staff
+                <td class="clause-b">5. High-Risk Tasks
+Required procedures and practices for high-risk tasks shall apply to Workers and contractors performing on-site work at a Supplier facility.
 
-Supplier shall provide comprehensive training to any person involved in activities that may be associated with Discrimination risks.
+5.1 Confined Spaces
 
-3.2 Workers, Supervisors, and Managers
+Wherever work involves maintenance or cleaning activity in a confined space, confined space entry procedures shall be set up and implemented and a work permitting process shall be implemented with special precautions.
 
-Supplier shall effectively communicate its anti-Discrimination policy to all Workers, supervisors, and managers. This communication shall include information about Hazardous jobs, workplace accommodations for non-Hazardous positions, and voluntary Medical Testing. The communication or training shall be provided during the initial orientation period and reinforced via refresher training on a regular basis.</td>
-                <td class="score">0.8163</td>
+5.2 Hot Work
+
+Appropriate hot work procedures including permitting and fire watches shall be implemented.
+
+5.3 Work at Heights
+
+Appropriate fall protection shall be worn and a work permitting process shall be implemented when working from heights exceeding of 6 feet (2 meters).
+
+5.4 Hoists and Cranes
+
+All operations involving the use of hoists and/or cranes shall have documented and implemented operating procedures. Operators shall obtain all required qualifications and licenses before performing such operations.
+
+5.5 Powered Industrial Truck
+
+Supplier shall establish and implement a written program to properly manage the use of Powered Industrial Trucks, which include but may not be limited to forklift trucks, powered hand trucks, stackers, or other types. A risk assessment must be undertaken to develop adequate control measures to ensure workplace safety and prevent injuries/accidents.
+
+All powered industrial truck and associated drivers/operators must be authorized with necessary permits/licenses prior to being operated per Applicable Laws and Regulations.
+
+Supplier shall ensure regular inspections and maintenance are performed for powered industrial trucks per Applicable Laws and Regulations and maintain relevant records.</td>
+                <td class="score">0.8465</td>
                 <td><span class="relevance-badge relevance-not-related">不相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动与限制人身自由，条款B强调反歧视培训与沟通，主题和义务不同，仅在员工权利保护广义层面有微弱交集"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦雇佣自由与非强迫劳动，条款B关注高风险作业安全，主题不同，仅在工作场所责任上有微弱交集"]</td>
                 <td class="rank">1</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
+                <td class="path">Occupational Health and Safety Management &gt; Supplier Code of Conduct Requirement &gt; Supplier Responsibility Standards &gt; 5. High-Risk Tasks</td>
             </tr>
             <tr>
-                <td class="clause-b">2. Operational Practice.
-2.1 Anti-Discrimination
+                <td class="clause-b">2. Operational Practices
+2.1 Identity Documents
 
-Unless prohibited by law, Supplier shall not Discriminate against any Worker based on race, color, age, gender, sexual orientation, ethnicity, disability, religion, political affiliation, union membership, national origin, marital status, or gender identity in hiring and employment practices such as applications for employment, promotions, rewards, access to training, job assignments, wages, benefits, discipline, and termination.
+Workers shall retain possession or control of all identity documents, such as passports, identity papers, travel documents, and other personal legal documents.
 
-Workers shall be provided with reasonable accommodation for religious practices.
+Supplier shall not require surrender of Workers’ original identity documents, withhold Workers’ original identity documents, or restrict Workers’ access to original identity documents for any reason. Supplier may obtain and retain copies of Workers’ original identity documents.
 
-Supplier shall ensure that there is no Discrimination in compensation based on the characteristics listed above.
+Supplier may request (but may not demand or require) Workers’ original identity documents for the purposes of obtaining visa renewals or satisfying other work permit related requirements for such Workers. Supplier shall work with related parties including a TPEA to ensure timely return of all original identity documents to Workers.
 
-Recruitment and employment policies and practices, including but not limited to job advertisements, job descriptions, job application forms and job performance/ evaluation policies and practices, shall be free from any type of Discriminatory bias.
+2.2 Recruitment Fees
 
-2.2 Pregnancy and Nursing Mothers Anti-Discrimination
+Workers shall not be required to pay employers’ or their agents’ fees for their recruiting and/or ongoing employment. This includes recruitment, application, recommendation, hiring, skills test, placement, processing, renewals, and/or recurring fees of any kind. If such fees are found to have been paid by Workers, they shall be repaid to the Worker.
 
-Supplier shall comply with all Applicable Laws and Regulations regarding pregnancy and postnatal employment protections, benefits, and pay. Supplier shall make reasonable accommodations for nursing mothers unless prohibited by Applicable Laws and Regulations.
+2.3 Deposits
 
-Supplier shall not (i) refuse to hire an applicant for a non-Hazardous position or (ii) terminate a Worker’s employment solely based on the Worker’s pregnancy or nursing status.
+Deposits from Workers are prohibited unless required by Applicable Laws and Regulations. If a deposit is legally required, Supplier shall ensure that an accurate receipt is provided for any deposits made by Workers and that such deposits be returned in full to the Worker as expeditiously as practicable, but no later than one month after the Worker’s employment has terminated or reason for such deposit has ended, whichever is earlier.
 
-Supplier shall not prohibit female Workers from becoming pregnant nor threaten female Workers with adverse employment consequences, including dismissal, loss of seniority, reduction or deduction of wages and benefits, in order to discourage them from becoming pregnant.
+2.4 Loans
 
-2.3 Medical Anti-Discrimination
+Personal loans to Workers or job seekers under circumstances where repayment terms could be construed as debt bondage or forced labor are prohibited.
 
-Supplier shall not, on the basis of a person’s Medical Status, make any employment decisions that negatively affect the person’s employment status unless such decision is dictated by the inherent requirements of the job or is Prudent for Workplace Safety.
+2.5 Freedom of Movement
 
-Supplier shall not Discriminate against a Worker in eligibility for another position based on the Worker’s refusal to take a Medical Test where there is no Required Medical Test for such position.
+All Workers shall have the right to freely enter into and to terminate their employment.
 
-Supplier shall make reasonable efforts to accommodate Workers with chronic illnesses, which may include rearranging working time, providing special equipment, opportunities for rest breaks, time for medical appointments, flexible sick leave, part-time work, and return-to-work arrangements.
+Supplier shall not confine or restrict Worker’s freedom of movement inside the place of production or Supplier-provided facilities, including access to drinking water and the Worker’s Dormitory room, except where necessary for Worker safety and permitted by Applicable Laws and Regulations.
 
-2.4 Pregnancy and Medical Testing
+Supplier shall not track workers’ realtime movement at workplace by requiring workers to wear any Tracking Devices unless for the monitoring of workplace health and safety.
 
-Supplier shall not require pregnancy tests or Medical Tests, including but not limited to Hepatitis B or HIV, either as a condition for employment or as a requirement for continued employment.
+Supplier shall not restrict Workers’ access to bathrooms in terms of time or frequency of bathroom breaks, number of workers going to bathroom at any time or non-payment of wages during bathroom breaks.
 
-Pregnancy tests or Medical Tests are allowed only if each of the following conditions are met:
+2.6 Forced Overtime
 
-• Applicable Laws and Regulations require the pregnancy test or the Medical Test is determined (in writing) by a Qualified Health Professional to be required as a safety measure prior to working in a particular environment and the Worker is specifically assigned to work in that particular environment
-• The cost of the Medical Test is paid by the Supplier
-• The Worker receives clear communication regarding the purpose of the test and the specifics of what will be tested
-• The Worker provides affirmative written consent to the test
-• The original report of results should be provided to and allowed to be retained by the worker. Suppliers should not retain copies of the report, unless required by law.
+All overtime shall be voluntary. Supplier shall ensure that all Workers have the right to refuse to work Overtime Hours.
 
-2.5 Worker Protections
+Supplier shall not impose overtime where Workers are unable to leave the work premises. Under no conditions shall a Supplier impose punitive measures such as salary deductions, apply coercion of any kind, denial of future opportunities for overtime, or take disciplinary action against Workers for refusing overtime.
 
-Supplier shall identify (in writing) the jobs for which applicable law or workplace safety requires Workers to take a pregnancy test or Medical Test. Workers refusing to take a required Medical Test or pregnancy test will not be eligible for these jobs.
+2.7 Production Quota
 
-Supplier shall provide documentary evidence that any Medical Test or other test it requires Workers to take is otherwise required by law or has been properly determined by a Qualified Health Professional to be Prudent for Workplace Safety.
+Supplier shall not set production quotas or piecework rates at such a level that Workers need to work beyond regular working hours (excluding overtime) to earn the legal Minimum Wage or the prevailing industry wage.
 
-Supplier shall identify positions deemed Hazardous for pregnant Workers, nursing Workers, or Workers with a medical condition. At a minimum, these must be communicated to persons responsible for recruitment, allocation of tasks, and the Worker before the Worker begins to work at that position.
+2.8 Bank Accounts
 
-Supplier shall take reasonable measures to ensure the safety and health of pregnant Workers, nursing Workers, and Workers with a medical condition, including elimination of workplace health and safety risks to such Workers and accommodating such Workers in a non-Hazardous position.</td>
-                <td class="score">0.8156</td>
-                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦强迫劳动与人身自由限制，条款B关注反歧视与特殊保护，均属劳动者基本权利，但责任主题不同，要求标准无直接重叠"]</td>
+Suppliers shall not have direct control of or access to Worker bank accounts other than to make direct deposits of compensation.</td>
+                <td class="score">0.8321</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及劳动者身份文件控制、自由就业权及防止强迫劳动，A侧重禁止行为，B细化操作要求，内容互补且主题一致"]</td>
                 <td class="rank">2</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practice</td>
+                <td class="path">Prevention of Involuntary Labor &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
             </tr>
             <tr>
-                <td class="clause-b">1. Policy &amp; Procedures.
-1.1 Written Policy and Procedures
+                <td class="clause-b">3. Non-Harassment and Non-Retaliation
+No Worker or prospective Worker shall be subject to dismissal, discrimination, harassment, Blacklisting, intimidation, retaliation, or other Employment Decision for reason of:
 
-Supplier shall have a written policy against Discrimination that complies with this Standard, Applicable Laws and Regulations, the Code, and all other relevant applicable standards. The policy must clearly state that:
+• Membership and/or participation in a union, Worker association, or other freedom of association activities
+• Exercising lawful right to form a union or participating in collective bargaining efforts
+• Organizing or participating in a legal strike or demonstration
+• Raising issues to Management concerning compliance with a collective bargaining agreement or any other legal requirements.
 
-• Supplier shall not Discriminate against any Worker based on race, color, age, gender, sexual orientation, ethnicity, disability, religion, political affiliation, union membership, national origin, marital status, or gender identity in hiring and employment practices such as applications for employment, promotions, rewards, access to training, job assignments, wages, benefits, discipline, and termination, unless prohibited by law.
+Supplier shall not threaten or use violence or the presence of police or military to intimidate employees or to prevent, disrupt, or break up any activities that constitute a lawful and peaceful exercise of the right of freedom of association, including union meetings, organizing activities, assemblies, and lawful strikes.
 
-• Supplier shall not require pregnancy or Medical Tests, except where required by Applicable Laws and Regulations or Prudent for Workplace Safety, and shall not improperly discriminate based on test results.
-• No Worker will be punished or retaliated against for reporting Discriminatory practices.
+Supplier shall not transfer, demote, promote, outsource, or reassign Workers as a means to discourage unionization or participation in Worker-Management communication activities.
 
-Supplier shall have written procedures and systems to implement its antiDiscrimination policy.
-
-Supplier shall comply with its Written Policy and Procedures at all times.
-
-1.2 Directly Responsible Individual(s)
-
-Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the anti-Discrimination 1、Policy and Procedures.
-
-1.3 Risk Management
-
-Supplier shall identify and comply with anti-Discrimination requirements specified in Applicable Laws and Regulations, as well as this Standard.
-
-Supplier shall identify, assess, minimize, and eliminate Discrimination.</td>
-                <td class="score">0.8018</td>
+Supplier Management shall not impede Workers’ right to peaceful organization by outsourcing work performed by union members. Shifting production from one site to another for the purpose of retaliating against Workers who have formed or are attempting to form a union is prohibited by the Code and this Standard.</td>
+                <td class="score">0.8295</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦强迫劳动与人身自由限制，条款B针对歧视性用工行为，均属劳工权益保护范畴，但在责任义务主题上侧重不同，存在部分交叉但不重合。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及劳动者基本权利保护，但A聚焦强迫劳动与自由终止雇佣，B侧重结社自由与反报复，义务主题有交集但重点不同"]</td>
                 <td class="rank">3</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy &amp; Procedures</td>
+                <td class="path">Freedom of Association and Collective Bargaining &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Non-Harassment and Non-Retaliation</td>
             </tr>
             <tr>
-                <td class="clause-a">6. Leading Practices include:.
+                <td class="clause-b">2. Operational Practices
+2.1 Legal Work Permits
+
+Supplier shall ensure that all FCWs have valid legal work permits.
+
+2.2 Signed Employment Contract
+
+Supplier shall ensure that all FCWs who are hired to work in Supplier’s facility while living in another country receive, understand, and sign a written employment contract in their own language, and receive a copy of the employment contract prior to departing from the sending country.
+
+In addition to the requirements specified in the Wages, Benefits, and Contracts Standard, contracts for FCWs shall additionally include the following:
+
+• Terms and conditions regarding the possession of identity documents during the employment contract term
+• Estimates of the minimum and maximum net pay the FCW could expect to receive each month. Maximum net pay shall be based on maximum of 60 hours of work per week.
+
+2.3 Early Termination of Contract with Reasonable Notice
+
+Supplier shall not penalize FCWs for voluntarily terminating their employment contracts with Reasonable Notice as defined by local laws.
+
+2.4 Early Termination of Contract Without Reasonable Notice
+
+Unless prohibited by law, Supplier may allow FCW to bear the actual cost of repatriation to the sending country for voluntarily terminating their employment contract early without Reasonable Notice. If this repatriation cost exceeds 60% of their 1 month net wage of the most recently paid wages, the excess shall be paid by employer.
+
+Supplier shall not penalize FCWs for voluntarily terminating their employment contract early without Reasonable Notice by deduction of base or overtime wages due.
+
+2.5 Fees, Expenses, and Deposits
+
+Supplier shall use its best efforts to ensure FCWs are not charged any Fees and Expenses or deposits related to their employment in accordance with Apple’s definition of Fees and Expenses.
+
+Suppliers shall pay the costs of recruitment directly to the extent possible.
+
+Supplier shall implement a process to determine the specific amount of any Fees and Expenses paid by each individual FCW prior to commencement of work.
+
+Supplier shall ensure that TPEA conducts due diligence through onboarding verification, so that applicants will understand how they came to know about this employment and any applicable risks.
+
+Applicants who paid any intermediaries, such as sub-agencies who are not in a working relationship with the TPEA, shall have an equal opportunity in the application process.
+
+Fees &amp; Expenses
+
+Suppliers are responsible for paying all fees and expenses associated with recruitment, placement, processing, transportation, or ongoing management of
+
+workers in both the Sending Country and the Receiving Country, and any Third Party Employment Agency expenses and fees, including, but not limited to:
+
+Recruitment fees
+
+• Reservation or commitment fees
+• Informal broker and sub-agent fees and expenses for assistance in recruitment (fees paid by workers to middlemen, recruiters, or individual/individuals who referred the worker to the Employment Agency or hiring company, whether formal or informal)
+• Recruitment service fees in the Sending Country (such as application or recommendation fees)
+• Recruitment service fees in the Receiving Country (both one-time and recurring fees)
+• Deposits
+• Relocation costs if asked to move once employment has begun
+
+Transportation and lodging costs
+
+• Air or ground transportation and the airport/border tax from Sending Country to Receiving Country
+• Returning air or ground transportation and the airport/border tax from Receiving Country to Sending Country
+
+Documentation, medical, training, and other government fees
+
+• Third-Party Employment Agency service fees
+• Passport and visa fees
+• Quarantined accommodation/facilities expense on arrival to country of work and upon repatriation (unless there are applicable laws otherwise directed)
+• Medical checkups, testing, vaccinations, and immunization/screening in the Sending Country and Receiving Country
+• Temporary work or residence permits and renewals
+• Documentation fees in Sending Country (such as notarization, translation services, and attorney’s fees)
+• Insurance
+• Government-required fees
+• Background and reference checks
+
+• Photos (including new passport or visa and renewals)
+• Quarantined accommodation/ facilities expenses on arrival to country of work and upon repatriation
+• Training fees
+• Third Party Employment Agency or supplier mandated training
+
+Exemptions
+
+Unless required by Applicable Laws and Regulations, the following shall be exempted:
+
+• Direct transportation expenses incurred from Worker’s home to local or central recruitment processing centers in the Sending Country prior to the offer of employment and signed acceptance in writing
+• Any fees and expenses incurred by workers for any services, with any parties (sub-agencies/intermediaries), where these parties are not connected / in a business independent from the TPEA, or are providing services to the applicants prior to TPEA engagement
+
+Fees and Expenses related to the recruitment of FCWs should be clearly stated in the contracts between Third Party Employment Agencies and Supplier to ensure compliance with zero fee policies.
+
+Supplier shall require Third Party Employment Agencies to provide accurate receipts to each FCW detailing actual Fees and Expenses paid by the FCW before departure from the sending country.
+
+Supplier shall implement a non-reprisal policy that prohibits the punishment of and/or retaliation against FCWs for any information provided during the jobseeking or employment process. This policy shall be communicated to all FCWs during the interview process.
+
+2.6 Remedy
+
+In the event that the Supplier finds that a FCW has paid Fees and Expenses related to their employment, Supplier shall reimburse such Fees and Expenses to the FCW within 30 days of the later of (i) the start of the FCW’s employment with Supplier or (ii) the date Supplier discovers the fee payment(s).
+
+2.7 Identity Document Storage
+
+Supplier shall provide each FCW with individual secure storage, in accommodation they provide, accessible for FCW for their identity documents, such as passports, identity papers, travel documents, and other personal legal documents.
+
+Storage shall be:
+
+• Freely and immediately accessible to FCWs at any time
+• Accessible to FCWs without assistance and there shall be no barriers to access
+• Lockable and secured against unauthorized access
+
+2.8 Pregnancy Protections
+
+Supplier shall take affirmative steps to protect the rights of FCWs who become pregnant, including if the FCW was found pregnant on arrival at the receiving country. In cases where receiving country law requires that pregnant FCWs return to their home country (or the sending country) to give birth, Supplier shall provide such protections to pregnant FCWs as per Applicable Laws and Regulations.
+
+2.9 Diplomatic Access
+
+Supplier shall not prevent any FCW from contacting his or her embassy.
+
+2.10 Repatriation
+
+Suppliers shall be responsible for the payment of repatriation for each FCW in all circumstances including but not limited to the following:
+
+• Upon completion of the employment contract
+• On termination of the contract due to employee misconduct, illness or incapacity
+• The FCW has been subject to harassment, abuse, or other violation of his or her rights
+
+This requirement does not apply when the FCW:
+
+• Obtains other employment within the country and leaving the country is not required per Applicable Laws and Regulations
+• Terminates employment contract early without Reasonable Notice</td>
+                <td class="score">0.8252</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及工人自愿离职权利、身份文件保管、解约处罚限制等核心责任义务，B条款对A条款具体化并补充操作标准。"]</td>
+                <td class="rank">4</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
+                <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
+            </tr>
+            <tr>
+                <td class="clause-b">2. Operational Practices
+2.1 Engaging Third Party Employment Agencies
+
+Supplier shall sign contract with a TPEA before engaging the TPEA to recruit or hire Workers. The contract shall comply with Applicable Laws and Regulations and the applicable terms of the Code and related Supplier Responsibility Standards and at a minimum include the following when applicable:
+
+• Compensation structure for any and all wages, benefits or bonuses to be paid or provided to Workers
+• Terms of payment by Supplier to the TPEA
+• Term that no unreasonable fees may be charged to Workers or unreasonable deductions made from Workers’ wages or other benefits in relation to their recruitment or hiring
+• Term that includes the consequences for violating this Standard, up to and including termination of the relationship between Supplier and TPEA
+
+2.2 Identity Documents
+
+TPEA shall not require surrender of Workers’ original identity documents, withhold Workers’ original identity documents, or restrict Workers’ access to original identity documents for any reason.
+
+Supplier and TPEA may request (but may not demand or require) Workers’ original identity documents for the purposes of obtaining visa renewals or satisfying other work permit related requirements for such Workers. Supplier shall work with related parties including a TPEA to ensure timely return of all original identity documents to Workers.
+
+Third Party Employment Agencies may obtain and retain copies of Workers’ original identity documents.
+
+2.3 Recruitment of Workers
+
+Supplier shall verify TPEA’s recruitment practices including but not limited to job postings and job interviews to ensure compliance with Applicable Laws and Regulations, and this Standard.
+
+A signed copy of the agreement shall be provided to workers in their own language when applicable and Suppliers shall verify the terms of the agreements between the TPEA and Workers prior to receiving the Workers onsite.
+
+Supplier shall conduct due diligence, including but not limited to onboarding interviews with Workers recruited or hired through the TPEA to ensure that:
+
+• The TPEA has not recruited or hired Students
+• Workers were provided accurate details of the nature and place of work, living conditions, the term of the employment contract (if applicable), working hours, Base Wages for Regular Hours, rates for overtime and holiday wages, and any bonuses or Return Fees committed by the TPEA and applicable deductions and benefits
+• Workers are not charged any unreasonable fees and expenses or deposits related to their employment
+• The TPEA does not withhold Workers’ original government-issued identification and travel documents
+
+Supplier shall document and maintain records of the due diligence above.
+
+2.4 Wage Payment
+
+Supplier shall establish a due diligence process to ensure, where TPEA is responsible for making wage and benefits, the payment and benefits are accurate and timely.
+
+The due diligence process shall include, at a minimum, effective monitoring of original payment records of all wages, bonuses or Return Fees. Supplier shall interview adequate number of workers recruited or hired through TPEA to ensure:
+
+• Full and timely payment of all wages, bonuses or Return Fees • No unreasonable deductions from Workers’ wages or other benefits
+
+An itemized pay slip shall be provided to Workers along with payment of bonuses or Return Fees.
+
+In the event of unreasonable fees or deductions in relation to recruitment or hiring, or under-payment of wages, bonuses, or Return Fee, Supplier shall repay the relevant amounts to workers.
+
+2.5 Bank Accounts
+
+Third Party Employment Agencies shall not have direct control of or access to Worker bank accounts other than to make direct deposits of compensation.
+
+2.6 Third Party Employment Agencies Service Access
+
+Supplier shall ensure that Workers have direct access to TPEA services, for example:
+
+• A TPEA representative stationed at Supplier site • A TPEA online service which provides prompt reply to Workers</td>
+                <td class="score">0.8233</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及劳动者身份文件保管、招聘费用与工资支付等核心责任义务，A强调禁止性行为，B细化操作要求，内容互补且主题高度一致"]</td>
+                <td class="rank">5</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
+                <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
+            </tr>
+            <tr>
+                <td class="clause-b">4. Remedy
+If any Active Underage Worker, Historical Underage Worker, or Terminated Underage Worker is found either through an external audit or self-review, Supplier shall notify Apple immediately and shall implement a remediation program as directed by Apple.
+
+4.1 Immediate Steps
+
+When an Active Underage Worker has been identified, Supplier shall immediately ensure that the Worker is:
+
+• Physically safe
+• Free from threat of retaliation
+• Removed from the workplace, although the Supplier shall not expel the Worker from the facility
+
+4.2 Case Management
+
+The remediation program shall last for six months or until the Worker reaches the Minimum Age, whichever is longer.
+
+Supplier shall provide funds and work with relevant governmental and civil society actors in order to provide for the welfare of the Worker, including provision of:
+
+• Tuition expenses and reasonable additional requisite expenses (for such items as books and supplies, and for general living) to enable the Worker to return to school
+• Forgone wages the Worker would have earned at the Supplier’s facility
+• Administrative costs for case management
+
+4.3 Offer of Reemployment
+
+When the Worker reaches the Minimum Age, Supplier shall offer the Worker a job at the facility that is equivalent to or more favorable than the job previously held by the Worker.</td>
+                <td class="score">0.8204</td>
+                <td><span class="relevance-badge relevance-weak">弱相关</span></td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦强迫劳动与员工自由，条款B针对童工补救，均属劳工权益但具体义务不同"]</td>
+                <td class="rank">6</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
+                <td class="path">Prevention of Underage Labor &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 4. Remedy</td>
+            </tr>
+            <tr>
+                <td class="clause-a" rowspan="6">6. Leading Practices include:
 Contract or offer letter detailing the level of physical work and what personal protective equipment is required to be worn. If this is impractical for a contract or offer letter, a separate document can suffice.
 Contract or employment agreement includes the worker’s date of birth.
 Foreign and internal migrant workers should be interviewed when they join the company to learn if any of the policies were violated, in which case remedy must be provided, and they must be informed of the grievance mechanism. If fees and costs were found to be charged, workers must be repaid within 90 days.</td>
-                <td class="clause-b">3. Training and Communication.
-3.1 Responsible Staff
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
 
-Supplier shall provide comprehensive training to any person involved in activities that may be associated with Discrimination risks.
+Supplier shall have a written policy that addresses wages, benefits, and contracts requirements specified in Applicable Laws and Regulations and this Standard.
 
-3.2 Workers, Supervisors, and Managers
+Supplier shall have written procedures and systems to implement its wages, benefits, and contracts policy.
 
-Supplier shall effectively communicate its anti-Discrimination policy to all Workers, supervisors, and managers. This communication shall include information about Hazardous jobs, workplace accommodations for non-Hazardous positions, and voluntary Medical Testing. The communication or training shall be provided during the initial orientation period and reinforced via refresher training on a regular basis.</td>
-                <td class="score">0.8064</td>
+Supplier shall comply with its Written Policy and Procedures at all times.
+
+1.2 Directly Responsible Individual(s)
+
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the wages, benefits, and contracts 1、Policy and Procedures.
+
+1.3 Risk Management
+
+Supplier shall identify and comply with wages, benefits, and contracts requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall identify, assess, and minimize risks related to wages, benefits, and contracts.</td>
+                <td class="score">0.8254</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A侧重雇佣条件与 migrant worker权益保护，条款B聚焦反歧视培训与沟通，均涉及员工入职阶段责任义务，但主题与要求不同。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦用工合同与 migrant worker 权益保护，条款B强调工资福利政策的书面化与风险管理，主题部分重叠但侧重点不同"]</td>
                 <td class="rank">1</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
-                <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
+                <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
+            </tr>
+            <tr>
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
+
+Supplier shall have a written policy that addresses Foreign Contract Worker (“FCW”) requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall have written procedures and systems to implement its FCW management policy.
+
+Supplier shall comply with its Written Policy and Procedures at all times.
+
+1.2Directly Responsible Individual(s)
+
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the FCW protections 1、Policy and Procedures.
+
+1.3 Risk Management
+
+Supplier shall identify and comply with FCW requirements specified in Applicable Laws and Regulations and this Standard in both the Receiving Countries and Sending Countries.
+
+Supplier shall identify, assess, and minimize risks related to FCW management.</td>
+                <td class="score">0.8197</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "条款A与B均涉及外籍劳工管理的责任义务，B侧重政策与风险管理框架，A细化具体实践要求，二者在责任义务层面形成补充。"]</td>
+                <td class="rank">2</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
+                <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
+            </tr>
+            <tr>
+                <td class="clause-b">3. Training and Communication
+3.1 Responsible Staff
+
+Supplier shall provide comprehensive training to all staff responsible for FCW management.
+
+3.2 Foreign Contract Workers
+
+Supplier shall provide pre-departure, regular and refresher training for FCWs to ensure they understand at the minimum the following:
+
+• Fees and Expenses related to recruitment and on-going employment
+
+• Reporting channel to whistleblow threats, any recruitment, or employment fees and expenses
+• The terms and conditions per employment contracts
+• Expected living expenses needed
+• Living conditions
+• Expected first salary, any deductions, taxable income and their payment terms including expected amount and payment schedule
+• Relevant labor rights of FCWs
+• Relevant Laws and regulations to follow
+• Company regulations
+• Any other protections under the Code and related Standards during their employment at the receiving country
+
+The above training shall be added onto the basic employee’s training per the applicable requirements.
+
+3.3 Third Party Employment Agencies
+
+Supplier shall effectively communicate its FCW protections policy to all Third Party Employment Agencies involved in such management.</td>
+                <td class="score">0.8180</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及 migrant worker 权益保护，A 强调合同与违规补救，B 强调培训与沟通，义务层面互补"]</td>
+                <td class="rank">3</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
+                <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
+            </tr>
+            <tr>
+                <td class="clause-b">3. Worker Engagement
+Supplier shall proactively solicit Workers’ feedback through different channels, including but not limited to periodic (at least once per year) surveys, interviews, dialogue with workers, or similar mechanisms designed to understand overall worker satisfaction from recruitment, onboarding, resignation, to termination. Feedback shall cover areas including but not limited to:
+
+• Wages and benefits • Workplace conditions • Employment relation • Healthcare and well-being • Living condition • Education and training
+
+• Supplier shall ensure these channels are available to all Workers who wish to participate, and in the language(s) in which Workers communicate in the workplace (if that language differs from their native language(s))
+
+Supplier shall identify areas for improvement based on the feedback and develop specific plans to address worker wellbeing and the workplace experience.</td>
+                <td class="score">0.8176</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及对工人的责任义务，A强调入职保护与补救，B强调持续反馈与改善，内容互补且共同覆盖用工全周期责任"]</td>
+                <td class="rank">4</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
+                <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Worker Engagement</td>
+            </tr>
+            <tr>
+                <td class="clause-b">2. Operational Practices
+2.1 Legal Work Permits
+
+Supplier shall ensure that all FCWs have valid legal work permits.
+
+2.2 Signed Employment Contract
+
+Supplier shall ensure that all FCWs who are hired to work in Supplier’s facility while living in another country receive, understand, and sign a written employment contract in their own language, and receive a copy of the employment contract prior to departing from the sending country.
+
+In addition to the requirements specified in the Wages, Benefits, and Contracts Standard, contracts for FCWs shall additionally include the following:
+
+• Terms and conditions regarding the possession of identity documents during the employment contract term
+• Estimates of the minimum and maximum net pay the FCW could expect to receive each month. Maximum net pay shall be based on maximum of 60 hours of work per week.
+
+2.3 Early Termination of Contract with Reasonable Notice
+
+Supplier shall not penalize FCWs for voluntarily terminating their employment contracts with Reasonable Notice as defined by local laws.
+
+2.4 Early Termination of Contract Without Reasonable Notice
+
+Unless prohibited by law, Supplier may allow FCW to bear the actual cost of repatriation to the sending country for voluntarily terminating their employment contract early without Reasonable Notice. If this repatriation cost exceeds 60% of their 1 month net wage of the most recently paid wages, the excess shall be paid by employer.
+
+Supplier shall not penalize FCWs for voluntarily terminating their employment contract early without Reasonable Notice by deduction of base or overtime wages due.
+
+2.5 Fees, Expenses, and Deposits
+
+Supplier shall use its best efforts to ensure FCWs are not charged any Fees and Expenses or deposits related to their employment in accordance with Apple’s definition of Fees and Expenses.
+
+Suppliers shall pay the costs of recruitment directly to the extent possible.
+
+Supplier shall implement a process to determine the specific amount of any Fees and Expenses paid by each individual FCW prior to commencement of work.
+
+Supplier shall ensure that TPEA conducts due diligence through onboarding verification, so that applicants will understand how they came to know about this employment and any applicable risks.
+
+Applicants who paid any intermediaries, such as sub-agencies who are not in a working relationship with the TPEA, shall have an equal opportunity in the application process.
+
+Fees &amp; Expenses
+
+Suppliers are responsible for paying all fees and expenses associated with recruitment, placement, processing, transportation, or ongoing management of
+
+workers in both the Sending Country and the Receiving Country, and any Third Party Employment Agency expenses and fees, including, but not limited to:
+
+Recruitment fees
+
+• Reservation or commitment fees
+• Informal broker and sub-agent fees and expenses for assistance in recruitment (fees paid by workers to middlemen, recruiters, or individual/individuals who referred the worker to the Employment Agency or hiring company, whether formal or informal)
+• Recruitment service fees in the Sending Country (such as application or recommendation fees)
+• Recruitment service fees in the Receiving Country (both one-time and recurring fees)
+• Deposits
+• Relocation costs if asked to move once employment has begun
+
+Transportation and lodging costs
+
+• Air or ground transportation and the airport/border tax from Sending Country to Receiving Country
+• Returning air or ground transportation and the airport/border tax from Receiving Country to Sending Country
+
+Documentation, medical, training, and other government fees
+
+• Third-Party Employment Agency service fees
+• Passport and visa fees
+• Quarantined accommodation/facilities expense on arrival to country of work and upon repatriation (unless there are applicable laws otherwise directed)
+• Medical checkups, testing, vaccinations, and immunization/screening in the Sending Country and Receiving Country
+• Temporary work or residence permits and renewals
+• Documentation fees in Sending Country (such as notarization, translation services, and attorney’s fees)
+• Insurance
+• Government-required fees
+• Background and reference checks
+
+• Photos (including new passport or visa and renewals)
+• Quarantined accommodation/ facilities expenses on arrival to country of work and upon repatriation
+• Training fees
+• Third Party Employment Agency or supplier mandated training
+
+Exemptions
+
+Unless required by Applicable Laws and Regulations, the following shall be exempted:
+
+• Direct transportation expenses incurred from Worker’s home to local or central recruitment processing centers in the Sending Country prior to the offer of employment and signed acceptance in writing
+• Any fees and expenses incurred by workers for any services, with any parties (sub-agencies/intermediaries), where these parties are not connected / in a business independent from the TPEA, or are providing services to the applicants prior to TPEA engagement
+
+Fees and Expenses related to the recruitment of FCWs should be clearly stated in the contracts between Third Party Employment Agencies and Supplier to ensure compliance with zero fee policies.
+
+Supplier shall require Third Party Employment Agencies to provide accurate receipts to each FCW detailing actual Fees and Expenses paid by the FCW before departure from the sending country.
+
+Supplier shall implement a non-reprisal policy that prohibits the punishment of and/or retaliation against FCWs for any information provided during the jobseeking or employment process. This policy shall be communicated to all FCWs during the interview process.
+
+2.6 Remedy
+
+In the event that the Supplier finds that a FCW has paid Fees and Expenses related to their employment, Supplier shall reimburse such Fees and Expenses to the FCW within 30 days of the later of (i) the start of the FCW’s employment with Supplier or (ii) the date Supplier discovers the fee payment(s).
+
+2.7 Identity Document Storage
+
+Supplier shall provide each FCW with individual secure storage, in accommodation they provide, accessible for FCW for their identity documents, such as passports, identity papers, travel documents, and other personal legal documents.
+
+Storage shall be:
+
+• Freely and immediately accessible to FCWs at any time
+• Accessible to FCWs without assistance and there shall be no barriers to access
+• Lockable and secured against unauthorized access
+
+2.8 Pregnancy Protections
+
+Supplier shall take affirmative steps to protect the rights of FCWs who become pregnant, including if the FCW was found pregnant on arrival at the receiving country. In cases where receiving country law requires that pregnant FCWs return to their home country (or the sending country) to give birth, Supplier shall provide such protections to pregnant FCWs as per Applicable Laws and Regulations.
+
+2.9 Diplomatic Access
+
+Supplier shall not prevent any FCW from contacting his or her embassy.
+
+2.10 Repatriation
+
+Suppliers shall be responsible for the payment of repatriation for each FCW in all circumstances including but not limited to the following:
+
+• Upon completion of the employment contract
+• On termination of the contract due to employee misconduct, illness or incapacity
+• The FCW has been subject to harassment, abuse, or other violation of his or her rights
+
+This requirement does not apply when the FCW:
+
+• Obtains other employment within the country and leaving the country is not required per Applicable Laws and Regulations
+• Terminates employment contract early without Reasonable Notice</td>
+                <td class="score">0.8143</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及 migrant worker 的合同、费用偿还、保护措施等责任义务，A强调违规补救，B细化执行标准，内容互补且主题高度一致"]</td>
+                <td class="rank">5</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
+                <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
+            </tr>
+            <tr>
+                <td class="clause-b">1. Policy and Procedures
+1.1 Written Policy and Procedures
+
+Supplier shall have a written policy that addresses worker engagement and Grievance management requirements specified in Applicable Laws and Regulations and this Standard.
+
+Supplier shall have written procedures and systems to implement its Worker Engagement and Grievance Management policy.
+
+Supplier shall periodically review, and analyze the effectiveness of existing worker engagement activities including remedial measures at least once per year.
+
+Supplier shall comply with its Written Policy and Procedures at all times.
+
+1.2 Directly Responsible Individual(s)
+
+Supplier shall identify the responsible individual(s) to oversee and enforce the implementation of the worker engagement and Grievance Management 1、Policy and Procedures.
+
+1.3 Protection and Non-Retaliation
+
+A Worker or prospective Worker shall be able to report any Grievance, or provide feedback, or participate in the investigation of such, in a safe environment without fear of reprisal, dismissal, discrimination, harassment, Blacklisting, intimidation, retaliation, or any other penalty of any form when raised in Good Faith.
+
+Supplier shall also ensure Workers’ identities are protected to the maximum extent possible to prevent retaliation and ensure confidentiality, and that any private information is disclosed only to Supplier personnel or parties required or permitted to access the information by law, or as required to conduct a good-faith, thorough investigation of any Grievance.</td>
+                <td class="score">0.8142</td>
+                <td><span class="relevance-badge relevance-strong">强相关</span></td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及工人权益保护责任，A强调入职审查与补救，B规定申诉机制与非报复政策，义务层面互补"]</td>
+                <td class="rank">6</td>
+                <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
+                <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
             </tr>
         </tbody>
             </table>
