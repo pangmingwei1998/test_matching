@@ -168,26 +168,21 @@
             background: #f8f9fa;
         }
 
-        /* 条款内容列 */
+        /* 条款内容列 - 加大宽度比例 */
         td.clause-a,
         td.clause-b {
             text-align: left;
             vertical-align: top;
             font-size: 0.95rem;
             line-height: 1.8;
-            max-width: 600px;
+            max-width: 1000px;
+            min-width: 500px;
             white-space: pre-wrap;
             word-wrap: break-word;
         }
 
-        /* 路径列 */
-        td.path {
-            text-align: left;
-            font-size: 0.85rem;
-            color: #6c757d;
-            font-family: "Courier New", monospace;
-            max-width: 400px;
-        }
+        /* 路径列 - 缩小宽度比例 */
+
 
         /* 数值列 */
         td.score,
@@ -287,7 +282,7 @@
                 <div class="header">
             <h1>RBA Clause Matching Results</h1>
             <div class="subtitle">
-                生成时间: 2026-01-14 13:15:38
+                Generation Time: 2026-01-14 15:49:24
             </div>
         </div>
                 <div class="stats-section">
@@ -325,12 +320,12 @@
             <tr>
                 <th>RBA_A</th>
                 <th>Apple_standard</th>
-                <th>相似度</th>
-                <th>相关性</th>
-                <th>判断理由</th>
-                <th>排名</th>
-                <th>A 文件路径</th>
-                <th>B 文件路径</th>
+                <th>Score</th>
+                <th>Label</th>
+                <th>Rationale</th>
+                <th>Rank</th>
+                <th>RBA_A clause path</th>
+                <th>Apple_standard clause path</th>
             </tr>
         </thead>
         <tbody>
@@ -364,7 +359,7 @@ Supplier shall identify and comply with wages, benefits, and contracts requireme
 Supplier shall identify, assess, and minimize risks related to wages, benefits, and contracts.</td>
                 <td class="score">0.8433</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动及工人自由，条款B关注工资福利合规，主题部分交叉但核心义务不同"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动及工人自由，条款B侧重工资福利合规，主题部分关联但核心义务不同"]</td>
                 <td class="rank">1</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
                 <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
@@ -390,7 +385,7 @@ Supplier shall identify and comply with prevention of involuntary labor requirem
 Supplier shall identify, assess, and minimize risks related to involuntary labor.</td>
                 <td class="score">0.8420</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均围绕禁止强迫劳动的政策与实施义务，A侧重具体操作标准，B强调制度建设和风险管理，核心责任主题一致且互补。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均围绕禁止强迫劳动的政策与实施义务，A侧重具体操作标准，B侧重体系与责任管理，核心责任主题一致且互补"]</td>
                 <td class="rank">2</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
                 <td class="path">Prevention of Involuntary Labor &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
@@ -411,7 +406,7 @@ Supplier shall not transfer, demote, promote, outsource, or reassign Workers as 
 Supplier Management shall not impede Workers’ right to peaceful organization by outsourcing work performed by union members. Shifting production from one site to another for the purpose of retaliating against Workers who have formed or are attempting to form a union is prohibited by the Code and this Standard.</td>
                 <td class="score">0.8394</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动与保障工人自由，条款B侧重非歧视与结社自由，均属劳工权益但义务主题不同"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动与保障工人自由，条款B侧重非骚扰与非报复，尤其在结社自由方面，两者在工人权利保护上有部分交集但核心义务不同"]</td>
                 <td class="rank">3</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
                 <td class="path">Freedom of Association and Collective Bargaining &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Non-Harassment and Non-Retaliation</td>
@@ -435,7 +430,7 @@ Supplier is not required to take an active role in supporting Workers’ efforts
 Supplier shall not deduct union membership fees or any other union fees from Workers’ wages without the express and written consent of individual Workers, unless specified otherwise in freely negotiated and valid collective bargaining agreements.</td>
                 <td class="score">0.8353</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动与工人自由，条款B侧重结社自由与集体谈判，均涉及工人基本权利，但在责任义务主题上各有侧重，存在部分交集。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动与工人自由，条款B侧重结社自由与集体谈判权，二者同属劳工权利范畴但核心义务不同，存在部分交集如非歧视、反报复等要求。"]</td>
                 <td class="rank">4</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
                 <td class="path">Freedom of Association and Collective Bargaining &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Freedom of Association</td>
@@ -463,7 +458,7 @@ A Worker or prospective Worker shall be able to report any Grievance, or provide
 Supplier shall also ensure Workers’ identities are protected to the maximum extent possible to prevent retaliation and ensure confidentiality, and that any private information is disclosed only to Supplier personnel or parties required or permitted to access the information by law, or as required to conduct a good-faith, thorough investigation of any Grievance.</td>
                 <td class="score">0.8265</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动及工人自由权利，条款B关注申诉机制与非报复保护，主题部分关联但核心义务不同"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦禁止强迫劳动及工人自由权利，条款B侧重申诉机制与非报复保护，均属劳工权益但侧重不同"]</td>
                 <td class="rank">5</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
                 <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
@@ -584,7 +579,7 @@ Supplier shall ensure that Workers are free to terminate their employment contra
 Where probationary or training employment is legally allowed, Supplier shall ensure that Workers are paid at least Minimum Wages. No Workers shall work more than 3 months cumulatively in these employment categories, or the maximum period allowed by Applicable Laws and Regulations, whichever is shorter.</td>
                 <td class="score">0.8260</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "条款A禁止强迫劳动并保障工人自由，条款B通过工资、工时、合同等保障工人基本权益，二者在防止剥削、保障劳工权利方面形成责任义务的互补与强化"]</td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "条款A禁止强迫劳动并保障工人自由，条款B通过工资、工时、合同等保障工人基本权益，二者在防止剥削、保障劳工权利方面形成互补"]</td>
                 <td class="rank">6</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:</td>
                 <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practice</td>
@@ -725,7 +720,7 @@ Supplier shall ensure that Workers have direct access to TPEA services, for exam
 • A TPEA representative stationed at Supplier site • A TPEA online service which provides prompt reply to Workers</td>
                 <td class="score">0.9084</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及用工责任，涵盖招聘、合同、工资、身份证明等义务，A侧重工人直接权利，B侧重第三方机构管理，内容互补且标准一致"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及工人权益保护，涵盖招聘、合同、工资、身份证明等责任义务，A侧重内部制度，B侧重第三方管理，要求一致且互补。"]</td>
                 <td class="rank">1</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
                 <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
@@ -905,7 +900,7 @@ This requirement does not apply when the FCW:
 • Terminates employment contract early without Reasonable Notice</td>
                 <td class="score">0.9026</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及 migrant worker 的合同、费用、身份证明、解雇通知、遣返等核心责任义务，标准高度一致且互为补充。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及 migrant worker 的合同、费用、身份证明、解雇通知、遣返等核心责任义务，A条款更全面，B条款针对FCW细化操作，内容高度重叠且互补。"]</td>
                 <td class="rank">3</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
                 <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
@@ -1026,7 +1021,7 @@ Supplier shall ensure that Workers are free to terminate their employment contra
 Where probationary or training employment is legally allowed, Supplier shall ensure that Workers are paid at least Minimum Wages. No Workers shall work more than 3 months cumulatively in these employment categories, or the maximum period allowed by Applicable Laws and Regulations, whichever is shorter.</td>
                 <td class="score">0.8962</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及雇佣合同、工资支付、工时、扣款、福利等核心责任义务，标准高度一致且互为补充，覆盖范围部分重叠但严格程度相当"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及雇佣合同、工资支付、工时计算、扣款限制等核心劳动权益，要求基本一致，部分条款互为补充，整体责任义务高度重合"]</td>
                 <td class="rank">4</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
                 <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practice</td>
@@ -1082,7 +1077,7 @@ Supplier shall identify positions deemed Hazardous for pregnant Workers, nursing
 Supplier shall take reasonable measures to ensure the safety and health of pregnant Workers, nursing Workers, and Workers with a medical condition, including elimination of workplace health and safety risks to such Workers and accommodating such Workers in a non-Hazardous position.</td>
                 <td class="score">0.8754</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦雇佣条件与财务权益，条款B关注反歧视与医疗保护，均属劳动者权益但侧重点不同"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦雇佣条件与财务权益，条款B关注反歧视与医疗保护，均属劳工权益但侧重点不同"]</td>
                 <td class="rank">5</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
                 <td class="path">Anti-Discrimination &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practice</td>
@@ -1174,7 +1169,7 @@ Supplier shall ensure that the Student is fully covered by any other forms of in
 Supplier must comply with any legal limits on the number of Students that can be employed at the Supplier’s facility at any given time.</td>
                 <td class="score">0.8633</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及雇佣合同、费用禁止、自愿就业、保险等核心责任义务，且标准高度一致"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均规定雇佣合同、自愿就业、禁止收费、保险等责任义务，核心要求高度重合，覆盖范围部分一致"]</td>
                 <td class="rank">6</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 2. Procedures &amp; Practices are in place such that:</td>
                 <td class="path">Educational Program Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
@@ -1209,7 +1204,7 @@ A Worker or prospective Worker shall be able to report any Grievance, or provide
 Supplier shall also ensure Workers’ identities are protected to the maximum extent possible to prevent retaliation and ensure confidentiality, and that any private information is disclosed only to Supplier personnel or parties required or permitted to access the information by law, or as required to conduct a good-faith, thorough investigation of any Grievance.</td>
                 <td class="score">0.8621</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦供应链合规与费用管控，条款B侧重员工申诉与参与机制，均属企业社会责任范畴但具体义务不同"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦供应链合规与费用管控，条款B侧重员工申诉与参与机制，均属社会责任范畴但具体义务不同"]</td>
                 <td class="rank">1</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
                 <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
@@ -1235,7 +1230,7 @@ Supplier shall identify and comply with wages, benefits, and contracts requireme
 Supplier shall identify, assess, and minimize risks related to wages, benefits, and contracts.</td>
                 <td class="score">0.8613</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及对供应链中劳工权益的责任义务，A强调政策传递与费用透明，B强调书面政策与风险管理，主题一致且要求互补"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及对供应链中劳动者权益的责任义务，涵盖政策传递、合规监控与风险管理，主题高度重合且要求互补。"]</td>
                 <td class="rank">2</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
                 <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
@@ -1274,7 +1269,7 @@ Supplier shall conduct due diligence, including but not limited to onboarding in
 • Students are clearly identified as such during the recruitment process • Workers are provided with accurate details of the nature and place of work, living conditions, the term of the employment contract (if applicable), working hours, Base Wages for Regular Hours, rates for overtime and holiday wages, and applicable deductions and benefits</td>
                 <td class="score">0.8580</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均聚焦第三方招聘机构管理中的责任义务，涵盖政策传递、合规监控、费用管控与尽职调查，核心要求高度重合"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均聚焦第三方招聘机构管理中的责任义务，涵盖政策传递、合规监控、费用管控与尽职调查，核心要求高度重合。"]</td>
                 <td class="rank">3</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
                 <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
@@ -1296,7 +1291,7 @@ This procedure shall define appropriate sanctions and establish a corrective act
 Supplier shall terminate its relationship with any TPEA that is unwilling to correct a violation.</td>
                 <td class="score">0.8548</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及对第三方招聘机构的监督责任，A强调费用透明与合同约定，B细化审计与违规处理，内容互补且共同构成完整监管要求"]</td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及对第三方招聘机构的监督责任，A强调费用透明与合同约定，B细化审计与违规处理，内容互补且共同构成完整监控义务"]</td>
                 <td class="rank">4</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
                 <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Third Party Agency Monitoring</td>
@@ -1358,7 +1353,8 @@ Supplier shall ensure that Workers have direct access to TPEA services, for exam
 • A TPEA representative stationed at Supplier site • A TPEA online service which provides prompt reply to Workers</td>
                 <td class="score">0.8499</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "均聚焦于第三方招聘机构管理，要求合同规范、费用透明、禁止扣押证件及工资保障，责任义务高度重合且互为补充。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明";  
+条款A与B均聚焦于第三方招聘机构管理中的责任义务，涵盖费用控制、合同规范、合规监控等核心要求，内容高度重叠且互为补充。]</td>
                 <td class="rank">5</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
                 <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
@@ -1392,7 +1388,7 @@ The above training shall be added onto the basic employee’s training per the a
 Supplier shall effectively communicate its FCW protections policy to all Third Party Employment Agencies involved in such management.</td>
                 <td class="score">0.8480</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "均围绕防止工人支付招聘费用及保障知情权，A强调合同与监控，B强调培训与沟通，责任义务互补"]</td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "条款A强调对招聘方的费用管控与合规监控，条款B侧重对工人的培训与信息告知，二者在防止招聘费用转嫁工人这一责任义务上形成互补"]</td>
                 <td class="rank">6</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 3. Controls &amp; Monitoring should include:</td>
                 <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
@@ -1432,7 +1428,7 @@ Supplier shall ensure that all legally required payroll documents, journals, and
 All documentation shall be made available to Apple for review upon its request.</td>
                 <td class="score">0.8637</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及雇佣记录与合同文件的保存责任，涵盖合规性、可访问性及审查要求，主题一致且要求互补。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及雇佣记录与合同文件的保存义务，涵盖合规性、可访问性及审查要求，主题一致且要求互补。"]</td>
                 <td class="rank">2</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
                 <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 4. Documentation</td>
@@ -1471,7 +1467,7 @@ Supplier shall retain all documentation related to occupational health and safet
 All documentation shall be made available to Apple for review upon its request.</td>
                 <td class="score">0.8465</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及记录保存责任，但A侧重人事与合规文件，B侧重健康安全文档，保存期限与对象不同，存在部分交叉但主题侧重不一。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及记录保存义务，但主题不同：A侧重人事与合规文件，B侧重健康安全技术文档，保存期限与对象差异明显。"]</td>
                 <td class="rank">4</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
                 <td class="path">Occupational Health and Safety Management &gt; Supplier Code of Conduct Requirement &gt; Supplier Responsibility Standards &gt; 12. Documentation</td>
@@ -1490,7 +1486,7 @@ All Waste management records and documentation shall be made available to Apple 
 • Incident records regarding all Hazardous Waste incidents at the facility shall be retained for 5 years</td>
                 <td class="score">0.8330</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及记录保存责任，但主题不同（人事与服务合规 vs. 废物管理），保存期限与内容要求有差异，义务主体均为供应商，部分要求结构相似。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及记录保存责任，但主题不同（人事与服务合规 vs. 废物管理），保存期限和对象部分重叠，义务严格程度相似但适用范围不同"]</td>
                 <td class="rank">5</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 4. Records are maintained including:</td>
                 <td class="path">Waste Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standard &gt; 11. Documentation</td>
@@ -1548,7 +1544,7 @@ All powered industrial truck and associated drivers/operators must be authorized
 Supplier shall ensure regular inspections and maintenance are performed for powered industrial trucks per Applicable Laws and Regulations and maintain relevant records.</td>
                 <td class="score">0.8465</td>
                 <td><span class="relevance-badge relevance-not-related">不相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦雇佣自由与非强迫劳动，条款B关注高风险作业安全，主题不同，仅在工作场所责任上有微弱交集"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦于雇佣自由与非强迫劳动等人权义务，条款B关注高风险作业的安全管理，主题不同但同属工作场所责任范畴"]</td>
                 <td class="rank">1</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
                 <td class="path">Occupational Health and Safety Management &gt; Supplier Code of Conduct Requirement &gt; Supplier Responsibility Standards &gt; 5. High-Risk Tasks</td>
@@ -1600,7 +1596,7 @@ Supplier shall not set production quotas or piecework rates at such a level that
 Suppliers shall not have direct control of or access to Worker bank accounts other than to make direct deposits of compensation.</td>
                 <td class="score">0.8321</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及劳动者身份文件控制、自由就业权及防止强迫劳动，A侧重禁止行为，B细化操作要求，内容互补且主题一致"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及劳动者身份文件控制、自由终止雇佣、强迫劳动等核心义务，A侧重禁止性严重情形，B细化操作标准，内容互补且主题高度一致。"]</td>
                 <td class="rank">2</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
                 <td class="path">Prevention of Involuntary Labor &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
@@ -1621,7 +1617,7 @@ Supplier shall not transfer, demote, promote, outsource, or reassign Workers as 
 Supplier Management shall not impede Workers’ right to peaceful organization by outsourcing work performed by union members. Shifting production from one site to another for the purpose of retaliating against Workers who have formed or are attempting to form a union is prohibited by the Code and this Standard.</td>
                 <td class="score">0.8295</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及劳动者基本权利保护，但A聚焦强迫劳动与自由终止雇佣，B侧重结社自由与反报复，义务主题有交集但重点不同"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及劳动者基本权利保护，但A聚焦强迫劳动与自由终止雇佣，B侧重反报复与结社自由，义务主题有交集但重点不同"]</td>
                 <td class="rank">3</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
                 <td class="path">Freedom of Association and Collective Bargaining &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Non-Harassment and Non-Retaliation</td>
@@ -1749,7 +1745,7 @@ This requirement does not apply when the FCW:
 • Terminates employment contract early without Reasonable Notice</td>
                 <td class="score">0.8252</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及工人自愿离职权利、身份文件保管、解约处罚限制等核心责任义务，B条款对A条款具体化并补充操作标准。"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖", "两条款补充说明"; "均涉及工人自愿离职权利、身份文件保管、解约处罚限制等核心义务，B条款对A条款具体化并补充操作标准"]</td>
                 <td class="rank">4</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
                 <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
@@ -1811,7 +1807,7 @@ Supplier shall ensure that Workers have direct access to TPEA services, for exam
 • A TPEA representative stationed at Supplier site • A TPEA online service which provides prompt reply to Workers</td>
                 <td class="score">0.8233</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及劳动者身份文件保管、招聘费用与工资支付等核心责任义务，A强调禁止性行为，B细化操作要求，内容互补且主题高度一致"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及劳动者身份文件保管、招聘费用与工资支付等核心责任义务，A强调禁止性行为，B细化操作要求，内容互补且主题高度一致。"]</td>
                 <td class="rank">5</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 5. Serious conditions that will result in a severe finding:</td>
                 <td class="path">Third Party Employment Agencies &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
@@ -1873,7 +1869,7 @@ Supplier shall identify and comply with wages, benefits, and contracts requireme
 Supplier shall identify, assess, and minimize risks related to wages, benefits, and contracts.</td>
                 <td class="score">0.8254</td>
                 <td><span class="relevance-badge relevance-weak">弱相关</span></td>
-                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦用工合同与 migrant worker 权益保护，条款B强调工资福利政策的书面化与风险管理，主题部分重叠但侧重点不同"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "条款A聚焦用工合同与 migrant worker 权益保护，条款B强调工资福利政策的制定与风险管理，主题部分重叠但侧重点不同"]</td>
                 <td class="rank">1</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
                 <td class="path">Wages, Benefits, and Contracts &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>
@@ -1933,7 +1929,7 @@ The above training shall be added onto the basic employee’s training per the a
 Supplier shall effectively communicate its FCW protections policy to all Third Party Employment Agencies involved in such management.</td>
                 <td class="score">0.8180</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及 migrant worker 权益保护，A 强调合同与违规补救，B 强调培训与沟通，义务层面互补"]</td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及 migrant worker 权益保护，A 强调合同与违规补救，B 强调培训与知情权，义务层面互补"]</td>
                 <td class="rank">3</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
                 <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Training and Communication</td>
@@ -1949,7 +1945,7 @@ Supplier shall proactively solicit Workers’ feedback through different channel
 Supplier shall identify areas for improvement based on the feedback and develop specific plans to address worker wellbeing and the workplace experience.</td>
                 <td class="score">0.8176</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及对工人的责任义务，A强调入职保护与补救，B强调持续反馈与改善，内容互补且共同覆盖用工全周期责任"]</td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及劳动者权益保护，A强调入职审查与违规补救，B侧重持续反馈与改进，义务层面互补"]</td>
                 <td class="rank">4</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
                 <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 3. Worker Engagement</td>
@@ -2077,7 +2073,7 @@ This requirement does not apply when the FCW:
 • Terminates employment contract early without Reasonable Notice</td>
                 <td class="score">0.8143</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及 migrant worker 的合同、费用偿还、保护措施等责任义务，A强调违规补救，B细化执行标准，内容互补且主题高度一致"]</td>
+                <td class="reason">["匹配类型": "两条款部分覆盖"; "均涉及雇佣合同、费用偿还、 migrant worker保护等责任义务，A强调入职访谈与90天退款，B规定30天内退款及更全面的费用禁止与合同要求，标准更严，内容互补且部分覆盖"]</td>
                 <td class="rank">5</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
                 <td class="path">Foreign Contract Worker Protections &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 2. Operational Practices</td>
@@ -2105,7 +2101,7 @@ A Worker or prospective Worker shall be able to report any Grievance, or provide
 Supplier shall also ensure Workers’ identities are protected to the maximum extent possible to prevent retaliation and ensure confidentiality, and that any private information is disclosed only to Supplier personnel or parties required or permitted to access the information by law, or as required to conduct a good-faith, thorough investigation of any Grievance.</td>
                 <td class="score">0.8142</td>
                 <td><span class="relevance-badge relevance-strong">强相关</span></td>
-                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及工人权益保护责任，A强调入职审查与补救，B规定申诉机制与非报复政策，义务层面互补"]</td>
+                <td class="reason">["匹配类型": "两条款补充说明"; "均涉及工人权益保护责任，A强调入职告知与补救，B强调申诉机制与非报复，义务主题一致且要求互补"]</td>
                 <td class="rank">6</td>
                 <td class="path">VAP Standard &gt; A. Labor &gt; A1. Prohibition of Forced Labor &gt; 6. Leading Practices include:</td>
                 <td class="path">Worker Engagement and Grievance Management &gt; Supplier Code of Conduct Requirements &gt; Supplier Responsibility Standards &gt; 1. Policy and Procedures</td>

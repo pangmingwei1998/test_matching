@@ -789,25 +789,27 @@ class TextMatcher:
             background: #f8f9fa;
         }}
 
-        /* 条款内容列 */
+        /* 条款内容列 - 加大宽度比例 */
         td.clause-a,
         td.clause-b {{
             text-align: left;
             vertical-align: top;
             font-size: 0.95rem;
             line-height: 1.8;
-            max-width: 600px;
+            max-width: 800px;
+            min-width: 300px;
             white-space: pre-wrap;
             word-wrap: break-word;
         }}
 
-        /* 路径列 */
+        /* 路径列 - 缩小宽度比例 */
         td.path {{
             text-align: left;
             font-size: 0.85rem;
             color: #6c757d;
             font-family: "Courier New", monospace;
-            max-width: 400px;
+            max-width: 250px;
+            min-width: 100px;
         }}
 
         /* 数值列 */
@@ -918,7 +920,7 @@ class TextMatcher:
         return f"""        <div class="header">
             <h1>RBA Clause Matching Results</h1>
             <div class="subtitle">
-                生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')}
+                Generation Time: {time.strftime('%Y-%m-%d %H:%M:%S')}
             </div>
         </div>"""
 
@@ -1007,12 +1009,12 @@ class TextMatcher:
         header_mapping = {
             'A文件条款': f'{a_name}',
             'B文件条款': f'{b_name}',
-            '相似度得分': '相似度',
-            'LLM判断结果': '相关性',
-            'LLM判断理由': '判断理由',
-            '排名': '排名',
-            'A文件路径': 'A 文件路径',
-            'B文件路径': 'B 文件路径',
+            '相似度得分': 'Score',
+            'LLM判断结果': 'Relevance_label',
+            'LLM判断理由': 'LLM_Rationale',
+            '排名': 'Rank',
+            'A文件路径': f'{a_name} clause path',
+            'B文件路径': f'{b_name} clause path',
         }
 
         headers = [header_mapping.get(col, col) for col in columns_order]
