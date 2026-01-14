@@ -26,6 +26,7 @@ class Config:
     A_FILE = "/home/pmw/h20/Text_matching/RBA_A.json"
     B_FILE = "/home/pmw/h20/Text_matching/Apple_standard.json"
     OUTPUT_EXCEL = "/home/pmw/h20/Text_matching/General_matching_results.xlsx"
+    OUTPUT_HTML = "/home/pmw/h20/Text_matching/General_matching_results.html"
 
     # BGE-M3 模型
     # 支持本地路径或 Hugging Face 模型名
@@ -325,20 +326,23 @@ class LLMJudge:
         """构建 LLM 判断提示词"""
         return f"""请判断以下两段责任标准条款在"责任义务层面"是否相关。
 
-【条款 A】（文档A）：
+【条款 A】：
 {text1}
 
-【条款 B】（文档B）：
+【条款 B】：
 {text2}
 
-请从以下几个方面判断：
+从以下维度判断：
 1. 是否涉及相似的责任或义务主题
 2. 是否规定相似的要求或标准
-3. 是否针对相似的利益相关方
+3. 覆盖范围关系（完全一致/部分覆盖/互补）
+4. 严格程度差异
+
 
 请仅返回以下格式的结果（不要输出其他内容）：
 相关性：[不相关/弱相关/强相关]
-理由：[简要说明判断理由，不超过100字]
+理由：["匹配类型": "两条款完全一致", "两条款部分覆盖", "两条款补充说明";
+        简要说明判断理由，不超过100字]
 """
 
     def _parse_result(self, result: str) -> Tuple[str, str]:
@@ -406,6 +410,12 @@ class TextMatcher:
         print("\n" + "=" * 60)
         print("初始化完成，开始匹配...")
         print("=" * 60 + "\n")
+
+        # 保存文档数量统计
+        self.doc_counts = {
+            'a_docs': len(self.a_docs),
+            'b_docs': len(self.b_docs)
+        }
 
     def match(self) -> List[Dict[str, Any]]:
         """执行匹配流程"""
@@ -567,21 +577,550 @@ class TextMatcher:
 
         print(f"导出完成！共 {len(results)} 条记录")
 
-        # 输出统计信息
-        if results:
-            print("\n结果统计:")
-            relevance_counts = {}
-            empty_match = 0
-            for r in results:
-                if r['LLM判断结果'] == '':
-                    empty_match += 1
-                else:
-                    relevance = r['LLM判断结果']
-                    relevance_counts[relevance] = relevance_counts.get(relevance, 0) + 1
+        # 计算统计信息
+        stats = self._calculate_stats(results)
+        return stats
 
-            print(f"  - 空匹配（A文件条款无匹配）: {empty_match} 条")
-            for relevance, count in relevance_counts.items():
-                print(f"  - {relevance}: {count} 条")
+    def _calculate_stats(self, results: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """计算结果统计信息"""
+        relevance_counts = {}
+        empty_match = 0
+        for r in results:
+            if r['LLM判断结果'] == '':
+                empty_match += 1
+            else:
+                relevance = r['LLM判断结果']
+                relevance_counts[relevance] = relevance_counts.get(relevance, 0) + 1
+
+        return {
+            'total': len(results),
+            'empty_match': empty_match,
+            'relevance_counts': relevance_counts
+        }
+
+    def export_to_html(self, results: List[Dict[str, Any]], stats: Dict[str, Any], doc_counts: Dict[str, int], output_path: str = None):
+        """导出结果到 HTML，带美观样式和统计信息"""
+        if output_path is None:
+            output_path = Config.OUTPUT_HTML
+
+        print(f"\n正在导出结果到 {output_path}...")
+
+        df = pd.DataFrame(results)
+
+        # 调整列顺序
+        columns_order = [
+            'A文件条款',
+            'B文件条款',
+            '相似度得分',
+            'LLM判断结果',
+            'LLM判断理由',
+            '排名',
+            'A文件路径',
+            'B文件路径',
+        ]
+        columns_order = [col for col in columns_order if col in df.columns]
+        df = df[columns_order]
+
+        # 生成 HTML
+        html_content = self._generate_html(df, columns_order, stats, doc_counts)
+
+        # 写入文件
+        with open(output_path, 'w', encoding='utf-8') as f:
+            f.write(html_content)
+
+        print(f"HTML 导出完成！文件路径: {output_path}")
+
+    def _generate_html(self, df: pd.DataFrame, columns_order: List[str], stats: Dict[str, Any], doc_counts: Dict[str, int]) -> str:
+        """生成完整的 HTML 内容"""
+
+        # 计算合并单元格的 rowspan
+        merge_spans = self._calculate_merge_spans(df)
+
+        # 统计信息 HTML
+        stats_html = self._generate_stats_html(stats, doc_counts)
+
+        # 表格内容 HTML
+        table_html = self._generate_table_html(df, columns_order, merge_spans)
+
+        # 组装完整 HTML
+        html = f"""<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>责任标准条款匹配结果</title>
+    <style>
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }}
+
+        .container {{
+            max-width: 1800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }}
+
+        .header {{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }}
+
+        .header h1 {{
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }}
+
+        .header .subtitle {{
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }}
+
+        .stats-section {{
+            padding: 30px 40px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }}
+
+        .stats-title {{
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }}
+
+        .stats-title::before {{
+            content: "📊";
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }}
+
+        .stats-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }}
+
+        .stat-card {{
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border-left: 4px solid #667eea;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }}
+
+        .stat-card:hover {{
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        }}
+
+        .stat-card.strong {{
+            border-left-color: #28a745;
+        }}
+
+        .stat-card.weak {{
+            border-left-color: #ffc107;
+        }}
+
+        .stat-card.empty {{
+            border-left-color: #dc3545;
+        }}
+
+        .stat-label {{
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 8px;
+        }}
+
+        .stat-value {{
+            font-size: 2rem;
+            font-weight: 700;
+            color: #212529;
+        }}
+
+        .table-section {{
+            padding: 40px;
+            overflow-x: auto;
+        }}
+
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }}
+
+        thead {{
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }}
+
+        th {{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+            padding: 16px 12px;
+            text-align: center;
+            position: relative;
+            white-space: nowrap;
+        }}
+
+        th:first-child {{
+            border-top-left-radius: 8px;
+        }}
+
+        th:last-child {{
+            border-top-right-radius: 8px;
+        }}
+
+        td {{
+            padding: 15px 12px;
+            border-bottom: 1px solid #dee2e6;
+            border-right: 1px solid #dee2e6;
+            vertical-align: top;
+            background: white;
+        }}
+
+        td:last-child {{
+            border-right: none;
+        }}
+
+        tbody tr:hover {{
+            background: #f8f9fa;
+        }}
+
+        /* 条款内容列 */
+        td.clause-a,
+        td.clause-b {{
+            text-align: left;
+            vertical-align: top;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            max-width: 600px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }}
+
+        /* 路径列 */
+        td.path {{
+            text-align: left;
+            font-size: 0.85rem;
+            color: #6c757d;
+            font-family: "Courier New", monospace;
+            max-width: 400px;
+        }}
+
+        /* 数值列 */
+        td.score,
+        td.rank {{
+            text-align: center;
+            font-weight: 500;
+        }}
+
+        /* 相关性标签 */
+        .relevance-badge {{
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+        }}
+
+        .relevance-strong {{
+            background: #d4edda;
+            color: #155724;
+        }}
+
+        .relevance-weak {{
+            background: #fff3cd;
+            color: #856404;
+        }}
+
+        .relevance-not-related {{
+            background: #f8d7da;
+            color: #721c24;
+        }}
+
+        /* 理由列 */
+        td.reason {{
+            text-align: left;
+            font-size: 0.9rem;
+            color: #495057;
+            line-height: 1.6;
+            max-width: 400px;
+        }}
+
+        /* 空匹配行 */
+        tr.empty-match {{
+            background: #fff5f5 !important;
+        }}
+
+        tr.empty-match td {{
+            color: #999;
+            font-style: italic;
+        }}
+
+        /* 分隔线 */
+        .divider {{
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #dee2e6, transparent);
+            margin: 20px 0;
+        }}
+
+        /* 响应式 */
+        @media (max-width: 768px) {{
+            .stats-grid {{
+                grid-template-columns: 1fr;
+            }}
+
+            table {{
+                font-size: 0.85rem;
+            }}
+
+            th, td {{
+                padding: 10px 8px;
+            }}
+        }}
+
+        /* 打印样式 */
+        @media print {{
+            body {{
+                background: white;
+                padding: 0;
+            }}
+
+            .container {{
+                box-shadow: none;
+                border-radius: 0;
+            }}
+
+            .header {{
+                background: #333 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        {self._generate_header_html(df)}
+        {stats_html}
+        {table_html}
+    </div>
+</body>
+</html>"""
+        return html
+
+    def _generate_header_html(self, df: pd.DataFrame) -> str:
+        """生成页面头部 HTML"""
+        return f"""        <div class="header">
+            <h1>责任标准条款匹配结果</h1>
+            <div class="subtitle">
+                生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')}
+            </div>
+        </div>"""
+
+    def _generate_stats_html(self, stats: Dict[str, Any], doc_counts: Dict[str, int]) -> str:
+        """生成统计信息 HTML"""
+        relevance_counts = stats['relevance_counts']
+
+        cards = []
+
+        # A/B 文档数量卡片
+        cards.append(f"""                <div class="stat-card">
+                    <div class="stat-label">📄 A 文档（企业联盟）</div>
+                    <div class="stat-value">{doc_counts.get('a_docs', 0)}</div>
+                </div>""")
+        cards.append(f"""                <div class="stat-card">
+                    <div class="stat-label">📄 B 文档（供应商）</div>
+                    <div class="stat-value">{doc_counts.get('b_docs', 0)}</div>
+                </div>""")
+
+        # 总数卡片
+        cards.append(f"""                <div class="stat-card">
+                    <div class="stat-label">总记录数</div>
+                    <div class="stat-value">{stats['total']}</div>
+                </div>""")
+
+        # 空匹配卡片
+        if stats['empty_match'] > 0:
+            cards.append(f"""                <div class="stat-card empty">
+                    <div class="stat-label">空匹配（无匹配结果）</div>
+                    <div class="stat-value">{stats['empty_match']}</div>
+                </div>""")
+
+        # 相关性统计卡片（按指定顺序：强相关 > 弱相关 > 不相关）
+        relevance_order = ['强相关', '弱相关', '不相关']
+        for relevance in relevance_order:
+            if relevance in relevance_counts:
+                count = relevance_counts[relevance]
+                css_class = 'strong' if relevance == '强相关' else ('weak' if relevance == '弱相关' else 'not-related')
+                icon = '🟢' if relevance == '强相关' else ('🟡' if relevance == '弱相关' else '🔴')
+                cards.append(f"""                <div class="stat-card {css_class}">
+                    <div class="stat-label">{icon} {relevance}</div>
+                    <div class="stat-value">{count}</div>
+                </div>""")
+
+        return f"""        <div class="stats-section">
+            <div class="stats-title">匹配统计</div>
+            <div class="stats-grid">
+{chr(10).join(cards)}
+            </div>
+        </div>"""
+
+    def _calculate_merge_spans(self, df: pd.DataFrame) -> dict:
+        """计算需要合并的单元格的 rowspan"""
+        merge_spans = {}
+        start_row = 0
+        current_value = None
+        merge_start_row = 0
+
+        for row_idx in range(len(df)):
+            cell_value = df.iloc[row_idx]['A文件条款']
+
+            if cell_value != current_value:
+                if current_value is not None and merge_start_row < row_idx:
+                    span = row_idx - merge_start_row
+                    for r in range(merge_start_row, row_idx):
+                        merge_spans[r] = span if r == merge_start_row else 0
+
+                current_value = cell_value
+                merge_start_row = row_idx
+
+        # 处理最后一组
+        if merge_start_row < len(df):
+            span = len(df) - merge_start_row
+            for r in range(merge_start_row, len(df)):
+                merge_spans[r] = span if r == merge_start_row else 0
+
+        return merge_spans
+
+    def _generate_table_html(self, df: pd.DataFrame, columns_order: List[str], merge_spans: dict) -> str:
+        """生成表格 HTML"""
+
+        # 表头
+        header_mapping = {
+            'A文件条款': '企业联盟条款 (A)',
+            'B文件条款': '供应商条款 (B)',
+            '相似度得分': '相似度',
+            'LLM判断结果': '相关性',
+            'LLM判断理由': '判断理由',
+            '排名': '排名',
+            'A文件路径': 'A 文件路径',
+            'B文件路径': 'B 文件路径',
+        }
+
+        headers = [header_mapping.get(col, col) for col in columns_order]
+
+        thead_html = "        <thead>\n            <tr>\n"
+        for h in headers:
+            thead_html += f"                <th>{h}</th>\n"
+        thead_html += "            </tr>\n        </thead>"
+
+        # 表体
+        tbody_html = "        <tbody>\n"
+
+        for row_idx, row in df.iterrows():
+            # 判断是否为空匹配行
+            is_empty = row['LLM判断结果'] == ''
+            tr_class = ' class="empty-match"' if is_empty else ''
+
+            tbody_html += f"            <tr{tr_class}>\n"
+
+            for col_idx, col in enumerate(columns_order):
+                value = row[col]
+
+                # 处理 A 文件条款的合并单元格
+                if col == 'A文件条款':
+                    rowspan = merge_spans.get(row_idx, 1)
+                    if rowspan == 0:
+                        continue  # 跳过被合并的单元格
+                    rowspan_attr = f' rowspan="{rowspan}"' if rowspan > 1 else ''
+                else:
+                    rowspan_attr = ''
+
+                # 确定单元格的 CSS 类
+                cell_class_attr = self._get_cell_class_attr(col, value, is_empty)
+
+                # 格式化单元格内容
+                cell_content = self._format_cell_content(col, value, is_empty)
+
+                # 拼接单元格 HTML (确保 class 前有空格)
+                class_space = ' ' if cell_class_attr else ''
+                tbody_html += f'                <td{class_space}{cell_class_attr}{rowspan_attr}>{cell_content}</td>\n'
+
+            tbody_html += "            </tr>\n"
+
+        tbody_html += "        </tbody>"
+
+        return f"""        <div class="table-section">
+            <table>
+{thead_html}
+{tbody_html}
+            </table>
+        </div>"""
+
+    def _get_cell_class_attr(self, col: str, value: Any, is_empty: bool) -> str:
+        """获取单元格的 class 属性字符串（含 class= 前缀）"""
+        if is_empty:
+            return ''
+
+        class_map = {
+            'A文件条款': 'class="clause-a"',
+            'B文件条款': 'class="clause-b"',
+            'A文件路径': 'class="path"',
+            'B文件路径': 'class="path"',
+            '相似度得分': 'class="score"',
+            '排名': 'class="rank"',
+            'LLM判断理由': 'class="reason"',
+        }
+        return class_map.get(col, '')
+
+    def _format_cell_content(self, col: str, value: Any, is_empty: bool) -> str:
+        """格式化单元格内容"""
+        if pd.isna(value) or value == '':
+            return '<span style="color: #999;">—</span>'
+
+        if col == 'LLM判断结果':
+            css_class = ''
+            if value == '强相关':
+                css_class = 'relevance-strong'
+            elif value == '弱相关':
+                css_class = 'relevance-weak'
+            elif value == '不相关':
+                css_class = 'relevance-not-related'
+            return f'<span class="relevance-badge {css_class}">{value}</span>'
+
+        if col == '相似度得分':
+            return f'{value:.4f}'
+
+        # HTML 转义
+        if isinstance(value, str):
+            value = value.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
+        return str(value)
 
 
 # ==================== 主程序入口 ====================
@@ -602,7 +1141,26 @@ def main():
 
     # 导出结果
     if results:
-        matcher.export_to_excel(results)
+        # 导出 Excel
+        stats = matcher.export_to_excel(results)
+
+        # 导出 HTML
+        matcher.export_to_html(results, stats, matcher.doc_counts)
+
+        # 打印统计摘要
+        print("\n" + "=" * 60)
+        print("导出完成！")
+        print(f"  - Excel: {Config.OUTPUT_EXCEL}")
+        print(f"  - HTML:  {Config.OUTPUT_HTML}")
+        print("=" * 60)
+
+        # 打印统计信息
+        print("\n结果统计:")
+        print(f"  - 总记录数: {stats['total']}")
+        print(f"  - 空匹配（无匹配结果）: {stats['empty_match']} 条")
+        for relevance, count in stats['relevance_counts'].items():
+            print(f"  - {relevance}: {count} 条")
+
     else:
         print("\n没有找到匹配结果")
 
