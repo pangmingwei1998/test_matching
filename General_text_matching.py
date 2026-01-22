@@ -26,7 +26,7 @@ os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
 # ==================== 配置参数 ====================
 class Config:
     # 文件路径
-    A_FILE = "/home/pmw/h20/Text_matching/RBA-VAP-Standard-V8.0.2_Apr2025.json"
+    A_FILE = "/home/pmw/h20/Text_matching/RBA_A.json"
     B_FILE = "/home/pmw/h20/Text_matching/Apple_standard.json"
     OUTPUT_EXCEL = "/home/pmw/h20/Text_matching/Matching-Results121.xlsx"
     OUTPUT_HTML = "/home/pmw/h20/Text_matching/Matching-Results121.html"
@@ -133,8 +133,8 @@ def build_embedding_text(doc: Dict[str, Any]) -> str:
     Anti-Discrimination
     Supplier Code of Conduct
     Supplier Responsibility Standards
-    1. Policy
     具体内容...
+    注意：level_3 的标题已经包含在 content 中，不再单独拼接
     """
     parts = []
 
@@ -158,13 +158,7 @@ def build_embedding_text(doc: Dict[str, Any]) -> str:
         else:
             parts.append(title)
 
-    level_3 = doc.get('level_3', {})
-    if level_3 and level_3.get('title'):
-        title = level_3['title']
-        if level_3.get('id'):
-            parts.append(f"{level_3['id']}. {title}")
-        else:
-            parts.append(title)
+     # level_3 的标题已包含在 content 中，不再单独拼接
 
     # 添加实际内容
     content = doc.get('content', '')
@@ -594,7 +588,8 @@ class TextMatcher:
         for a_doc in tqdm(self.a_docs, desc="匹配进度"):
             # 使用带层级路径的文本进行向量检索
             a_text_for_embedding = build_embedding_text(a_doc)
-            a_text = a_doc.get('content', '')  # 用于展示的原始内容
+            # 用于展示的内容：包含层级标题的完整检索文本
+            a_text = a_text_for_embedding
 
             # 1. 向量检索 Top-K（召回更多候选）
             # 使用带层级路径的文本进行查询
@@ -623,8 +618,6 @@ class TextMatcher:
                     'Rerank分数': '',
                     '排名': '',
                     'LLM judgement': '',
-                    'B文件路径': '',
-                    'A文件路径': a_doc.get('path', ''),
                 })
                 continue
 
@@ -641,8 +634,8 @@ class TextMatcher:
             has_match = False
             for rank, candidate in enumerate(top_candidates, 1):
                 b_doc = candidate['doc']
-                # 获取B文档用于展示的原始内容
-                b_text = b_doc.get('content', '')
+                # 用于展示的内容：包含层级标题的完整检索文本
+                b_text = build_embedding_text(b_doc)
 
                 # LLM 精判（使用原始内容进行判断，不包含层级路径）
                 llm_relevance, llm_reason = self.llm_judge.judge(a_text, b_text)
@@ -656,8 +649,6 @@ class TextMatcher:
                     'Rerank分数': round(candidate.get('rerank_score', 0), 4),
                     '排名': rank,
                     'LLM judgement': llm_judgement,
-                    'B文件路径': b_doc.get('path', ''),
-                    'A文件路径': a_doc.get('path', ''),
                 }
                 results.append(result)
                 has_match = True
@@ -671,8 +662,6 @@ class TextMatcher:
                     'Rerank分数': '',
                     '排名': '',
                     'LLM judgement': '',
-                    'B文件路径': '',
-                    'A文件路径': a_doc.get('path', ''),
                 })
 
         return results
@@ -694,8 +683,6 @@ class TextMatcher:
             'Rerank分数',
             'LLM judgement',
             '排名',
-            'A文件路径',
-            'B文件路径',
         ]
 
         # 只保留存在的列
@@ -714,8 +701,6 @@ class TextMatcher:
             'Rerank分数': 'Rerank_Score',
             'LLM judgement': 'LLM judgement',
             '排名': 'Rank',
-            'A文件路径': f'{a_name} clause path',
-            'B文件路径': f'{b_name} clause path',
         }
 
         df = df.rename(columns=column_rename_map)
@@ -735,8 +720,6 @@ class TextMatcher:
             worksheet.column_dimensions['D'].width = 15  # Rerank_Score
             worksheet.column_dimensions['E'].width = 40  # LLM judgement
             worksheet.column_dimensions['F'].width = 10  # Rank
-            worksheet.column_dimensions['G'].width = 40  # A文件路径
-            worksheet.column_dimensions['H'].width = 40  # B文件路径
 
             # 设置所有数据行的行高为 200
             for row in range(2, len(df) + 2):  # 从第2行开始（第1行是标题）
@@ -837,8 +820,6 @@ class TextMatcher:
             'Rerank分数',
             'LLM judgement',
             '排名',
-            'A文件路径',
-            'B文件路径',
         ]
         columns_order = [col for col in columns_order if col in df.columns]
         df = df[columns_order]
@@ -1259,8 +1240,6 @@ class TextMatcher:
             'Rerank分数': 'Rerank_Score',
             'LLM judgement': 'LLM judgement',
             '排名': 'Rank',
-            'A文件路径': f'{a_name} clause path',
-            'B文件路径': f'{b_name} clause path',
         }
 
         headers = [header_mapping.get(col, col) for col in columns_order]
@@ -1321,8 +1300,6 @@ class TextMatcher:
         class_map = {
             'A文件条款': 'class="clause-a"',
             'B文件条款': 'class="clause-b"',
-            'A文件路径': 'class="path"',
-            'B文件路径': 'class="path"',
             '向量相似度': 'class="score"',
             'Rerank分数': 'class="score"',
             '排名': 'class="rank"',

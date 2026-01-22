@@ -1,0 +1,135 @@
+[
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": null,
+      "title": null
+    },
+    "level_2": {
+      "id": null,
+      "title": null
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "The following notes apply to all provisions herein:\n\n14.1.1 When there is a discrepancy between the RBA code, local law, a participant’s policies, or a Collective Bargaining Agreement (CBA), the RBA defines conformance to the RBA code as meeting the strictest requirements (even if it meets RBA code provisions and legal requirements). A Collective Bargaining Agreement may create requirements beyond the RBA Code requirements. The Validated assessment (VA) shall not validate CBA compliance where it is stricter than the RBA Code.\n\n14.1.2 A legal non-conformance is a Major non-conformance unless otherwise stated in a specific provision (e.g., A3.1 if the situation of reviewee is below 60h/w but above local law for ≤40% of the workers) or there is another finding which has a higher non-conformance rating for that provision.\n\n14.1.3 All communications from the reviewee to workers shall be done in a language the worker can understand unless otherwise stated in the provisions. If this is not the case, the relevant aspect is, at minimum, a ‘Major’ non-conformance.\n\n14.1.4 Guidance applies to all workers, including temporary, migrant, student, and contract, directly and indirectly, employed workers that work in the factory/on production/in the warehouse and any other type of worker/employee unless the AC specifically states a narrower focus group.\n\n14.1.5 Unless otherwise noted, references to the percentage of workers in conformance or nonconformance are based on the defined sample.\n\n14.1.6 A Process is not required to be in writing (unless the AC states specifically it shall be documented). However, all processes shall be verifiably implemented consistently.\n\n14.1.7 Adequate shall mean appropriate and complete for its intended purpose. In practice, it means all required code compliance elements are included in the document (policy or procedure). For example, n adequate policy on prohibition of child labor includes all the elements RBA requires on this code topic.\n\n14.1.8 Effective shall mean successfully achieves its intended goal or outcome. In practice, this means all implementation elements are deployed and the outcome of process/procedure meets the RBA requirement. An effective procedure of child labor will include all RBA required implementation elements such as age verification, personnel files and no children are present or have been hired.\n\nInternal Migrant Workers\n\n14.1.9 Internal migrant workers: Individuals who are recruited and migrate from their usual place of residence to another state or province within their home country for employment purposes. These individuals may differ from the dominant group, often the majority population—in terms of race, color, religion, or cultural origin.\n\n14.1.10 Internal migrant workers shall be considered a separate group, like foreign migrant workers, during the Validated assessment to determine risks and conformance specific to this group.\n\nCode 8.0 Labor Preamble: Participants commit to respect the human rights of workers, and to treat them with dignity and respect as understood by the international community. This applies to all workers including temporary, migrant, student, contract, direct employees, and any other type of worker.",
+    "path": "VAP Standard > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": null,
+      "title": null
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0 Labor Preamble: Participants commit to respect the human rights of workers, and to treat them with dignity and respect as understood by the international community. This applies to all workers including temporary, migrant, student, contract, direct employees, and any other type of worker.",
+    "path": "VAP Standard > A. Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": null,
+      "title": null
+    },
+    "Preamble": "Code 8.0: Forced labor in any form, including but not limited to, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery or trafficking of persons is not permitted. This includes transporting, harboring, recruiting, transferring, or receiving persons by means of threat, force, coercion, abduction or fraud for labor or services. There shall be no unreasonable restrictions on workers’ freedom of movement in the facility in addition to unreasonable restrictions on entering or exiting company- provided facilities including, if applicable, workers’ dormitories or living quarters. As part of the hiring process, all workers must be provided with a written employment agreement in their native language, or in a language the worker can understand that contains a description of terms and conditions of employment. Foreign migrant workers must receive the employment agreement prior to the worker departing from his or her country of origin and there shall be no substitution or change(s) allowed in the employment agreement upon arrival in the receiving country unless these changes are made to meet local law and provide equal or better terms. All work shall be voluntary, and workers shall be free to leave work at any time or terminate their employment without penalty if reasonable notice is given, which shall be clearly stated in workers’ contracts. Participants shall maintain documentation on all leaving workers. Employers, agents, and sub-agents’ may not hold or otherwise destroy, conceal, or confiscate identity or immigration documents, such as government-issued identification, passports, or work permits. Notwithstanding the foregoing, employers can only hold documentation if necessary to comply with the local law. In this case, at no time shall workers be denied access to their documents. Workers shall not be required to pay employers’ agents or sub-agents’ recruitment fees or other related fees for their employment. If any such fees are found to have been paid by workers, such fees shall be repaid to the worker.\n\nElements to Demonstrate Compliance to RBA Code:",
+    "path": "VAP Standard > A. Labor > A1. Prohibition of Forced Labor > Preamble",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "1",
+      "title": "Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:"
+    },
+    "content": "1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:\na. No levies, recruiting, hiring or placement fees or costs, even if allowed by local law.\nb. No fees or costs charged to workers as defined by the RBA Definition of Fees\nc. No deposits, mandatory saving, or any other financial obligation are required to obtain or keep a job. d. If fees and costs were found to be charged, workers must be repaid within 90 days.\ne. No holding original identification documents of workers\nf. Overtime is to be voluntary (i.e., workers can always refuse overtime)\ng. Resignation must be voluntary, and the required notice period cannot exceed one month.\nh. The penalty for not serving notice cannot exceed 60% of one month’s wages.\ni. Workers’ freedom of movement is not restricted.",
+    "path": "VAP Standard > A. Labor > A1. Prohibition of Forced Labor > 1. Policy: Have a detailed, comprehensive documented policy prohibiting the use of any type of forced, bonded (including debt bondage) or indentured labor, involuntary or exploitative prison labor, slavery, or trafficking of persons. This policy would contain specific elements including:",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "2",
+      "title": "Procedures & Practices are in place such that:"
+    },
+    "content": "2. Procedures & Practices are in place such that:\na. Workers are not required to pay any deposit or employment fee to the supplier, labor recruiter or employment agency to get or keep their job (See RBA Definition of Fees). b. No control of or access to workers’ banking or financial accounts (direct deposit is allowed).\n\nc. Workers are informed before employment of the key employment terms and conditions in writing in their native language or in a language that the worker can understand.\n\ni. Allowed fees (e.g., housing), deductions (e.g., taxes, social insurance) are disclosed to the workers.\nii. No detrimental changes to the contract or work conditions\n\nd. Signed employment contracts or agreements are in place between the worker and the facility, to ensure the worker is provided with documentation of their legal rights and responsibilities. All terms required by law are in the employment contracts.\n\ne. Verbal explanation to workers of the key components of the employment conditions in the worker's native language, or in a language the worker can understand AND gaining their acknowledgement this has happened.\n\ni. Nature of work including what PPE is required to be worn.\nii. Working hours (which do not exceed 60 hours, 6 consecutive workdays), personal leave allowance and public holidays.\niii. Benefits (housing, transportation, uniforms, etc.)\niv. What allowed fees the worker shall be charged and the amount(s)\nv. Wages and wage deductions (including all components of tax and social insurance(s)) and how these are calculated including premiums for overtime (which must be at least 125% of standard pay), working rest days and statutory holidays.\nvi. Other non-legally required benefits provided (pension, insurances, etc.)\nvii. Information concerning the general conditions of life and work.\n\nf. Offer letter / Contract terms should include:\n\ni. Name and address of the employer ii. Worker’s full name\niii. Workers’ start date and duration of contract.\niv. Contract termination requirements include a notice period not to exceed one month, or less per local law and a penalty for early contract termination. v. Contract renewal provisions (if applicable).\nvi. Description of the location and nature of work to be performed.\nvii. Regular work hours and shifts and anticipated overtime hours with total working hours not to exceed 60 hours per week or local law, whichever is lower.\nviii. Regular, overtime, and holiday wage rates and estimated monthly base and total pay.\n\nix. Any bonuses and conditions for earning them.\n\nx. Any allowances granted (e.g., food, accommodation)\n\nxi. Full listing of all deductions including specification of the type and amount of each deduction and which, if any, are optional.\n\nxii. Method and frequency of wage payment\n\nxiii. Description of additional benefits including medical insurance coverage, accident/injury, insurance, holidays, annual leave, sick leave, and/or any other applicable benefits\n\nxiv. If accommodation is provided include detailed description of living conditions and breakdown of any deductions for accommodations, meals, transportation, or other services provided or offered by the employer and/or their labor agent or other representative or service provider.\n\nxv. Any other terms required by applicable laws and regulations.\n\nxvi. Clear prohibition on charging of recruitment or placement fees xvii. Note: there should be no terms 1.Requiring overtime 2.Restricting movements\n3.Restricting a worker’s rights to freedom of association and collective bargaining consistent with local law.\n\ng. Worker handbook or similar document should include the items above and also:\n\ni. Discipline process (note this cannot include any threat of punishment, fines, violence, or withholding wages)\n\nh. For Migrant Workers\n\ni. Terms and conditions of employment shall be delivered to the migrant workers before departure indicating the conditions of work and remuneration (minimum wage which is guaranteed).\nii. Description of repatriation process and specification of the costs to be borne by the employer and the worker.\niii. Transportation to the receiving country and repatriation as well as between living accommodations and the work facility\niv. Ability to return home during annual leave and family emergencies without penalty.\nv. No substitution or change(s) allowed in the employment contract / agreement upon arrival in the receiving country/region unless these changes are made to meet local law and provide equal or better terms.\n\ni. Workers are not subject to any deductions from their pay other than legally required deductions and agreed upon fees for meals, lodging, uniforms, etc. The amounts of such deductions are communicated to workers at time of hire.\n\nj. Original personal identification such as government issued identification, passports or work permits, certifications, or educational documents such as diplomas are in the possession of the workers unless specifically required by local law.\n\ni. Only copies should be retained to use as verification of age and right-to-work.\nii. Where holding documents is required by local law it must be done with the full knowledge, permission and participation of the worker and procedures are in place to ensure proper handling and immediate access if requested by the worker.\niii. It is acceptable for employers to be in temporary possession of original personal documents only for the time when they are helping to obtain or renew work permits and other legal documents. Provide proper documentation receipt stating the reason for holding of passport/ travel document and expected duration to hold such documents.\niv. In no case shall there be a fee for the possession of government-issued identification, passports, or work permits.\nv. Personal documents shall not be tampered with or damaged in any way.\nvi. Secure personal storage is required when living accommodations are provided directly or indirectly.\nk. Ensure workers are free to use bathrooms, drinking water, and medical facilities, as needed.\nl. Reasonable restrictions linked to health and safety, and IP restrictions can exist.\nm. Workers are allowed to leave the workplace location or dormitory outside of their normal work hours (i.e., no curfews unless dictated by law).\nn. Freedom to enter and leave the site does not apply to prison labor.\no. Doors can be locked from the outside only for normal business and housing security reasons and do not prevent emergency egress.\np. Workers may choose to use external medical facilities for personal health care even when onsite infirmaries or other medical facilities exist.\nq. Personal loans are no greater than 60% of 1-month gross base salary, have a maximum repayment maximum of 10% of the worker’s gross base wage per month for maximum of 6 months. Charging interest is not permitted.\n\nr. Education loans are no greater than 120% of 1-month gross base salary, have a maximum repayment maximum of 10% of the worker’s gross base wage per month for maximum of 12 months. Charging interest is not permitted.\n\ns. The termination notice period is not stricter than 1 month and is noted in their contract/agreement and explained at the time of hiring. The penalty for leaving without reasonable notice cannot exceed 60% of 1 month of gross base wages. Terminating employment is voluntary with no explicit threat of punishment, fines, violence, or withholding wages.",
+    "path": "VAP Standard > A. Labor > A1. Prohibition of Forced Labor > 2. Procedures & Practices are in place such that:",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "3",
+      "title": "Controls & Monitoring should include:"
+    },
+    "content": "3. Controls & Monitoring should include:\na. Cascade this policy and the RBA Code of Conduct to suppliers, contractors, subcontractors, and labor recruiters noted the expectation that they adopt it, put in place procedures to follow it.\nb. Conformance to the policy is regularly monitored.\nc. When engaging with recruiters and labor agents determine the specific amount of any fees and expenses that are required to recruit, hire and onboard each individual (which varies if they are local, internal migrant, or foreign migrant worker) prior to commencement of work and ensure that is part of contract and sub-contracts and paid to reduce risk of workers incurring fees.\nd. Actively verify compliance through monitoring labor recruiters, brokers, and agents.\n\nNOTE: reimbursement is not the desired model (no fees to workers is)and therefore it is a non-conformance to the RBA Code of Conduct albeit a lesser one.",
+    "path": "VAP Standard > A. Labor > A1. Prohibition of Forced Labor > 3. Controls & Monitoring should include:",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  },
+  {
+    "Theme": "VAP Standard",
+    "version": "V8.0.2",
+    "level_1": {
+      "id": "A",
+      "title": "Labor"
+    },
+    "level_2": {
+      "id": "A1",
+      "title": "Prohibition of Forced Labor"
+    },
+    "level_3": {
+      "id": "4",
+      "title": "Records are maintained including:"
+    },
+    "content": "4. Records are maintained including:\na. Personnel files for all workers are maintained and include:\n\ni. All versions of employment contract / agreement\nii. All items to ensure regulatory compliance.\niii. They are maintained with appropriate access and retention controls (on and/or off site) and confidentiality to protect privacy.\niv. Documentation on their leaving conditions and end of contract of workers\nv. Workers’ documentation must be retained for at least 12 months or as required by law whichever is longer.\n\nb. Contracts with service providers, recruiters, labor agents and labor contractors and evidence that they have acted in compliance with the contract/agreement requirements. c. Records on allowed fees are maintained and disclosed to the worker.",
+    "path": "VAP Standard > A. Labor > A1. Prohibition of Forced Labor > 4. Records are maintained including:",
+    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
+  }
+]
