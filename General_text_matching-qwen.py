@@ -26,28 +26,29 @@ os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
 # ==================== 配置参数 ====================
 class Config:
     # 文件路径
-    A_FILE = "/home/pmw/h20/Text_matching/RBA-VAP-Standard-V8.0.2_Apr2025.json"
+    A_FILE = "/home/pmw/h20/Text_matching/RBA_A.json"
     B_FILE = "/home/pmw/h20/Text_matching/Apple_standard.json"
-    OUTPUT_EXCEL = "/home/pmw/h20/Text_matching/Matching-Results121.xlsx"
-    OUTPUT_HTML = "/home/pmw/h20/Text_matching/Matching-Results121.html"
+    OUTPUT_EXCEL = "/home/pmw/h20/Text_matching/General_matching_results.xlsx"
+    OUTPUT_HTML = "/home/pmw/h20/Text_matching/General_matching_results.html"
 
-    # BGE-M3 嵌入模型 (BAAI)
+    # Qwen3-Embedding-8B 嵌入模型 (Qwen/Qwen3-Embedding-8B)
     # 支持本地路径或 Hugging Face 模型名
-    EMBEDDING_MODEL = "BAAI/bge-m3"
-    EMBEDDING_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"  # Embedding 使用 GPU
+    EMBEDDING_MODEL = "Qwen/Qwen3-Embedding-8B"
+    # 8B 模型约 16GB，使用 CPU 运行（稳定但较慢）
+    EMBEDDING_DEVICE = "cpu"
 
     # 检查本地缓存是否存在
-    HF_CACHE = os.path.expanduser("~/.cache/huggingface/hub/models--BAAI--bge-m3")
+    HF_CACHE = os.path.expanduser("~/.cache/huggingface/hub/models--Qwen--Qwen3-Embedding-8B")
     USE_LOCAL_ONLY = os.path.exists(HF_CACHE)  # 如果缓存存在，强制使用本地模式
 
-    # BGE-Reranker-large 模型
-    RERANKER_MODEL = "BAAI/bge-reranker-large"  # BGE Reranker 模型
+    # BGE-Reranker-Base 模型
+    RERANKER_MODEL = "BAAI/bge-reranker-base"  # BGE Reranker 模型
     RERANKER_DEVICE = "cpu"  # Reranker 使用 CPU，节省显存
-    RERANKER_TOP_K = 6  # Rerank 后取 Top-K
+    RERANKER_TOP_K = 5  # Rerank 后取 Top-K
     ENABLE_RERANKER = True  # Reranker 开关：True=启用，False=禁用
 
     # 向量检索参数
-    TOP_K = 15  # 召回Top-K候选（增大召回数量）
+    TOP_K = 20  # 召回Top-K候选（增大召回数量）
 
     # LLM API 配置
     LLM_API_BASE = "http://10.71.5.24:8000/v1"
@@ -181,12 +182,15 @@ def truncate_text(text: str, max_length: int = 512) -> str:
     return text[:max_length] + "..."
 
 
-# ==================== BGE 向量嵌入 ====================
-class BGEEmbedder:
-    """使用 BGE-M3 模型生成文本嵌入向量"""
+# ==================== Qwen 向量嵌入 ====================
+class QwenEmbedder:
+    """使用 Qwen3-Embedding-8B 模型生成文本嵌入向量
+
+    Qwen Embedding 模型不需要前缀，直接使用原始文本
+    """
 
     def __init__(self, model_name: str = Config.EMBEDDING_MODEL, device: str = Config.EMBEDDING_DEVICE):
-        print(f"正在加载 BGE-M3 模型 ({device}模式)...")
+        print(f"正在加载 Qwen3-Embedding-8B 模型 ({device}模式)...")
         self.device = device
 
         # 禁用 huggingface_hub 的网络检查
@@ -196,7 +200,7 @@ class BGEEmbedder:
         if Config.USE_LOCAL_ONLY:
             # 查找实际的 snapshot 路径
             import glob
-            snapshot_pattern = os.path.expanduser("~/.cache/huggingface/hub/models--BAAI--bge-m3/snapshots/*")
+            snapshot_pattern = os.path.expanduser("~/.cache/huggingface/hub/models--Qwen--Qwen3-Embedding-8B/snapshots/*")
             snapshot_dirs = glob.glob(snapshot_pattern)
             if snapshot_dirs:
                 # 找到包含完整模型文件的 snapshot
@@ -234,7 +238,7 @@ class BGEEmbedder:
             self.model = AutoModel.from_pretrained(model_to_load, **load_kwargs)
             self.model.to(device)
             self.model.eval()
-            print("BGE-M3 模型加载完成")
+            print("Qwen3-Embedding-8B 模型加载完成")
 
         except Exception as e:
             print(f"\n错误: 模型加载失败: {e}")
@@ -242,11 +246,29 @@ class BGEEmbedder:
             print("1. 清理显存: python -c \"import torch; torch.cuda.empty_cache()\"")
             print("2. 检查网络连接")
             print("3. 设置环境变量使用镜像站: export HF_ENDPOINT=https://hf-mirror.com")
-            print("4. 手动下载模型: huggingface-cli download BAAI/bge-m3")
+            print("4. 手动下载模型: huggingface-cli download Qwen/Qwen3-Embedding-8B")
             raise
 
-    def encode(self, texts: List[str], batch_size: int = 32) -> np.ndarray:
-        """将文本列表编码为向量，支持批量处理避免显存溢出"""
+    def encode_queries(self, texts: List[str], batch_size: int = 32) -> np.ndarray:
+        """将查询文本编码为向量"""
+        return self._encode(texts, batch_size)
+
+    def encode_passages(self, texts: List[str], batch_size: int = 32) -> np.ndarray:
+        """将文档文本编码为向量"""
+        return self._encode(texts, batch_size)
+
+    def encode(self, texts: List[str], batch_size: int = 32, is_query: bool = False) -> np.ndarray:
+        """将文本列表编码为向量
+
+        Args:
+            texts: 文本列表
+            batch_size: 批次大小
+            is_query: Qwen Embedding 不区分 query/passage，此参数保留兼容性
+        """
+        return self._encode(texts, batch_size)
+
+    def _encode(self, texts: List[str], batch_size: int = 32) -> np.ndarray:
+        """内部编码方法"""
         all_embeddings = []
         total_texts = len(texts)
 
@@ -272,7 +294,7 @@ class BGEEmbedder:
             # Encode
             with torch.no_grad():
                 model_output = self.model(**encoded_input)
-                # 使用 [CLS] token 的嵌入或者平均池化
+                # Qwen 使用平均池化
                 embeddings = self._mean_pooling(model_output, encoded_input['attention_mask'])
                 # 归一化
                 embeddings = torch.nn.functional.normalize(embeddings, p=2, dim=1)
@@ -325,7 +347,7 @@ class BGEReranker:
 
         # 检查本地缓存
         import glob
-        reranker_cache_pattern = os.path.expanduser(f"~/.cache/huggingface/hub/models--BAAI--bge-reranker-large/snapshots/*")
+        reranker_cache_pattern = os.path.expanduser(f"~/.cache/huggingface/hub/models--BAAI--bge-reranker-base/snapshots/*")
         reranker_cache_dirs = glob.glob(reranker_cache_pattern)
 
         use_local = False
@@ -425,7 +447,7 @@ class LLMJudge:
 
     # 相关性等级
     RELEVANCE_NOT_RELATED = "不相关"
-    RELEVANCE_WEAK = "部分相关"
+    RELEVANCE_WEAK = "弱相关"
     RELEVANCE_STRONG = "强相关"
 
     def __init__(self):
@@ -472,32 +494,26 @@ class LLMJudge:
 
     def _build_prompt(self, text1: str, text2: str) -> str:
         """构建 LLM 判断提示词"""
-        return f"""
-        您是专攻国际供应链标准的合规审计员。
-        您的任务是评估 RBA VAP Standard 的要求条款是否与 Apple Supplier Responsibility Standard 条款存在对应关系、涵盖范围或语义等效性。
+        return f"""请判断以下两段责任标准条款在"责任义务层面"是否相关。
 
-            【RBA VAP Standard】：
-            {text1}
+【条款 A】：
+{text1}
 
-            【Apple Supplier Responsibility Standard】：
-            {text2}
+【条款 B】：
+{text2}
 
-        从以下维度判断：
-        1. 是否涉及相似的责任或义务主题
-        2. 是否规定相似的要求或标准
-        3. 监管主体（义务承担方）
-        4. 覆盖范围关系（完全一致/部分覆盖/互补）
-        5. 严格程度差异
+从以下维度判断：
+1. 是否涉及相似的责任或义务主题
+2. 是否规定相似的要求或标准
+3. 覆盖范围关系（完全一致/部分覆盖/互补）
+4. 严格程度差异
 
 
-        请仅返回以下格式的结果（不要输出其他内容）：
-        相关性：[不相关/部分相关/强相关]
-        理由：
-        "匹配类型": "完全匹配 | 部分匹配 | 无匹配",
-        "理由说明": "...简要说明判断理由，不超过100字...",
-        "关键对齐点": ["..."],
-        "差异点": ["..."]
-        """
+请仅返回以下格式的结果（不要输出其他内容）：
+相关性：[不相关/弱相关/强相关]
+理由：["匹配类型": "两条款完全一致", "两条款部分覆盖", "两条款补充说明";
+        简要说明判断理由，不超过100字]
+"""
 
     def _parse_result(self, result: str) -> Tuple[str, str]:
         """解析 LLM 返回结果"""
@@ -544,14 +560,15 @@ class TextMatcher:
         print(f"  - B文件: {len(all_b_docs)} 条（其中 content: {len(self.b_docs)} 条）")
 
         # 初始化嵌入模型
-        print("\n[2/4] 初始化 BGE-M3 嵌入模型...")
-        self.embedder = BGEEmbedder()
+        print("\n[2/4] 初始化 Qwen3-Embedding-8B 嵌入模型...")
+        self.embedder = QwenEmbedder()
 
         # 构建B文件文档向量索引
         print("\n[3/4] 构建B文件文档向量索引...")
         # 使用带层级路径的文本进行 embedding
         b_texts = [build_embedding_text(doc) for doc in self.b_docs]
-        b_embeddings = self.embedder.encode(b_texts)
+        # B 文档作为 passage（文档库）
+        b_embeddings = self.embedder.encode_passages(b_texts)
         self.vector_index = VectorIndex(b_embeddings)
         print(f"  - 向量维度: {b_embeddings.shape[1]}")
         print(f"  - 索引完成")
@@ -598,7 +615,8 @@ class TextMatcher:
 
             # 1. 向量检索 Top-K（召回更多候选）
             # 使用带层级路径的文本进行查询
-            query_embedding = self.embedder.encode([a_text_for_embedding])
+            # A 文档作为 query（查询）
+            query_embedding = self.embedder.encode_queries([a_text_for_embedding])
             similarities, indices = self.vector_index.search(query_embedding, Config.TOP_K)
 
             # 2. 准备候选列表
@@ -622,7 +640,8 @@ class TextMatcher:
                     '向量相似度': '',
                     'Rerank分数': '',
                     '排名': '',
-                    'LLM judgement': '',
+                    'LLM判断结果': '',
+                    'LLM判断理由': '',
                     'B文件路径': '',
                     'A文件路径': a_doc.get('path', ''),
                 })
@@ -647,15 +666,15 @@ class TextMatcher:
                 # LLM 精判（使用原始内容进行判断，不包含层级路径）
                 llm_relevance, llm_reason = self.llm_judge.judge(a_text, b_text)
 
-                # 保存结果 - 合并 LLM判断结果 和 LLM判断理由 为一个单元格
-                llm_judgement = f"{llm_relevance}\n{llm_reason}" if llm_reason else llm_relevance
+                # 保存结果
                 result = {
                     'A文件条款': a_text,
                     'B文件条款': b_text,
                     '向量相似度': round(candidate['similarity'], 4),
                     'Rerank分数': round(candidate.get('rerank_score', 0), 4),
                     '排名': rank,
-                    'LLM judgement': llm_judgement,
+                    'LLM判断结果': llm_relevance,
+                    'LLM判断理由': llm_reason,
                     'B文件路径': b_doc.get('path', ''),
                     'A文件路径': a_doc.get('path', ''),
                 }
@@ -670,7 +689,8 @@ class TextMatcher:
                     '向量相似度': '',
                     'Rerank分数': '',
                     '排名': '',
-                    'LLM judgement': '',
+                    'LLM判断结果': '',
+                    'LLM判断理由': '',
                     'B文件路径': '',
                     'A文件路径': a_doc.get('path', ''),
                 })
@@ -692,7 +712,8 @@ class TextMatcher:
             'B文件条款',
             '向量相似度',
             'Rerank分数',
-            'LLM judgement',
+            'LLM判断结果',
+            'LLM判断理由',
             '排名',
             'A文件路径',
             'B文件路径',
@@ -701,24 +722,6 @@ class TextMatcher:
         # 只保留存在的列
         columns_order = [col for col in columns_order if col in df.columns]
         df = df[columns_order]
-
-        # 重命名列标题为英文（与 HTML 保持一致）
-        # 使用文件名（已去掉 .json 后缀）
-        a_name = self.doc_counts.get('a_file_name', 'A Doc')
-        b_name = self.doc_counts.get('b_file_name', 'B Doc')
-
-        column_rename_map = {
-            'A文件条款': a_name,
-            'B文件条款': b_name,
-            '向量相似度': 'Vector_Score',
-            'Rerank分数': 'Rerank_Score',
-            'LLM judgement': 'LLM judgement',
-            '排名': 'Rank',
-            'A文件路径': f'{a_name} clause path',
-            'B文件路径': f'{b_name} clause path',
-        }
-
-        df = df.rename(columns=column_rename_map)
 
         # 导出到 Excel
         from openpyxl.styles import Alignment, Font, Border, Side
@@ -731,12 +734,13 @@ class TextMatcher:
             # 调整列宽
             worksheet.column_dimensions['A'].width = 60  # A文件条款
             worksheet.column_dimensions['B'].width = 60  # B文件条款
-            worksheet.column_dimensions['C'].width = 15  # Vector_Score
-            worksheet.column_dimensions['D'].width = 15  # Rerank_Score
-            worksheet.column_dimensions['E'].width = 40  # LLM judgement
-            worksheet.column_dimensions['F'].width = 10  # Rank
-            worksheet.column_dimensions['G'].width = 40  # A文件路径
-            worksheet.column_dimensions['H'].width = 40  # B文件路径
+            worksheet.column_dimensions['C'].width = 15  # 向量相似度
+            worksheet.column_dimensions['D'].width = 15  # Rerank分数
+            worksheet.column_dimensions['E'].width = 15  # LLM判断结果
+            worksheet.column_dimensions['F'].width = 40  # LLM判断理由
+            worksheet.column_dimensions['G'].width = 10  # 排名
+            worksheet.column_dimensions['H'].width = 40  # A文件路径
+            worksheet.column_dimensions['I'].width = 40  # B文件路径
 
             # 设置所有数据行的行高为 200
             for row in range(2, len(df) + 2):  # 从第2行开始（第1行是标题）
@@ -805,13 +809,10 @@ class TextMatcher:
         relevance_counts = {}
         empty_match = 0
         for r in results:
-            llm_judgement = r.get('LLM judgement', '')
-            # LLM judgement 格式为 "标签\n理由"，需要提取标签（第一行）
-            if llm_judgement == '':
+            if r['LLM判断结果'] == '':
                 empty_match += 1
             else:
-                # 提取第一行作为相关性标签
-                relevance = llm_judgement.split('\n')[0] if '\n' in llm_judgement else llm_judgement
+                relevance = r['LLM判断结果']
                 relevance_counts[relevance] = relevance_counts.get(relevance, 0) + 1
 
         return {
@@ -835,7 +836,8 @@ class TextMatcher:
             'B文件条款',
             '向量相似度',
             'Rerank分数',
-            'LLM judgement',
+            'LLM判断结果',
+            'LLM判断理由',
             '排名',
             'A文件路径',
             'B文件路径',
@@ -1090,8 +1092,8 @@ class TextMatcher:
             color: #721c24;
         }}
 
-        /* LLM judgement 列 */
-        td.llm-judgement {{
+        /* 理由列 */
+        td.reason {{
             text-align: left;
             font-size: 0.9rem;
             color: #495057;
@@ -1199,13 +1201,13 @@ class TextMatcher:
                     <div class="stat-value">{stats['empty_match']}</div>
                 </div>""")
 
-        # 相关性统计卡片（按指定顺序：强相关 > 部分相关 > 不相关）
-        relevance_order = ['强相关', '部分相关', '不相关']
+        # 相关性统计卡片（按指定顺序：强相关 > 弱相关 > 不相关）
+        relevance_order = ['强相关', '弱相关', '不相关']
         for relevance in relevance_order:
             if relevance in relevance_counts:
                 count = relevance_counts[relevance]
-                css_class = 'strong' if relevance == '强相关' else ('weak' if relevance == '部分相关' else 'not-related')
-                icon = '🟢' if relevance == '强相关' else ('🟡' if relevance == '部分相关' else '🔴')
+                css_class = 'strong' if relevance == '强相关' else ('weak' if relevance == '弱相关' else 'not-related')
+                icon = '🟢' if relevance == '强相关' else ('🟡' if relevance == '弱相关' else '🔴')
                 cards.append(f"""                <div class="stat-card {css_class}">
                     <div class="stat-label">{icon} {relevance}</div>
                     <div class="stat-value">{count}</div>
@@ -1214,7 +1216,7 @@ class TextMatcher:
         return f"""        <div class="stats-section">
             <div class="stats-title">匹配统计</div>
             <div class="stats-grid">
-            {chr(10).join(cards)}
+{chr(10).join(cards)}
             </div>
         </div>"""
 
@@ -1257,7 +1259,8 @@ class TextMatcher:
             'B文件条款': f'{b_name}',
             '向量相似度': 'Vector_Score',
             'Rerank分数': 'Rerank_Score',
-            'LLM judgement': 'LLM judgement',
+            'LLM判断结果': 'Relevance_label',
+            'LLM判断理由': 'LLM_Rationale',
             '排名': 'Rank',
             'A文件路径': f'{a_name} clause path',
             'B文件路径': f'{b_name} clause path',
@@ -1275,7 +1278,7 @@ class TextMatcher:
 
         for row_idx, row in df.iterrows():
             # 判断是否为空匹配行
-            is_empty = row.get('LLM judgement', '') == ''
+            is_empty = row['LLM判断结果'] == ''
             tr_class = ' class="empty-match"' if is_empty else ''
 
             tbody_html += f"            <tr{tr_class}>\n"
@@ -1308,8 +1311,8 @@ class TextMatcher:
 
         return f"""        <div class="table-section">
             <table>
-            {thead_html}
-            {tbody_html}
+{thead_html}
+{tbody_html}
             </table>
         </div>"""
 
@@ -1326,7 +1329,7 @@ class TextMatcher:
             '向量相似度': 'class="score"',
             'Rerank分数': 'class="score"',
             '排名': 'class="rank"',
-            'LLM judgement': 'class="llm-judgement"',
+            'LLM判断理由': 'class="reason"',
         }
         return class_map.get(col, '')
 
@@ -1335,28 +1338,15 @@ class TextMatcher:
         if pd.isna(value) or value == '':
             return '<span style="color: #999;">—</span>'
 
-        if col == 'LLM judgement':
-            # LLM judgement 格式为 "标签\n理由"，需要分别格式化
-            lines = value.split('\n', 1) if '\n' in str(value) else [str(value), '']
-            label = lines[0]
-            reason = lines[1] if len(lines) > 1 else ''
-
-            # 根据标签确定样式
+        if col == 'LLM判断结果':
             css_class = ''
-            if label == '强相关':
+            if value == '强相关':
                 css_class = 'relevance-strong'
-            elif label == '部分相关':
+            elif value == '弱相关':
                 css_class = 'relevance-weak'
-            elif label == '不相关':
+            elif value == '不相关':
                 css_class = 'relevance-not-related'
-
-            # HTML 转义理由部分
-            if reason:
-                reason = reason.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-                # 将理由中的换行符转换为 <br>
-                reason = reason.replace('\n', '<br>')
-
-            return f'<div style="display: flex; flex-direction: column; gap: 8px;"><span class="relevance-badge {css_class}">{label}</span><span style="font-size: 0.9rem; color: #495057;">{reason}</span></div>'
+            return f'<span class="relevance-badge {css_class}">{value}</span>'
 
         if col in ['向量相似度', 'Rerank分数']:
             return f'{value:.4f}'

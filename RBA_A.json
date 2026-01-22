@@ -1,7 +1,7 @@
 [
   {
     "Theme": "VAP Standard",
-    "version": "V4.9",
+    "version": "V8.0.2",
     "level_1": {
       "id": null,
       "title": null
@@ -20,7 +20,7 @@
   },
   {
     "Theme": "VAP Standard",
-    "version": "V4.9",
+    "version": "V8.0.2",
     "level_1": {
       "id": "A",
       "title": "Labor"
@@ -39,7 +39,7 @@
   },
   {
     "Theme": "VAP Standard",
-    "version": "V4.9",
+    "version": "V8.0.2",
     "level_1": {
       "id": "A",
       "title": "Labor"
@@ -58,7 +58,7 @@
   },
   {
     "Theme": "VAP Standard",
-    "version": "V4.9",
+    "version": "V8.0.2",
     "level_1": {
       "id": "A",
       "title": "Labor"
@@ -77,7 +77,7 @@
   },
   {
     "Theme": "VAP Standard",
-    "version": "V4.9",
+    "version": "V8.0.2",
     "level_1": {
       "id": "A",
       "title": "Labor"
@@ -96,7 +96,7 @@
   },
   {
     "Theme": "VAP Standard",
-    "version": "V4.9",
+    "version": "V8.0.2",
     "level_1": {
       "id": "A",
       "title": "Labor"
@@ -115,7 +115,7 @@
   },
   {
     "Theme": "VAP Standard",
-    "version": "V4.9",
+    "version": "V8.0.2",
     "level_1": {
       "id": "A",
       "title": "Labor"
@@ -130,44 +130,6 @@
     },
     "content": "4. Records are maintained including:\na. Personnel files for all workers are maintained and include:\n\ni. All versions of employment contract / agreement\nii. All items to ensure regulatory compliance.\niii. They are maintained with appropriate access and retention controls (on and/or off site) and confidentiality to protect privacy.\niv. Documentation on their leaving conditions and end of contract of workers\nv. Workers’ documentation must be retained for at least 12 months or as required by law whichever is longer.\n\nb. Contracts with service providers, recruiters, labor agents and labor contractors and evidence that they have acted in compliance with the contract/agreement requirements. c. Records on allowed fees are maintained and disclosed to the worker.",
     "path": "VAP Standard > A. Labor > A1. Prohibition of Forced Labor > 4. Records are maintained including:",
-    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
-  },
-  {
-    "Theme": "VAP Standard",
-    "version": "V4.9",
-    "level_1": {
-      "id": "A",
-      "title": "Labor"
-    },
-    "level_2": {
-      "id": "A1",
-      "title": "Prohibition of Forced Labor"
-    },
-    "level_3": {
-      "id": "5",
-      "title": "Serious conditions that will result in a severe finding:"
-    },
-    "content": "5. Serious conditions that will result in a severe finding:\nRestricting workers from voluntary employment termination.\nImposing any penalty for resignation that is >3 months of gross base wages.\nCreating a situation that puts workers at risk such as locking exit doors in the factory or dormitories while the workers are inside.\nAny action that would be considered coercive or restrictive to reasonable movement by the use of threats such as firing, “sending home,” reporting immigration status to authorities or similarly severe activities.\nUse or employment of non-voluntary labor.\nChanging the terms and conditions of employment to be materially worse than originally agreed.\nNot communicating employment terms and conditions before employment.\nKeeping, destroying, concealing, or confiscating original personal identification documents such as passports, work permits, identity, or travel papers.\nIf in the rare case where local law requires an employer to store personal identification documents, tampering with or restricting access for more than 12 hours or charging a fee to access them.",
-    "path": "VAP Standard > A. Labor > A1. Prohibition of Forced Labor > 5. Serious conditions that will result in a severe finding:",
-    "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
-  },
-  {
-    "Theme": "VAP Standard",
-    "version": "V4.9",
-    "level_1": {
-      "id": "A",
-      "title": "Labor"
-    },
-    "level_2": {
-      "id": "A1",
-      "title": "Prohibition of Forced Labor"
-    },
-    "level_3": {
-      "id": "6",
-      "title": "Leading Practices include:"
-    },
-    "content": "6. Leading Practices include:\nContract or offer letter detailing the level of physical work and what personal protective equipment is required to be worn. If this is impractical for a contract or offer letter, a separate document can suffice.\nContract or employment agreement includes the worker’s date of birth.\nForeign and internal migrant workers should be interviewed when they join the company to learn if any of the policies were violated, in which case remedy must be provided, and they must be informed of the grievance mechanism. If fees and costs were found to be charged, workers must be repaid within 90 days.",
-    "path": "VAP Standard > A. Labor > A1. Prohibition of Forced Labor > 6. Leading Practices include:",
     "source": "RBA-VAP-Standard-V8.0.2_Apr2025-A.md"
   }
 ]
